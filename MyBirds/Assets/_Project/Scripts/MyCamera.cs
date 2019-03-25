@@ -1,6 +1,6 @@
 ﻿using System;
 using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class MyCamera : MonoBehaviour {
 
@@ -10,14 +10,23 @@ public class MyCamera : MonoBehaviour {
     public float waitBetweenTargets = 3f;
 
     private GameObject playerBall;
+    private Ball playerBallScript;
+    private Queue<GameObject> targets;
+    private Queue<Vector3> offsets;
+    private float lastQueueOperation;
 
     private void Start()
     {
         playerBall = References.Player_Ball;
+        playerBallScript = playerBall.GetComponent<Ball>();
+        targets = new Queue<GameObject>();
+        offsets = new Queue<Vector3>();
+        lastQueueOperation = -waitBetweenTargets;
 
-        playerBall.GetComponent<Ball>().BallThrown += this.LookAtBall;
-        playerBall.GetComponent<Ball>().BallOut += this.LookAtObstacles;
-        playerBall.GetComponent<Ball>().AllOut += this.LookAtCatapult;
+        // subscribe
+        playerBallScript.BallThrown += this.LookAtBall;
+        playerBallScript.BallOut += this.LookAtObstacles;
+        playerBallScript.AllOut += this.LookAtCatapult;
     }
 
     void FixedUpdate ()
@@ -26,6 +35,13 @@ public class MyCamera : MonoBehaviour {
         {
             Move();
             Look();
+        }
+
+        if (targets.Count > 0 && Time.realtimeSinceStartup - lastQueueOperation > waitBetweenTargets)
+        {
+            target = targets.Dequeue().transform;
+            offset = offsets.Dequeue();
+            lastQueueOperation = Time.realtimeSinceStartup;
         }
 	}
 
@@ -46,25 +62,16 @@ public class MyCamera : MonoBehaviour {
 
     private void LookAtBall(object source, EventArgs args)
     {
-        StartCoroutine(LookAtBall());
-    }
-    private IEnumerator LookAtBall()
-    {
-        yield return new WaitForSecondsRealtime(0);
-        this.target = References.Player_Ball.transform;
-        playerBall.GetComponent<Ball>().BallThrown -= this.LookAtBall;
+        targets.Enqueue(References.Player_Ball);
+        offsets.Enqueue(offset);
+        playerBallScript.BallThrown -= LookAtBall;
     }
 
     private void LookAtObstacles(object source, EventArgs args)
     {
-        StartCoroutine(LookAtObstacles());
-    }
-    private IEnumerator LookAtObstacles()
-    {
-        yield return new WaitForSecondsRealtime(waitBetweenTargets);
-        this.target = References.Group_Obstacles.transform;
-        this.offset = new Vector3(1.42f, 8.6f, -13.21f);
-        playerBall.GetComponent<Ball>().BallOut -= this.LookAtObstacles;
+        targets.Enqueue(References.Group_Obstacles);
+        offsets.Enqueue(new Vector3(1.42f, 8.6f, -13.21f));
+        playerBallScript.BallOut -= LookAtObstacles;
     }
 
     private void LookAtCatapult(object source, EventArgs args)
@@ -72,12 +79,8 @@ public class MyCamera : MonoBehaviour {
         // Problem: Cannot make this script wait until the end of one coroutine to start another
         // Solution: Use a Queue In Update to EnQueue any camera movement then Dequeue every fixed amount oftime
         // Signing off, Goodnight
-    }
-    private IEnumerator LookAtCatapult()
-    {
-        yield return new WaitForSecondsRealtime(waitBetweenTargets);
-        this.target = References.Catapult_FrontArm.transform.parent;
-        this.offset = new Vector3(4.84f, 3.1f, -3.79f);
-        playerBall.GetComponent<Ball>().AllOut -= this.LookAtCatapult;
+        targets.Enqueue(References.Catapult_FrontArm.transform.parent.gameObject);
+        offsets.Enqueue(new Vector3(4.84f, 3.1f, -3.79f));
+        playerBallScript.AllOut -= LookAtCatapult;
     }
 }

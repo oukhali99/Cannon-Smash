@@ -803,6 +803,7 @@ MonoBehaviour:
   smoothSpeed: 0.1
   offset: {x: 0, y: 0.4, z: -5}
   target: {fileID: 0}
+  waitBetweenTargets: 3
 --- !u!114 &534669908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3754,7 +3755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671e0f08dcab092429422da6bc371e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endWait: 1
   worldYBoundary: -6
   maxStretch: 3
   epsilon: 0.1
