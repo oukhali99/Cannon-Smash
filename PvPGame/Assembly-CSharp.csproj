@@ -62,11 +62,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Project\Prefabs\Ball\PooledBall.cs" />
+    <Compile Include="Assets\_Project\Scripts\Controller.cs" />
     <Compile Include="Assets\_Project\Scripts\Global.cs" />
     <Compile Include="Assets\_Project\Scripts\IPooledObject.cs" />
     <Compile Include="Assets\_Project\Scripts\ObjectPooler.cs" />
     <Compile Include="Assets\_Project\Scripts\Spawner.cs" />
-    <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Gaming/Documents/GitHub/Unity-Projects/PvPGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
