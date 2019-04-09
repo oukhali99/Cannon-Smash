@@ -42,7 +42,7 @@ public class ObjectPooler : MonoBehaviour
         PooledObject pooledObjectToSpawn = poolDictionary[tag].Dequeue();
         GameObject objectToSpawn = pooledObjectToSpawn.obj;
         IPooledObject pooledObjectScript = pooledObjectToSpawn.objScript;
-
+        
         objectToSpawn.SetActive(true);
         objectToSpawn.transform.position = position;
         objectToSpawn.transform.rotation = rotation;

@@ -58,11 +58,13 @@
      <Compile Include="Assets\_Project\Scripts\Controllers\Jump.cs" />
      <Compile Include="Assets\_Project\Scripts\Controllers\Roll.cs" />
      <Compile Include="Assets\_Project\Scripts\Controllers\XController.cs" />
+     <Compile Include="Assets\_Project\Scripts\DiesOnColWithTag.cs" />
      <Compile Include="Assets\_Project\Scripts\Global.cs" />
      <Compile Include="Assets\_Project\Scripts\IPooledObject.cs" />
      <Compile Include="Assets\_Project\Scripts\MyCameraAnimatorHelper.cs" />
      <Compile Include="Assets\_Project\Scripts\ObjectPooler.cs" />
      <Compile Include="Assets\_Project\Scripts\Spawner.cs" />
+     <Compile Include="Assets\_Project\Scripts\Splash.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

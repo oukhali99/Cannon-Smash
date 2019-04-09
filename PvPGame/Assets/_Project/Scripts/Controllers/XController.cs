@@ -29,7 +29,7 @@ public class XController : MonoBehaviour
 
     private void Update()
     {
-        SafetyCheck();
+        // SafetyCheck();
         input.x = 0;
         input.y = 0;
         anim.SetBool("isRunning", false);
@@ -64,7 +64,7 @@ public class XController : MonoBehaviour
             }
         }
         
-        speedText.text = "Velocity: " + (float)Mathf.RoundToInt(rb.velocity.x * 100) / 100;
+        speedText.text = "" + (float)Mathf.RoundToInt(rb.velocity.x * 100) / 100;
     }
 
     private void SafetyCheck()
