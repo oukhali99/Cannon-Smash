@@ -59,6 +59,7 @@
      <Compile Include="Assets\_Project\Scripts\Controllers\Roll.cs" />
      <Compile Include="Assets\_Project\Scripts\Controllers\XController.cs" />
      <Compile Include="Assets\_Project\Scripts\DiesOnColWithTag.cs" />
+     <Compile Include="Assets\_Project\Scripts\Exit.cs" />
      <Compile Include="Assets\_Project\Scripts\Global.cs" />
      <Compile Include="Assets\_Project\Scripts\IPooledObject.cs" />
      <Compile Include="Assets\_Project\Scripts\MyCameraAnimatorHelper.cs" />
