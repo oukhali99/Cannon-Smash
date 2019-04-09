@@ -1,17 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Global : MonoBehaviour
 {
-    public static GameObject cam;
-    public static GameObject Player;
+    public static Global Instance;
 
-    public GameObject camH;
-    public GameObject PlayerH;
+    public GameObject Cam;
+    public GameObject Player;
 
     private void Awake()
     {
-        cam = camH;
-        Player = PlayerH;
+        Instance = this;
     }
 
     public static float exponent(float num, int exp)
@@ -35,5 +34,13 @@ public class Global : MonoBehaviour
         {
             return num * halfExp * halfExp;
         }
+    }
+
+    public void NextLevel()
+    {
+        int cur;
+
+        cur = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(cur + 1);
     }
 }

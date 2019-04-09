@@ -1,13 +1,19 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
 {
+    private GameObject player;
+
+    private void Start()
+    {
+        player = Global.Instance.Player;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject == Global.Player)
+        if (collision.gameObject == player)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Global.Instance.NextLevel();
         }
     }
 }

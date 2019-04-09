@@ -8,19 +8,25 @@ public class Coin : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI scoreText;
 
     // Components
-    Animator anim;
-    Collider2D col;
-    Rigidbody2D rb;
-    SpriteRenderer sr;
-    AudioSource sound;
+    private Animator anim;
+    private Collider2D col;
+    private Rigidbody2D rb;
+    private SpriteRenderer sr;
+    private AudioSource sound;
+    private GameObject player;
 
-    private void Start()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         sound = GetComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
+        player = Global.Instance.Player;
     }
 
     private void Update()
@@ -38,7 +44,7 @@ public class Coin : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject == Global.Player && col.enabled == true)
+        if (collision.gameObject == player && col.enabled == true)
         {
             sound.Play();
             score++;

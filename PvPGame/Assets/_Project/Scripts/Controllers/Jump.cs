@@ -19,10 +19,6 @@ public class Jump : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-    }
-
-    private void Start()
-    {
         grounded = false;
     }
 
@@ -72,8 +68,12 @@ public class Jump : MonoBehaviour
             if (angle < (180 - groundedAngle) && angle > groundedAngle)
             {
                 grounded = true;
-                anim.SetBool("jumpDown", false);
-                anim.SetBool("jumpUp", false);
+                
+                if (anim.isActiveAndEnabled)
+                {
+                    anim.SetBool("jumpDown", false);
+                    anim.SetBool("jumpUp", false);
+                }
             }
         }        
     }

@@ -2,6 +2,8 @@
 
 public class Splash : MonoBehaviour, IPooledObject
 {
+    [SerializeField] private Vector3 offset;
+
     private ParticleSystem ps;
 
     private void Awake()
@@ -13,5 +15,6 @@ public class Splash : MonoBehaviour, IPooledObject
     {
         ps.Clear();
         ps.Play();
+        transform.position += offset;
     }
 }

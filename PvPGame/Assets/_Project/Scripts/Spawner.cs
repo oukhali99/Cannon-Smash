@@ -14,9 +14,13 @@ public class Spawner : MonoBehaviour
     
     private ObjectPooler objectPooler;
 
-    private void Start()
+    private void Awake()
     {
         objectPooler = ObjectPooler.Instance;
+    }
+
+    private void Start()
+    {
         timer = 0;
     }
 

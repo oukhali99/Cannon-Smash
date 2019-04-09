@@ -1362,9 +1362,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 242551865
-  m_SortingLayer: 2
-  m_SortingOrder: -1
+  m_SortingLayerID: 1877062185
+  m_SortingLayer: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9974daca20338734893687c284eefb96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1406,7 +1406,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1417,7 +1417,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 2}
+  m_Size: {x: 2.56, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &437571263
 GameObject:
@@ -1753,8 +1753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11d33d7fe67d95439ef88d0ced49881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camH: {fileID: 519420028}
-  PlayerH: {fileID: 1208092158}
+  Cam: {fileID: 519420028}
+  Player: {fileID: 1208092158}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -3550,7 +3550,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1877062185
   m_SortingLayer: 3
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b7f2095fd51a644395b1b79ff6105e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -15,12 +15,12 @@ public class MyCameraAnimatorHelper : MonoBehaviour {
     {
         anim = GetComponent<Animator>();
         cam = GetComponent<Camera>();
+        timer = 0;
     }
 
     private void Start()
     {
-        player = Global.Player;
-        timer = 0;
+        player = Global.Instance.Player;        
     }
 
     private void Update()

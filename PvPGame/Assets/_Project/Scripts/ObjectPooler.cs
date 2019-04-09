@@ -12,11 +12,15 @@ public class ObjectPooler : MonoBehaviour
 
     private void Awake()
     {
+        // initialize the dictionary of Queues. Each queue is associated with a tag(name)
         poolDictionary = new Dictionary<string, Queue<PooledObject>>();
 
+        // go through the list provided as input in the inspector
         foreach (Pool curPool in pools)
         {
+            // initialize the pool
             Queue<PooledObject> objectPool = new Queue<PooledObject>();
+
 
             for (int i = 0; i < curPool.size; i++)
             {

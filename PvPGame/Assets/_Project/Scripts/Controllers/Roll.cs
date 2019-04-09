@@ -11,10 +11,6 @@ public class Roll : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    private void Start()
-    {
         maxTilt = Mathf.Abs(maxTilt);
     }
 

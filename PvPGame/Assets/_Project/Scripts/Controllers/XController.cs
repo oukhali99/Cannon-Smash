@@ -19,10 +19,6 @@ public class XController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-    }
-
-    private void Start()
-    {
         maxSpeed += rb.drag;
         input = new Vector2(0, 0);
     }
