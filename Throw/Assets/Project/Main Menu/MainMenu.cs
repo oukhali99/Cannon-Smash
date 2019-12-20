@@ -10,15 +10,13 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public static MainMenu Instance;
-
-    public bool Verbose;
+    
     public TMPro.TextMeshProUGUI NameDisplay;
     public CanvasScaler MyCanvasScaler;
     public float[] UIScales;
     public Text NameInputText;
     public string PlayerNameDefault;
-    public float UISizeDefault;
-    public string GameOptionsFileName;
+    public float UIScaleDefault;
     public float HeightFactor;
     public Camera MyCamera;
 
@@ -27,7 +25,12 @@ public class MainMenu : MonoBehaviour
         Instance = this;
 
         // First time check
-        Options.GameOptionsCheck(GameOptionsFileName, new Options.GameOptions(UISizeDefault, PlayerNameDefault));
+        if (!PlayerPrefs.HasKey("UIScale"))
+        {
+            PlayerPrefs.SetFloat("UIScale", UIScaleDefault);
+            PlayerPrefs.SetString("PlayerName", PlayerNameDefault);
+            PlayerPrefs.Save();
+        }
 
         // Update Options
         UpdateOptions();        
@@ -44,28 +47,30 @@ public class MainMenu : MonoBehaviour
 
     public void UpdateOptions()
     {
-        Static.ScaleUI(MyCamera, MyCanvasScaler, HeightFactor, GameOptionsFileName);
-        NameDisplay.text = "Welcome " + Options.LoadGameOptions(GameOptionsFileName).PlayerName;
+        Static.ScaleUI(MyCamera, MyCanvasScaler, HeightFactor);
+        NameDisplay.text = "Welcome " + PlayerPrefs.GetString("PlayerName");
     }
 
     public void SaveGUISmall()
     {
-        Options.SaveGUI(0, GameOptionsFileName);
+        PlayerPrefs.SetFloat("UIScale", UIScales[0]);
+        PlayerPrefs.Save();
     }
     public void SaveGUIMedium()
     {
-        Options.SaveGUI(1, GameOptionsFileName);
+        PlayerPrefs.SetFloat("UIScale", UIScales[1]);
+        PlayerPrefs.Save();
     }
     public void SaveGUILarge()
     {
-        Options.SaveGUI(2, GameOptionsFileName);
+        PlayerPrefs.SetFloat("UIScale", UIScales[2]);
+        PlayerPrefs.Save();
     }
 
     public void ProcessNameInput()
     {
         string inputName = NameInputText.text;
-        Options.GameOptions gameOptions = Options.LoadGameOptions(GameOptionsFileName);
-        gameOptions.PlayerName = inputName;
-        Options.SaveGameOptions(gameOptions, GameOptionsFileName);
+        PlayerPrefs.SetString("PlayerName", inputName);
+        PlayerPrefs.Save();
     }
 }

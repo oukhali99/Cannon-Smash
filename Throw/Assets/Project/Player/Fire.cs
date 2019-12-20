@@ -13,7 +13,6 @@ public class Fire : MonoBehaviour
     public float Cooldown;
 
     private Rigidbody[] ballRbs;
-    private Vector3 firePos;
     private float lastFire;
     private float verTimestamp;
     private float heightTimestamp;
@@ -27,8 +26,7 @@ public class Fire : MonoBehaviour
         {
             ballRbs[i] = BallPooler.Pool[i].GetComponent<Rigidbody>();
         }
-
-        firePos = BallPooler.transform.position;
+        
         lastFire = -Cooldown;
         verTimestamp = 0;
         heightTimestamp = 0;

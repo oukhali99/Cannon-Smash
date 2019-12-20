@@ -41,9 +41,9 @@ public class Static
         }
     }
 
-    public static void ScaleUI(Camera cam, CanvasScaler cs, float heightFactor, string gameOptionsPath)
+    public static void ScaleUI(Camera cam, CanvasScaler cs, float heightFactor)
     {
         float resHeight = cam.pixelHeight;
-        cs.scaleFactor = resHeight * Options.LoadGameOptions(gameOptionsPath).UIScale / heightFactor;
+        cs.scaleFactor = resHeight * PlayerPrefs.GetFloat("UIScale") / heightFactor;
     }
 }

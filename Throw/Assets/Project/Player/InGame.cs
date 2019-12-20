@@ -5,8 +5,7 @@ using UnityEngine;
 public class InGame : MonoBehaviour
 {
     public static InGame Instance;
-
-    public bool Verbose;
+    
     public int Score;
     public int MaxScore;
     public int Ammo;
@@ -16,7 +15,6 @@ public class InGame : MonoBehaviour
     public Camera MyCamera;
     public UnityEngine.UI.CanvasScaler MyCanvasScaler;
     public float HeightFactor;
-    public string GameOptionsFileName;
 
     // Use this for initialization
     void Awake ()
@@ -29,9 +27,9 @@ public class InGame : MonoBehaviour
     {
         Instance.Ammo = BallPooler.Pool.Length;
         UpdateScoreboard();
-
+        
         // Canvas Size
-        Static.ScaleUI(MyCamera, MyCanvasScaler, HeightFactor, GameOptionsFileName);
+        Static.ScaleUI(MyCamera, MyCanvasScaler, HeightFactor);
     }
 
     public void UpdateScoreboard()
@@ -47,13 +45,5 @@ public class InGame : MonoBehaviour
     public void ClickedMenu()
     {
         Static.LoadScene(0);
-    }
-
-    public void Log(string str)
-    {
-        if (Verbose)
-        {
-            Debug.Log(str);
-        }
     }
 }
