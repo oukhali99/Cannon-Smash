@@ -164,11 +164,11 @@ e1ea12ca952c81d81a9a21fdf34446ed UnityEngine.HoloLens.dll:UnityEngine.EventSyste
 dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+3758d115a13dd5d8fa47d50ed218d2da Assembly-CSharp.dll:.RandomSky
 e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 2f9af06a78208a67db480e9bfed4a076 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 2c1941464e3b6daeaf71db06910a55cb Assembly-CSharp.dll:.DestructionGlobal
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 9f991b5c0eb2c10d6cacd97d01638249 Assembly-CSharp.dll:.Fire
-d7d19db0f149dd28026d194379f444e4 Assembly-CSharp.dll:.Global
-3758d115a13dd5d8fa47d50ed218d2da Assembly-CSharp.dll:.RandomSky
+1247bad50f7cbe0aec06d7ad2efec7f5 Assembly-CSharp.dll:.Global
