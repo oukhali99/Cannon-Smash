@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
@@ -62,14 +60,14 @@ public class Fire : MonoBehaviour
             // Force
             float forceMag = MaxForceMag;
 
-            if (Global.Instance.Ammo == 0)
+            if (InGame.Instance.Ammo == 0)
             {
                 Arrow.SetActive(false);
             }
             else if (Press() && Time.time - lastFire > Cooldown)
             {
-                Global.Instance.Ammo--;
-                Global.UpdateScoreboard();
+                InGame.Instance.Ammo--;
+                InGame.Instance.UpdateScoreboard();
                 lastFire = Time.time;
                 Vector3 forceUnitDir = Arrow.transform.up.normalized;
                 Vector3 force = forceUnitDir * forceMag;

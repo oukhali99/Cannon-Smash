@@ -248,8 +248,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1919185307575404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: -0.5, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0, y: -0.4, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 4492938584359736}
   m_RootOrder: 5
@@ -293,7 +293,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1465455760205012}
   m_LocalRotation: {x: 0.6427876, y: 0, z: 0, w: 0.7660445}
-  m_LocalPosition: {x: 2, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4145776141331182}
@@ -308,7 +308,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1527468881908532}
   m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
-  m_LocalPosition: {x: 2, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4492938584359736}
@@ -334,7 +334,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1249143814971698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5, y: -1.0999999, z: 0}
+  m_LocalPosition: {x: 0, y: -1.0999999, z: 0}
   m_LocalScale: {x: 6, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4492938584359736}
@@ -574,7 +574,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1919185307575404}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallVelocityThresholdSqr: 10
   ballVelocityThresholdSqr: 20
-  breakWait: 0
+  breakWait: Infinity
 --- !u!114 &114319902057805474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -810,5 +810,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9fbf10f578eade4c98c515eddc9cccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Verbose: 0
+  Score: 0
+  MaxScore: 0
+  Ammo: 0
+  BallPooler: {fileID: 114319902057805474}
   ScoreText: {fileID: 0}
   AmmoText: {fileID: 0}
+  MyCamera: {fileID: 20844231841550102}
+  MyCanvasScaler: {fileID: 0}

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -10,73 +9,63 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public Text NameInputField;
+    public static MainMenu Instance;
+
+    public bool Verbose;
     public TMPro.TextMeshProUGUI NameDisplay;
     public CanvasScaler MyCanvasScaler;
-    public Slider GUIScaleSlider;
+    public float[] UIScales;
+    public Text NameInputText;
+    public string PlayerNameDefault;
+    public float UISizeDefault;
+    public string GameOptionsFileName;
+    public float HeightFactor;
+    public Camera MyCamera;
 
     void Start()
     {
-        RefreshDisplayedName();
-        RefreshGUIScale();
+        Instance = this;
+
+        // First time check
+        Options.GameOptionsCheck(GameOptionsFileName, new Options.GameOptions(UISizeDefault, PlayerNameDefault));
+
+        // Update Options
+        UpdateOptions();        
     }
 
     public void LoadScene(int index)
     {
-        SceneManager.LoadScene(index);
+        Static.LoadScene(index);
     }
-
     public void ReloadScene()
     {
-        int index = SceneManager.GetActiveScene().buildIndex;
-        LoadScene(index);
+        Static.ReloadScene();
     }
 
-    // Welcome Name
-    public void RefreshDisplayedName()
+    public void UpdateOptions()
     {
-        NameDisplay.text = "Welcome " + LoadProperty("playerName");
+        Static.ScaleUI(MyCamera, MyCanvasScaler, HeightFactor, GameOptionsFileName);
+        NameDisplay.text = "Welcome " + Options.LoadGameOptions(GameOptionsFileName).PlayerName;
     }
 
-    public void ChangeSavedNameToInput()
+    public void SaveGUISmall()
     {
-        SaveProperty("playerName", NameInputField.text);
-        NameInputField.text = "";
-        RefreshDisplayedName();
+        Options.SaveGUI(0, GameOptionsFileName);
+    }
+    public void SaveGUIMedium()
+    {
+        Options.SaveGUI(1, GameOptionsFileName);
+    }
+    public void SaveGUILarge()
+    {
+        Options.SaveGUI(2, GameOptionsFileName);
     }
 
-    // GUI Scale
-    public void RefreshGUIScale()
+    public void ProcessNameInput()
     {
-        float GUIScale = float.Parse(LoadProperty("GUIScale"));
-
-        MyCanvasScaler.scaleFactor = GUIScale;
-    }
-
-    public void ChangeGUIScaleToSliderValue()
-    {
-        float newGUIScale = GUIScaleSlider.value;
-
-        SaveProperty("GUIScale", newGUIScale.ToString());
-    }
-
-    // Helpers
-    private void SaveProperty(string property, string newValue)
-    {
-        BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/" + property + ".dat");
-
-        bf.Serialize(file, newValue);
-        file.Close();
-    }
-
-    private string LoadProperty(string property)
-    {
-        BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Open(Application.persistentDataPath + "/" + property + ".dat", FileMode.Open);
-        string savedName = (string)bf.Deserialize(file);
-        file.Close();
-
-        return savedName;        
+        string inputName = NameInputText.text;
+        Options.GameOptions gameOptions = Options.LoadGameOptions(GameOptionsFileName);
+        gameOptions.PlayerName = inputName;
+        Options.SaveGameOptions(gameOptions, GameOptionsFileName);
     }
 }

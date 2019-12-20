@@ -15,7 +15,7 @@ public class Destruction : MonoBehaviour
 
     void Start()
     {
-        Global.Instance.MaxScore++;
+        InGame.Instance.MaxScore++;
     }
 
     void Update()
@@ -45,8 +45,8 @@ public class Destruction : MonoBehaviour
     void Score()
     {
         scored = true;
-        Global.Instance.Score++;
-        Global.UpdateScoreboard();
+        InGame.Instance.Score++;
+        InGame.Instance.UpdateScoreboard();
         scoredTimestamp = Time.time;
     }
 }
