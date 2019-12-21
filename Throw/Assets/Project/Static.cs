@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// This class contains commonly used static functions
+/// </summary>
 public class Static
 {
     public static float Round(float n, int dec)
@@ -23,27 +26,12 @@ public class Static
         return n;
     }
 
-    public static void LoadScene(int sceneIndex)
+    public static void StreamlineButton(Button streamliner, Button streamlinee)
     {
-        SceneManager.LoadScene(sceneIndex);
-    }
 
-    public static void ReloadScene()
-    {
-        LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
-    public static void Log(bool verbose, string str)
+    public static void StreamlineImage(Image streamliner, Image streamlinee)
     {
-        if (verbose)
-        {
-            Debug.Log(str);
-        }
-    }
 
-    public static void ScaleUI(Camera cam, CanvasScaler cs, float heightFactor)
-    {
-        float resHeight = cam.pixelHeight;
-        cs.scaleFactor = resHeight * PlayerPrefs.GetFloat("UIScale") / heightFactor;
     }
 }

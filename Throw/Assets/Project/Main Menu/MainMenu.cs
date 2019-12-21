@@ -7,11 +7,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine.UI;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu : GlobalEnvironnment
 {
-    public static MainMenu Instance;
-    
-    public TMPro.TextMeshProUGUI NameDisplay;
+    public TMPro.TextMeshProUGUI GreetingsText;
     public CanvasScaler MyCanvasScaler;
     public float[] UIScales;
     public Text NameInputText;
@@ -19,36 +17,30 @@ public class MainMenu : MonoBehaviour
     public float UIScaleDefault;
     public float HeightFactor;
     public Camera MyCamera;
+    [Header("Temeify Settings")]
+    public GameObject Button1;
+    public GameObject Button2;
 
     void Start()
     {
-        Instance = this;
-
-        // First time check
+        FirstTimeSaveCheck();
+        RefreshOptions();
+        Themeify();
+    }
+    
+    public void RefreshOptions()
+    {
+        ScaleUI(MyCamera, MyCanvasScaler, HeightFactor);
+        GreetingsText.text = "Welcome " + PlayerPrefs.GetString("PlayerName");
+    }
+    public void FirstTimeSaveCheck()
+    {
         if (!PlayerPrefs.HasKey("UIScale"))
         {
             PlayerPrefs.SetFloat("UIScale", UIScaleDefault);
             PlayerPrefs.SetString("PlayerName", PlayerNameDefault);
             PlayerPrefs.Save();
         }
-
-        // Update Options
-        UpdateOptions();        
-    }
-
-    public void LoadScene(int index)
-    {
-        Static.LoadScene(index);
-    }
-    public void ReloadScene()
-    {
-        Static.ReloadScene();
-    }
-
-    public void UpdateOptions()
-    {
-        Static.ScaleUI(MyCamera, MyCanvasScaler, HeightFactor);
-        NameDisplay.text = "Welcome " + PlayerPrefs.GetString("PlayerName");
     }
 
     public void SaveGUISmall()
@@ -72,5 +64,11 @@ public class MainMenu : MonoBehaviour
         string inputName = NameInputText.text;
         PlayerPrefs.SetString("PlayerName", inputName);
         PlayerPrefs.Save();
+    }
+    
+    public void Themeify()
+    {
+        ThemeifyButtons("Button1", Button1);
+        ThemeifyButtons("Button2", Button2);
     }
 }
