@@ -30,11 +30,47 @@ public class GlobalEnvironnment : MonoBehaviour
         cs.scaleFactor = resHeight * PlayerPrefs.GetFloat("UIScale") / heightFactor;
     }
 
+    public void ThemeifyButtons(string tag, GameObject buttonGameObject)
+    {
+        GameObject[] allButtons = GameObject.FindGameObjectsWithTag(tag);
+        Button buttonButtonComponent = buttonGameObject.GetComponent<Button>();
+        Image buttonImageComponent = buttonGameObject.GetComponent<Image>();
+        TMPro.TextMeshProUGUI buttonTextComponent = buttonGameObject.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
+
+        foreach (GameObject cur in allButtons)
+        {
+            Button curButtonComponent = cur.GetComponent<Button>();
+            Image curImageComponent = cur.GetComponent<Image>();
+            TMPro.TextMeshProUGUI curTextComponent = cur.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
+
+            StreamlineButton(buttonButtonComponent, curButtonComponent);
+            StreamlineImage(buttonImageComponent, curImageComponent);
+            StreamLineTextMeshPro(buttonTextComponent, curTextComponent);
+
+            cur.SetActive(false);
+            cur.SetActive(true);
+        }
+    }
+    public void ThemeifyTMProText(string tag, GameObject themer)
+    {
+        GameObject[] allTMProTextGameObjects = GameObject.FindGameObjectsWithTag(tag);
+        TMPro.TextMeshProUGUI themerTMProText = themer.GetComponent<TMPro.TextMeshProUGUI>();
+
+        foreach (GameObject cur in allTMProTextGameObjects)
+        {
+            TMPro.TextMeshProUGUI curTMProText = cur.GetComponent<TMPro.TextMeshProUGUI>();
+
+            StreamLineTextMeshPro(themerTMProText, curTMProText);
+
+            cur.SetActive(false);
+            cur.SetActive(true);
+        }
+    }
+
     public void StreamlineButton(Button streamliner, Button streamlinee)
     {
         streamlinee.interactable = streamliner.interactable;
         streamlinee.transition = streamliner.transition;
-        streamlinee.targetGraphic = streamliner.targetGraphic;
         streamlinee.colors = streamliner.colors;
         streamlinee.navigation = streamliner.navigation;
     }
@@ -58,27 +94,5 @@ public class GlobalEnvironnment : MonoBehaviour
         streamlinee.fontSize = streamliner.fontSize;
         streamlinee.alignment = streamliner.alignment;
         streamlinee.enableKerning = streamliner.enableKerning;
-    }
-
-    public void ThemeifyButtons(string tag, GameObject buttonGameObject)
-    {
-        GameObject[] allButtons = GameObject.FindGameObjectsWithTag(tag);
-        Button buttonButtonComponent = buttonGameObject.GetComponent<Button>();
-        Image buttonImageComponent = buttonGameObject.GetComponent<Image>();
-        TMPro.TextMeshProUGUI buttonTextComponent = buttonGameObject.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
-
-        foreach (GameObject cur in allButtons)
-        {
-            Button curButtonComponent = cur.GetComponent<Button>();
-            Image curImageComponent = cur.GetComponent<Image>();
-            TMPro.TextMeshProUGUI curTextComponent = cur.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
-
-            StreamlineButton(buttonButtonComponent, curButtonComponent);
-            StreamlineImage(buttonImageComponent, curImageComponent);
-            StreamLineTextMeshPro(buttonTextComponent, curTextComponent);
-
-            cur.SetActive(false);
-            cur.SetActive(true);
-        }
     }
 }

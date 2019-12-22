@@ -12,7 +12,7 @@ public class MainMenu : GlobalEnvironnment
     public TMPro.TextMeshProUGUI GreetingsText;
     public CanvasScaler MyCanvasScaler;
     public float[] UIScales;
-    public Text NameInputText;
+    public TMPro.TextMeshProUGUI NameInputText;
     public string PlayerNameDefault;
     public float UIScaleDefault;
     public float HeightFactor;
