@@ -55,19 +55,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Project\CanvasThemer.cs" />
-     <Compile Include="Assets\Project\In-Game\Buildings\Destructible.cs" />
-     <Compile Include="Assets\Project\In-Game\Canvases\GameOverCanvas\GameOverCanvas.cs" />
-     <Compile Include="Assets\Project\In-Game\Canvases\InfoCanvas\Ammo.cs" />
-     <Compile Include="Assets\Project\In-Game\Canvases\InfoCanvas\Score.cs" />
-     <Compile Include="Assets\Project\In-Game\Player\Ball\Ball.cs" />
-     <Compile Include="Assets\Project\In-Game\Player\Fire.cs" />
-     <Compile Include="Assets\Project\In-Game\Pooled.cs" />
-     <Compile Include="Assets\Project\In-Game\Pooler.cs" />
-     <Compile Include="Assets\Project\Main Menu\GreetingsHandler.cs" />
-     <Compile Include="Assets\Project\Main Menu\PlayPanel.cs" />
-     <Compile Include="Assets\Project\SmartCanvasThemer.cs" />
-     <Compile Include="Assets\Project\Static.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\Ammo.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\Ball.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\CanvasThemer.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\Destructible.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\Fire.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\GameOverHandler.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\InGamePanels\GameOverPanel.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\InGamePanels\PausePanel.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\InGamePanels\TopRightPanel.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\Pooled.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\Pooler.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\SaveManager.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\Score.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\Static.cs" />
+     <Compile Include="Assets\Scenes\Scene0\Scripts\GreetingsHandler.cs" />
+     <Compile Include="Assets\Scenes\Scene0\Scripts\PlayPanel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -105,7 +108,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\Project\PlayerPrefs.txt" />
+     <None Include="Assets\Scenes\Common\PlayerPrefs.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
