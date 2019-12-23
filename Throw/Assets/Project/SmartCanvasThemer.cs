@@ -8,10 +8,14 @@ public class SmartCanvasThemer : CanvasThemer
 {
     [SerializeField] private float HeightFactor;
 
-    // Start is called before the first frame update
     void Start()
     {
-        ScaleUIToHeightFactor(SceneCamera, CanvasScaler, HeightFactor);
+        RefreshUI();
         Themeify();
+    }
+
+    public new void RefreshUI()
+    {
+        ScaleUIToHeightFactor(SceneCamera, CanvasScaler, HeightFactor);
     }
 }

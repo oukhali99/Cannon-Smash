@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2088579081}
+      - m_Target: {fileID: 735161284}
         m_MethodName: SaveGUISmall
         m_Mode: 1
         m_Arguments:
@@ -213,30 +213,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2088579081}
-        m_MethodName: RefreshOptions
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2088579081}
-        m_MethodName: RefreshOptions
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 867129964}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735161284}
+        m_MethodName: RefreshUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -371,7 +360,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &57495022
 GameObject:
@@ -522,7 +511,7 @@ PrefabInstance:
     - target: {fileID: 4285640097182927651, guid: c416ecbcf0a0b6645885cd9d5f758ecf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4285640097182927651, guid: c416ecbcf0a0b6645885cd9d5f758ecf,
         type: 3}
@@ -623,7 +612,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2088579081}
+      - m_Target: {fileID: 735161284}
         m_MethodName: SaveGUIMedium
         m_Mode: 1
         m_Arguments:
@@ -634,30 +623,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2088579081}
-        m_MethodName: RefreshOptions
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2088579081}
-        m_MethodName: RefreshOptions
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 867129964}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735161284}
+        m_MethodName: RefreshUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -785,7 +763,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2088579081}
+      - m_Target: {fileID: 735161284}
         m_MethodName: SaveGUILarge
         m_Mode: 1
         m_Arguments:
@@ -796,30 +774,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2088579081}
-        m_MethodName: RefreshOptions
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2088579081}
-        m_MethodName: RefreshOptions
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 867129964}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735161284}
+        m_MethodName: RefreshUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1257,7 +1224,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 867129964}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -1407,7 +1374,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &600064475
 GameObject:
@@ -1491,7 +1458,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2088579081}
+      - m_Target: {fileID: 0}
         m_MethodName: RefreshOptions
         m_Mode: 1
         m_Arguments:
@@ -1502,7 +1469,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 867129964}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -1653,8 +1620,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2088579081}
-        m_MethodName: ProcessNameInput
+      - m_Target: {fileID: 659994619}
+        m_MethodName: ClickedChangeNameButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1664,18 +1631,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2088579081}
-        m_MethodName: RefreshOptions
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 867129964}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -1756,6 +1712,7 @@ GameObject:
   - component: {fileID: 659994616}
   - component: {fileID: 659994618}
   - component: {fileID: 659994617}
+  - component: {fileID: 659994619}
   m_Layer: 5
   m_Name: GreetingsText
   m_TagString: Text1
@@ -1903,6 +1860,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659994615}
   m_CullTransparentMesh: 0
+--- !u!114 &659994619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659994615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f65be52223a4b42be9978d4b80fcdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerNameInput: {fileID: 1311601095}
+  GreetingsText: {fileID: 659994617}
+  PlayerNameDefault: Player
 --- !u!1 &735161279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,7 +1970,7 @@ RectTransform:
   - {fileID: 1710616110}
   - {fileID: 57495023}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2023,7 +1995,11 @@ MonoBehaviour:
   Button2: {fileID: 1990736051941296, guid: 125d02880e3ed7147a39c4c1a9f44ae8, type: 3}
   Text1: {fileID: 5767628584401941272, guid: c08ada3e767a1be4b9ad274ae46d9e58, type: 3}
   Panel1: {fileID: 8502153897982405527, guid: 02a27819e6ea88741b47600a3909f06b, type: 3}
-  HeightFactor: 1280
+  UIScales:
+  - 1
+  - 1.5
+  - 2
+  HeightFactor: 1000
 --- !u!1 &807152525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,6 +2310,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826054749}
   m_CullTransparentMesh: 0
+--- !u!82 &867129964 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4285640097182927650, guid: c416ecbcf0a0b6645885cd9d5f758ecf,
+    type: 3}
+  m_PrefabInstance: {fileID: 365310269}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &881596223
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,7 +2473,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2088579081}
+      - m_Target: {fileID: 735161284}
         m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
@@ -2502,7 +2484,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 867129964}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -2718,7 +2700,7 @@ GameObject:
   - component: {fileID: 1273322387}
   - component: {fileID: 1273322386}
   m_Layer: 5
-  m_Name: WelcomeSreen
+  m_Name: WelcomeScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2807,7 +2789,7 @@ GameObject:
   - component: {fileID: 1311601096}
   - component: {fileID: 1311601095}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3978,7 +3960,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 867129964}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -4011,7 +3993,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2088579081}
+      - m_Target: {fileID: 735161284}
         m_MethodName: Themeify
         m_Mode: 1
         m_Arguments:
@@ -4572,7 +4554,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1902983237
 GameObject:
@@ -4678,7 +4660,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 867129964}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -4689,7 +4671,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2088579081}
+      - m_Target: {fileID: 735161284}
         m_MethodName: Themeify
         m_Mode: 1
         m_Arguments:
@@ -4736,67 +4718,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902983237}
   m_CullTransparentMesh: 0
---- !u!1 &2088579080
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2088579082}
-  - component: {fileID: 2088579081}
-  m_Layer: 0
-  m_Name: Global
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2088579081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088579080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dbb7a68f105a4e44854c6b9db0cbbab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SceneCamera: {fileID: 0}
-  CanvasScaler: {fileID: 0}
-  Button1: {fileID: 1289044672023718, guid: bbbd734b781e033409ca231e0f5f9e39, type: 3}
-  Button2: {fileID: 1990736051941296, guid: 125d02880e3ed7147a39c4c1a9f44ae8, type: 3}
-  Text1: {fileID: 5767628584401941272, guid: c08ada3e767a1be4b9ad274ae46d9e58, type: 3}
-  Panel1: {fileID: 0}
-  HeightFactor: 800
-  GreetingsText: {fileID: 659994617}
-  MyCanvasScaler: {fileID: 735161281}
-  UIScales:
-  - 1
-  - 1.5
-  - 2
-  NameInputText: {fileID: 1311601095}
-  PlayerNameDefault: Player
-  UIScaleDefault: 1
-  HeightFactor: 800
-  MyCamera: {fileID: 598539466}
-  Button1: {fileID: 1289044672023718, guid: bbbd734b781e033409ca231e0f5f9e39, type: 3}
-  Button2: {fileID: 1990736051941296, guid: 125d02880e3ed7147a39c4c1a9f44ae8, type: 3}
-  Text1: {fileID: 5767628584401941272, guid: c08ada3e767a1be4b9ad274ae46d9e58, type: 3}
---- !u!4 &2088579082
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088579080}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

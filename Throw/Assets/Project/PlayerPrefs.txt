@@ -1,0 +1,3 @@
+PlayerName
+UIScale
+Level1Score Level1MaxScore

@@ -11,13 +11,36 @@ public class CanvasThemer : MonoBehaviour
     [SerializeField] protected GameObject Button1;
     [SerializeField] protected GameObject Button2;
     [SerializeField] protected GameObject Text1;
+    [SerializeField] protected GameObject Text2;
     [SerializeField] protected GameObject Panel1;
+    [SerializeField] protected float[] UIScales;
 
     // Start is called before the first frame update
     void Start()
     {
-        ScaleUI(SceneCamera, CanvasScaler);
+        RefreshUI();
         Themeify();
+    }
+
+    public void RefreshUI()
+    {
+        ScaleUIToHeightFactor(SceneCamera, CanvasScaler, SceneCamera.pixelHeight);
+    }
+
+    public void SaveGUISmall()
+    {
+        PlayerPrefs.SetFloat("UIScale", UIScales[0]);
+        PlayerPrefs.Save();
+    }
+    public void SaveGUIMedium()
+    {
+        PlayerPrefs.SetFloat("UIScale", UIScales[1]);
+        PlayerPrefs.Save();
+    }
+    public void SaveGUILarge()
+    {
+        PlayerPrefs.SetFloat("UIScale", UIScales[2]);
+        PlayerPrefs.Save();
     }
 
     public void LoadScene(int index)
@@ -34,17 +57,17 @@ public class CanvasThemer : MonoBehaviour
         float resHeight = cam.pixelHeight;
         cs.scaleFactor = resHeight * PlayerPrefs.GetFloat("UIScale") / heightFactor;
     }
-
-
+    
     public void Themeify()
     {
         ThemeifyButtons("Button1", Button1);
         ThemeifyButtons("Button2", Button2);
         ThemeifyTMProText("Text1", Text1);
+        ThemeifyTMProText("Text2", Text2);
         ThemeifyPanel("Panel1", Panel1);
-
     }
-    public void ThemeifyButtons(string tag, GameObject buttonGameObject)
+
+    private void ThemeifyButtons(string tag, GameObject buttonGameObject)
     {
         if (buttonGameObject == null)
         {
@@ -70,7 +93,7 @@ public class CanvasThemer : MonoBehaviour
             cur.SetActive(true);
         }
     }
-    public void ThemeifyTMProText(string tag, GameObject themer)
+    private void ThemeifyTMProText(string tag, GameObject themer)
     {
         if (themer == null)
         {
@@ -90,7 +113,7 @@ public class CanvasThemer : MonoBehaviour
             cur.SetActive(true);
         }
     }
-    public void ThemeifyPanel(string tag, GameObject themer)
+    private void ThemeifyPanel(string tag, GameObject themer)
     {
         if (themer == null)
         {
@@ -109,11 +132,6 @@ public class CanvasThemer : MonoBehaviour
             curGameObject.SetActive(false);
             curGameObject.SetActive(true);
         }
-    }
-
-    private void ScaleUI(Camera cam, CanvasScaler cs)
-    {
-        ScaleUIToHeightFactor(cam, cs, cam.pixelHeight);
     }
 
     private void StreamlineButton(Button streamliner, Button streamlinee)
