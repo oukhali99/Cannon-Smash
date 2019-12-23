@@ -64,6 +64,7 @@
      <Compile Include="Assets\Project\In-Game\Player\Fire.cs" />
      <Compile Include="Assets\Project\In-Game\Pooled.cs" />
      <Compile Include="Assets\Project\In-Game\Pooler.cs" />
+     <Compile Include="Assets\Project\Main Menu\GreetingsHandler.cs" />
      <Compile Include="Assets\Project\Main Menu\MainMenu.cs" />
      <Compile Include="Assets\Project\Main Menu\PlayPanel.cs" />
      <Compile Include="Assets\Project\SmartCanvasThemer.cs" />

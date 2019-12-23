@@ -9,7 +9,6 @@ using UnityEngine.UI;
 
 public class MainMenu : SmartCanvasThemer
 {
-    public TMPro.TextMeshProUGUI GreetingsText;
     public CanvasScaler MyCanvasScaler;
     public float[] UIScales;
     public TMPro.TextMeshProUGUI NameInputText;
