@@ -4,47 +4,38 @@ using UnityEngine;
 
 public class Pooler : MonoBehaviour
 {
-    public GameObject Object;
-    public GameObject[] Pool;
+    public int PoolSize { private get; set; }
+
+    [SerializeField] private Pooled ObjectScript;
+
+    private Pooled[] Pool;
 
 	// Use this for initialization
-	void Awake ()
+	void Start()
     {
-        Pool = new GameObject[Pool.Length];
+        Pool = new Pooled[PoolSize];
 
 		for (int i = 0; i < Pool.Length; i++)
         {
-            GameObject newObject = Instantiate(Object);
+            GameObject newObject = ObjectScript.Instantiate();
             newObject.SetActive(false);
-            Pool[i] = newObject;
+            Pool[i] = newObject.GetComponent<Pooled>();
         }
 	}
 	
-	public GameObject GetObject()
+	public Pooled GetObject()
     {
         for (int i = 0; i < Pool.Length; i++)
         {
-            if (!Pool[i].activeInHierarchy)
+            GameObject curGameObject = Pool[i].gameObject;
+
+            if (!curGameObject.activeInHierarchy)
             {
-                Pool[i].SetActive(true);
+                curGameObject.SetActive(true);
                 return Pool[i];
             }
         }
 
         return null;
-    }
-
-    public int GetObjectIndex()
-    {
-        for (int i = 0; i < Pool.Length; i++)
-        {
-            if (!Pool[i].activeInHierarchy)
-            {
-                Pool[i].SetActive(true);
-                return i;
-            }
-        }
-
-        return -1;
     }
 }

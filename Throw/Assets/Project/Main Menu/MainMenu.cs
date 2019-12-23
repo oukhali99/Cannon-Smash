@@ -7,7 +7,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine.UI;
 
-public class MainMenu : GlobalEnvironnment
+public class MainMenu : SmartCanvasThemer
 {
     public TMPro.TextMeshProUGUI GreetingsText;
     public CanvasScaler MyCanvasScaler;
@@ -20,6 +20,7 @@ public class MainMenu : GlobalEnvironnment
     [Header("Temeify Settings")]
     public GameObject Button1;
     public GameObject Button2;
+    public GameObject Text1;
 
     void Start()
     {
@@ -30,7 +31,7 @@ public class MainMenu : GlobalEnvironnment
     
     public void RefreshOptions()
     {
-        ScaleUI(MyCamera, MyCanvasScaler, HeightFactor);
+        ScaleUIToHeightFactor(MyCamera, MyCanvasScaler, HeightFactor);
         GreetingsText.text = "Welcome " + PlayerPrefs.GetString("PlayerName");
     }
     public void FirstTimeSaveCheck()
@@ -64,11 +65,5 @@ public class MainMenu : GlobalEnvironnment
         string inputName = NameInputText.text;
         PlayerPrefs.SetString("PlayerName", inputName);
         PlayerPrefs.Save();
-    }
-    
-    public void Themeify()
-    {
-        ThemeifyButtons("Button1", Button1);
-        ThemeifyButtons("Button2", Button2);
     }
 }

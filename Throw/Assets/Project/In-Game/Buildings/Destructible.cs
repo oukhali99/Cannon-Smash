@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Destructible : MonoBehaviour
 {
-    public AudioSource ImpactSoundAudioSource;
+    [SerializeField] private AudioSource ImpactSoundAudioSource;
+    [SerializeField] private float FallVelocityThresholdSqr;
+    [SerializeField] private float BallVelocityThresholdSqr;
+    [SerializeField] private float BreakWait;
 
     private bool scored;
     private float scoredTimestamp;
@@ -17,13 +20,12 @@ public class Destructible : MonoBehaviour
 
     void Start()
     {
-        InGame.Instance.MaxScore++;
-        InGame.Instance.RefreshUI();
+        global::Score.Instance.NewDestructible();
     }
 
     void Update()
     {
-        if (Time.time - scoredTimestamp > DestructibleGlobal.Instance.breakWait && scored)
+        if (Time.time - scoredTimestamp > BreakWait && scored)
         {
             gameObject.SetActive(false);
         }
@@ -34,22 +36,23 @@ public class Destructible : MonoBehaviour
         if (!scored)
         {
             if (collision.gameObject.tag.Equals("Player")
-                && collision.relativeVelocity.sqrMagnitude > DestructibleGlobal.Instance.ballVelocityThresholdSqr)
+                && collision.relativeVelocity.sqrMagnitude > BallVelocityThresholdSqr)
             {
                 Score();
             }
-            else if (collision.relativeVelocity.sqrMagnitude > DestructibleGlobal.Instance.fallVelocityThresholdSqr)
+            else if (collision.relativeVelocity.sqrMagnitude > FallVelocityThresholdSqr)
             {
                 Score();
             }
         }
     }
 
-    void Score()
+
+    // Helpers
+    private void Score()
     {
         scored = true;
-        InGame.Instance.Score++;
-        InGame.Instance.RefreshUI();
+        global::Score.Instance.PlayerScores();
         scoredTimestamp = Time.time;
         ImpactSoundAudioSource.Play();
     }

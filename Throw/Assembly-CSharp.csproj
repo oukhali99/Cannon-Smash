@@ -55,14 +55,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Project\GlobalEnvironnment.cs" />
+     <Compile Include="Assets\Project\CanvasThemer.cs" />
      <Compile Include="Assets\Project\In-Game\Buildings\Destructible.cs" />
-     <Compile Include="Assets\Project\In-Game\Buildings\DestructibleGlobal.cs" />
-     <Compile Include="Assets\Project\In-Game\InGame.cs" />
+     <Compile Include="Assets\Project\In-Game\Canvases\GameOverCanvas\GameOverCanvas.cs" />
+     <Compile Include="Assets\Project\In-Game\Canvases\InfoCanvas\Ammo.cs" />
+     <Compile Include="Assets\Project\In-Game\Canvases\InfoCanvas\Score.cs" />
+     <Compile Include="Assets\Project\In-Game\Player\Ball\Ball.cs" />
      <Compile Include="Assets\Project\In-Game\Player\Fire.cs" />
+     <Compile Include="Assets\Project\In-Game\Pooled.cs" />
      <Compile Include="Assets\Project\In-Game\Pooler.cs" />
-     <Compile Include="Assets\Project\In-Game\RandomSky.cs" />
      <Compile Include="Assets\Project\Main Menu\MainMenu.cs" />
+     <Compile Include="Assets\Project\Main Menu\PlayPanel.cs" />
+     <Compile Include="Assets\Project\SmartCanvasThemer.cs" />
      <Compile Include="Assets\Project\Static.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

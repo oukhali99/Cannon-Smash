@@ -9,7 +9,21 @@ using UnityEngine.UI;
 /// </summary>
 public class Static
 {
-    public static float Round(float n, int dec)
+    public static string GetPercentageString(int score, int maxScore)
+    {
+        if (maxScore != 0)
+        {
+            float percentage = 100 * (float)score / maxScore;
+
+            return Round(percentage, 1).ToString() + "%";
+        }
+        else
+        {
+            return "0%";
+        }
+    }
+
+    private static float Round(float n, int dec)
     {
         for (int i = 0; i < dec; i++)
         {
@@ -24,14 +38,5 @@ public class Static
         }
 
         return n;
-    }
-
-    public static void StreamlineButton(Button streamliner, Button streamlinee)
-    {
-
-    }
-    public static void StreamlineImage(Image streamliner, Image streamlinee)
-    {
-
     }
 }

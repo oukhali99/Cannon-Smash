@@ -187,6 +187,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ImpactSoundAudioSource: {fileID: 82523515190206398}
+  FallVelocityThresholdSqr: 10
+  BallVelocityThresholdSqr: 20
+  BreakWait: Infinity
 --- !u!54 &54550726941293298
 Rigidbody:
   m_ObjectHideFlags: 0
