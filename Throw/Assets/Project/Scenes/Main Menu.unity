@@ -1994,6 +1994,7 @@ MonoBehaviour:
   Button1: {fileID: 1289044672023718, guid: bbbd734b781e033409ca231e0f5f9e39, type: 3}
   Button2: {fileID: 1990736051941296, guid: 125d02880e3ed7147a39c4c1a9f44ae8, type: 3}
   Text1: {fileID: 5767628584401941272, guid: c08ada3e767a1be4b9ad274ae46d9e58, type: 3}
+  Text2: {fileID: 5750127584267484071, guid: 90c7877c48548454a80c7103e48d706d, type: 3}
   Panel1: {fileID: 8502153897982405527, guid: 02a27819e6ea88741b47600a3909f06b, type: 3}
   UIScales:
   - 1
@@ -3255,7 +3256,7 @@ GameObject:
   - component: {fileID: 1400698867}
   m_Layer: 5
   m_Name: Level1Percent
-  m_TagString: Text1
+  m_TagString: Text2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

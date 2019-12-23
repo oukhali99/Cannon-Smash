@@ -9,6 +9,15 @@ using UnityEngine.UI;
 /// </summary>
 public class Static
 {
+    public static void LoadScene(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+    public static void ReloadScene()
+    {
+        LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+        
     public static string GetPercentageString(int score, int maxScore)
     {
         if (maxScore != 0)

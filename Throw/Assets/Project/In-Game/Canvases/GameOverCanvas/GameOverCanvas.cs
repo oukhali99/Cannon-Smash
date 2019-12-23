@@ -21,6 +21,11 @@ public class GameOverCanvas : MonoBehaviour
         GameOverCheck();
     }
 
+    public void ClickedMainMenu()
+    {
+        Static.LoadScene(0);
+    }
+
     // Helpers
     private void GameOverCheck()
     {

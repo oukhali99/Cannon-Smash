@@ -114,9 +114,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneCamera: {fileID: 0}
   CanvasScaler: {fileID: 7146502814041953009}
-  Button1: {fileID: 0}
+  Button1: {fileID: 816442119847577391, guid: 2627bdb7404688a4c80cbd27334811ed, type: 3}
   Button2: {fileID: 0}
-  Text1: {fileID: 0}
+  Text1: {fileID: 8879067756150435863, guid: 03cca2e0eba66a145bb042419b1830d7, type: 3}
+  Text2: {fileID: 0}
+  Panel1: {fileID: 0}
+  UIScales: []
   HeightFactor: 1280
 --- !u!1 &7146502814157812799
 GameObject:
@@ -405,12 +408,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4687225552097222167}
-        m_MethodName: LoadScene
-        m_Mode: 3
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

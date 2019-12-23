@@ -9,6 +9,7 @@ TagManager:
   - Button2
   - Text1
   - Panel1
+  - Text2
   layers:
   - Default
   - TransparentFX
