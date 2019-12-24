@@ -34,10 +34,9 @@ public class Fire : MonoBehaviour
             float periodFraction = ((Time.time - verTimestamp) % Period) / Period;
 
             // Angle
-            float oldAngleY = Arrow.transform.eulerAngles.z;
-            float newAngleY = MaxAngleHor * Mathf.Sin(periodFraction * 2 * Mathf.PI) + 1;
-            float deltaAngleY = newAngleY - oldAngleY;
-            Arrow.transform.Rotate(0, 0, deltaAngleY, Space.Self);
+            float newAngleY = MaxAngleHor * Mathf.Sin(periodFraction * 2 * Mathf.PI);
+            Vector3 oldEulerAngles = Arrow.transform.eulerAngles;
+            Arrow.transform.eulerAngles = new Vector3(oldEulerAngles.x, newAngleY, oldEulerAngles.z);
 
             if (Ammo.Instance.ammo == 0)
             {
