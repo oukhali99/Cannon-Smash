@@ -9,10 +9,12 @@ public class GameOverHandler : MonoBehaviour
     
     private float lastScoreTimestamp;
     private int previousFrameScore;
+    private bool gameOver;
 
     void Awake()
     {
         lastScoreTimestamp = float.MaxValue;
+        gameOver = false;
     }
 
     void Start()
@@ -25,24 +27,35 @@ public class GameOverHandler : MonoBehaviour
 
         if (Ammo.Instance.ammo == 0)
         {
-            int score = Score.Instance.score;
-
-            if (score > previousFrameScore || lastScoreTimestamp == float.MaxValue)
-            {
-                lastScoreTimestamp = Time.time;
-            }
-
-            if (Time.time - lastScoreTimestamp > WaitOnLastScore)
-            {
-                GameOver();
-            }
+            ScoreCheck();
+            GameOverCheck();
         }
     }
 
     // Helpers
+    private void ScoreCheck()
+    {
+        int score = Score.Instance.score;
+
+        if (score > previousFrameScore || lastScoreTimestamp == float.MaxValue)
+        {
+            previousFrameScore = score;
+            lastScoreTimestamp = Time.time;
+        }
+    }
+
+    private void GameOverCheck()
+    {
+        if (Time.time - lastScoreTimestamp > WaitOnLastScore && !gameOver)
+        {
+            GameOver();
+        }
+    }
+
     private void GameOver()
     {
         HighScoreCheck();
+        gameOver = true;
 
         PausePanel.Instance.gameObject.SetActive(false);
         TopRightPanel.Instance.gameObject.SetActive(false);
