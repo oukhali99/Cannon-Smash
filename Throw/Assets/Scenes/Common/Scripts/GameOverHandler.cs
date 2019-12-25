@@ -6,52 +6,43 @@ using UnityEngine.UI;
 public class GameOverHandler : MonoBehaviour
 {
     [SerializeField] float WaitOnLastScore;
-
+    
     private float lastScoreTimestamp;
-    private int lastFrameScore;
-    private bool gameOver;
+    private int previousFrameScore;
 
     void Awake()
     {
-        lastScoreTimestamp = 0;
-        lastFrameScore = Score.Instance.score;
-        gameOver = false;
+        lastScoreTimestamp = float.MaxValue;
+    }
+
+    void Start()
+    {
+        previousFrameScore = Score.Instance.score;
     }
 
     void Update()
-    {
-        ScoreCheck();
-        GameOverCheck();
-    }
+    {     
 
-    // Helpers
-    private void ScoreCheck()
-    {
         if (Ammo.Instance.ammo == 0)
         {
             int score = Score.Instance.score;
 
-            if (score > lastFrameScore)
+            if (score > previousFrameScore || lastScoreTimestamp == float.MaxValue)
             {
-                lastFrameScore = score;
                 lastScoreTimestamp = Time.time;
+            }
+
+            if (Time.time - lastScoreTimestamp > WaitOnLastScore)
+            {
+                GameOver();
             }
         }
     }
 
-    private void GameOverCheck()
-    {
-        int ammoLeft = Ammo.Instance.ammo;
-
-        if (!gameOver && ammoLeft == 0 && Time.time - lastScoreTimestamp > WaitOnLastScore && lastScoreTimestamp != 0)
-        {
-            GameOver();
-        }
-    }
+    // Helpers
     private void GameOver()
     {
         HighScoreCheck();
-        gameOver = true;
 
         PausePanel.Instance.gameObject.SetActive(false);
         TopRightPanel.Instance.gameObject.SetActive(false);
