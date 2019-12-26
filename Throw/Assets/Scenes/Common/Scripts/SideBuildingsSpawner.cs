@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SideBuildingsSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject[] BuildingPrefabs;
+    [SerializeField] private SideBuilding[] BuildingPrefabs;
     [SerializeField] private float XCoordinate;
     [SerializeField] private float ZGap;
     [SerializeField] private int ZBuildingCount;
@@ -25,7 +25,7 @@ public class SideBuildingsSpawner : MonoBehaviour
     {
         int buildingIndex = Random.Range(0, BuildingPrefabs.Length);
 
-        GameObject newObject = Instantiate(BuildingPrefabs[buildingIndex]);
+        GameObject newObject = Instantiate(BuildingPrefabs[buildingIndex].gameObject);
         newObject.transform.position = new Vector3(doorX, 0, doorZ);
         newObject.transform.Rotate(new Vector3(0, rotationY, 0));
     }

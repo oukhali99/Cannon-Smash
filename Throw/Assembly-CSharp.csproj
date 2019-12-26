@@ -76,6 +76,7 @@
      <Compile Include="Assets\Scenes\Common\Scripts\Pooler.cs" />
      <Compile Include="Assets\Scenes\Common\Scripts\SaveManager.cs" />
      <Compile Include="Assets\Scenes\Common\Scripts\Score.cs" />
+     <Compile Include="Assets\Scenes\Common\Scripts\SideBuilding.cs" />
      <Compile Include="Assets\Scenes\Common\Scripts\SideBuildingsSpawner.cs" />
      <Compile Include="Assets\Scenes\Common\Scripts\Static.cs" />
      <Compile Include="Assets\Scenes\Scene0\Scripts\GreetingsHandler.cs" />
