@@ -61,7 +61,6 @@ public class GameOverHandler : MonoBehaviour
         TopRightPanel.Instance.gameObject.SetActive(false);
         GameOverPanel.Instance.gameObject.SetActive(true);
         CanvasThemer.Instance.Themeify();
-        Time.timeScale = 0;
     }
 
     private void HighScoreCheck()

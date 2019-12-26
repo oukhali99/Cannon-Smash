@@ -1,3 +1,0 @@
-PlayerName
-UIScale 0 1 2
-Level1Score Level1MaxScore
