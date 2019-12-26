@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8686916461015163134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5993771504731781917}
+  - component: {fileID: 8858326966257971063}
+  m_Layer: 0
+  m_Name: SideBuildingSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5993771504731781917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8686916461015163134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.12241, y: 6.296756, z: 1.5763795}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8858326966257971063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8686916461015163134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc62d45a13bc78d4a914d9cfd48fb4c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuildingPrefabs:
+  - {fileID: 898153152719101415, guid: 257cd1830e8209143ab1d7a625778272, type: 3}
+  - {fileID: 6974644480078940565, guid: 388d9141206015f4da9c1f9fa64c8be2, type: 3}
+  - {fileID: 653005246309036785, guid: 40bff49d72e77b84abd35f85a38ad22b, type: 3}
+  XCoordinate: 20
+  ZGap: 2
+  ZBuildingCount: 30

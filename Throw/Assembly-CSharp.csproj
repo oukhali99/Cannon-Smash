@@ -55,6 +55,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ammo.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\CanvasThemer.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Destructible.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Fire.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\GameOverHandler.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\GameOverPanel.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\PausePanel.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\TopRightPanel.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Pooled.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Pooler.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\SaveManager.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Score.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Static.cs" />
+     <Compile Include="Assets\_Project\Scenes\Scene0\Scripts\GreetingsHandler.cs" />
+     <Compile Include="Assets\_Project\Scenes\Scene0\Scripts\PlayPanel.cs" />
+     <Compile Include="Assets\_Project\Side Buildings\Common\Scripts\SideBuilding.cs" />
+     <Compile Include="Assets\_Project\Side Buildings\Common\Scripts\SideBuildingsSpawner.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
@@ -63,24 +81,6 @@
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\Ammo.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\Ball.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\CanvasThemer.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\Destructible.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\Fire.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\GameOverHandler.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\InGamePanels\GameOverPanel.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\InGamePanels\PausePanel.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\InGamePanels\TopRightPanel.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\Pooled.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\Pooler.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\SaveManager.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\Score.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\SideBuilding.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\SideBuildingsSpawner.cs" />
-     <Compile Include="Assets\Scenes\Common\Scripts\Static.cs" />
-     <Compile Include="Assets\Scenes\Scene0\Scripts\GreetingsHandler.cs" />
-     <Compile Include="Assets\Scenes\Scene0\Scripts\PlayPanel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
