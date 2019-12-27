@@ -57,7 +57,6 @@
   <ItemGroup>
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ammo.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball.cs" />
-     <Compile Include="Assets\_Project\Scenes\Common\Scripts\CanvasThemer.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Destructible.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Fire.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\GameOverHandler.cs" />
@@ -73,6 +72,7 @@
      <Compile Include="Assets\_Project\Scenes\Scene0\Scripts\PlayPanel.cs" />
      <Compile Include="Assets\_Project\Side Buildings\Common\Scripts\SideBuilding.cs" />
      <Compile Include="Assets\_Project\Side Buildings\Common\Scripts\SideBuildingsSpawner.cs" />
+     <Compile Include="Assets\_Project\Themer\Scripts\CanvasThemer.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />

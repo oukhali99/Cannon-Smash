@@ -45,8 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BuildingPrefabs:
   - {fileID: 898153152719101415, guid: 257cd1830e8209143ab1d7a625778272, type: 3}
-  - {fileID: 6974644480078940565, guid: 388d9141206015f4da9c1f9fa64c8be2, type: 3}
   - {fileID: 653005246309036785, guid: 40bff49d72e77b84abd35f85a38ad22b, type: 3}
+  - {fileID: 6974644480078940565, guid: 388d9141206015f4da9c1f9fa64c8be2, type: 3}
   XCoordinate: 20
   ZGap: 2
   ZBuildingCount: 30
+  XDistanceFromCenterToCurbEnd: 10

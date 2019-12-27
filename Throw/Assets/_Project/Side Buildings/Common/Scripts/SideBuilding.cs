@@ -6,4 +6,5 @@ public class SideBuilding : MonoBehaviour
 {
     public float ZLength;
     public float Prevalence;
+    public GameObject Path;
 }
