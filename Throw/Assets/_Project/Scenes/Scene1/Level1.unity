@@ -195,7 +195,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1118348
+  m_Name: pb_Mesh-537306
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -495,7 +495,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1118610
+  m_Name: pb_Mesh-537308
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -928,56 +928,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 466923387084344542, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466923387084344542, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466923387084344542, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466923387084344542, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466923387084344542, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4570351839573362370, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4570351839573362370, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4570351839573362370, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4570351839573362370, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4570351839573362370, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4687225552097222167, guid: 22ea46ee3c2aef046b2f2ed5bc58830d,
         type: 3}
       propertyPath: SceneCamera

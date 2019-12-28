@@ -13,15 +13,14 @@ public class GreetingsHandler : MonoBehaviour
     {
         Refresh();
     }
-
-    // Setters
+    
     public void ClickedChangeNameButton()
     {
         SaveManager.Instance.SavePlayerName(PlayerNameInput.text);
+        Refresh();
     }
-
-    // Helpers
-    private void Refresh()
+    
+    public void Refresh()
     {
         string savedName = SaveManager.Instance.LoadPlayerName();
         GreetingsText.text = "Welcome " + savedName;

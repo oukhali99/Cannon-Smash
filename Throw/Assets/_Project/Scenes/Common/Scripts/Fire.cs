@@ -2,7 +2,6 @@
 
 public class Fire : MonoBehaviour
 {
-    [SerializeField] private BallPooler MyBallPooler;
     [SerializeField] private GameObject Arrow;
     [SerializeField] private float ForceMagnitude;
     [SerializeField] private float MaxAngleHor;
@@ -11,6 +10,7 @@ public class Fire : MonoBehaviour
     [SerializeField] private float MinHeight;
     [SerializeField] private float Period;
     [SerializeField] private float Cooldown;
+    [SerializeField] private AudioSource NoAmmoSound;
     
     private float lastFire;
     private float verTimestamp;
@@ -29,7 +29,7 @@ public class Fire : MonoBehaviour
 	
 	void Update ()
     {
-        if ((Arrow.activeInHierarchy && verTimestamp != 0 && heightTimestamp != 0) || Ammo.Instance.ammo == 0)
+        if ((Arrow.activeInHierarchy && verTimestamp != 0 && heightTimestamp != 0) || Ammo.Instance.ammo == -1)
         {
             float periodFraction = ((Time.time - verTimestamp) % Period) / Period;
 
@@ -38,22 +38,35 @@ public class Fire : MonoBehaviour
             Vector3 oldEulerAngles = Arrow.transform.eulerAngles;
             Arrow.transform.eulerAngles = new Vector3(oldEulerAngles.x, newAngleY, oldEulerAngles.z);
 
-            if (Ammo.Instance.ammo == 0)
+            if (Ammo.Instance.ammo == 0 || Ammo.Instance.ammo == -1)
             {
                 Arrow.SetActive(false);
             }
             else if (Press() && Time.time - lastFire > Cooldown)
             {
-                Ammo.Instance.PlayerFires();
-                lastFire = Time.time;
-                Vector3 forceUnitDir = Arrow.transform.up.normalized;
-                Vector3 force = forceUnitDir * ForceMagnitude;
+                Ball newBall = BallPooler.Instance.GetBall();
 
-                Ball newBall = MyBallPooler.GetBall();
-                Rigidbody newBallRigidbody = newBall.Rigidbody;
-                newBall.transform.position = MyBallPooler.transform.position;
-                newBallRigidbody.velocity = Vector3.zero;
-                newBallRigidbody.AddForce(force);
+                if (newBall != null)
+                {
+                    Rigidbody newBallRigidbody = newBall.Rigidbody;
+
+                    Ammo.Instance.PlayerFires();
+                    lastFire = Time.time;
+                    Vector3 forceUnitDir = Arrow.transform.up.normalized;
+                    Vector3 force = forceUnitDir * ForceMagnitude;
+
+
+                    newBall.transform.position = BallPooler.Instance.transform.position;
+                    newBallRigidbody.velocity = Vector3.zero;
+                    newBallRigidbody.AddForce(force);
+
+                    // Ammo Wheel refresh
+                    AmmoWheel.Instance.Refresh();
+                }
+                else
+                {
+                    NoAmmoSound.Play();
+                }
             }
         }
         else if (Arrow.activeInHierarchy && heightTimestamp != 0)
@@ -91,13 +104,13 @@ public class Fire : MonoBehaviour
     // Helpers
     private bool Press()
     {
-        if (Input.touchCount != 0)
+        if (Input.touchCount != 0 && Time.timeScale != 0)
         {
             Touch lastTouch = Input.touches[Input.touchCount - 1];
 
             return lastTouch.phase == TouchPhase.Began;
         }
-        else if (Input.GetButtonDown("Jump"))
+        else if (Input.GetButtonDown("Jump") && Time.timeScale != 0)
         {
             return true;
         }

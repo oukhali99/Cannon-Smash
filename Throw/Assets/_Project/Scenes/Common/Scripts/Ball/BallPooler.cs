@@ -6,28 +6,53 @@ public class BallPooler : MonoBehaviour
 {
     public static BallPooler Instance { get; private set; }
 
-    private LinkedList<Ball> ballPouch;
+    public LinkedList<Ball> SelectedAmmo { get; set; }
+    public LinkedList<Ball> NormalBallList { get; private set; }
+    public LinkedList<Ball> ExplosiveBallList { get; private set; }
+    public LinkedList<Ball> AntigravityBallList { get; private set; }
 
     void Awake()
     {
         Instance = this;
-        ballPouch = new LinkedList<Ball>();
+        NormalBallList = new LinkedList<Ball>();
+        ExplosiveBallList = new LinkedList<Ball>();
+        AntigravityBallList = new LinkedList<Ball>();
+        SelectedAmmo = NormalBallList;
     }
 
     public Ball GetBall()
     {
-        Ball ball = ballPouch.First.Value;
+        var ball = SelectedAmmo.First;
 
-        ballPouch.RemoveFirst();
+        if (ball == null)
+        {
+            return null;
+        }
+        else
+        {
+            SelectedAmmo.RemoveFirst();
+            return ball.Value;
+        }
 
-        return ball;
     }
 
-    public void AddBall(Ball ball)
+    public void AddNormalBall(Ball ball)
     {
         GameObject ballObject = Instantiate(ball.gameObject);
         Ball ballScript = ballObject.GetComponent<Ball>();
-        ballPouch.AddFirst(ballScript);
+        NormalBallList.AddFirst(ballScript);
+    }
+    public void AddExplosiveBall(ExplosiveBall ball)
+    {
+        GameObject ballObject = Instantiate(ball.gameObject);
+        ExplosiveBall ballScript = ballObject.GetComponent<ExplosiveBall>();
+        ExplosiveBallList.AddFirst(ballScript);
+    }
+    public void AddAntigravtityBall(AntigravityBall ball)
+    {
+        GameObject ballObject = Instantiate(ball.gameObject);
+        AntigravityBall ballScript = ballObject.GetComponent<AntigravityBall>();
+        AntigravityBallList.AddFirst(ballScript);
     }
 }
 

@@ -29,14 +29,14 @@ public class ChooseAmmoPanel : MonoBehaviour
 
         if (picksLeft > 0 && normalBallsLeft > 0)
         {
-            BallPooler.Instance.AddBall(NormalBall);
+            BallPooler.Instance.AddNormalBall(NormalBall);
 
             picksLeft--;
             RefreshPicksLeft();
 
             SaveManager.Instance.SaveNormalBallCount(normalBallsLeft - 1);
-            Ammo.Instance.ammo++;
             RefreshStockText();
+            Ammo.Instance.ammo++;
         }
     }
     public void ClickedExplosive()
@@ -45,14 +45,14 @@ public class ChooseAmmoPanel : MonoBehaviour
 
         if (picksLeft > 0 && ExplosiveBallsLeft > 0)
         {
-            BallPooler.Instance.AddBall(ExplosiveBall);
+            BallPooler.Instance.AddExplosiveBall(ExplosiveBall);
 
             picksLeft--;
             RefreshPicksLeft();
 
             SaveManager.Instance.SaveExplosiveBallCount(ExplosiveBallsLeft - 1);
-            Ammo.Instance.ammo++;
             RefreshStockText();
+            Ammo.Instance.ammo++;
         }
     }
     public void ClickedAntigravity()
@@ -61,14 +61,14 @@ public class ChooseAmmoPanel : MonoBehaviour
 
         if (picksLeft > 0 && AntigravityBallsLeft > 0)
         {
-            BallPooler.Instance.AddBall(AntigravityBall);
+            BallPooler.Instance.AddAntigravtityBall(AntigravityBall);
 
             picksLeft--;
             RefreshPicksLeft();
 
             SaveManager.Instance.SaveAntigravityBallCount(AntigravityBallsLeft - 1);
-            Ammo.Instance.ammo++;
             RefreshStockText();
+            Ammo.Instance.ammo++;
         }
     }
 
@@ -76,6 +76,12 @@ public class ChooseAmmoPanel : MonoBehaviour
     {
         Time.timeScale = 1;
         gameObject.SetActive(false);
+        Ammo.Instance.RefreshText();
+
+        if (Ammo.Instance.ammo == 0)
+        {
+            Ammo.Instance.ammo--;
+        }
     }
 
     // Helpers

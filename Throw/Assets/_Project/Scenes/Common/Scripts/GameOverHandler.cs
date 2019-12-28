@@ -26,7 +26,7 @@ public class GameOverHandler : MonoBehaviour
 
     void Update()
     {
-        if (Ammo.Instance.ammo == 0)
+        if (Ammo.Instance.ammo == 0 || Ammo.Instance.ammo == -1)
         {
             ScoreCheck();
             GameOverCheck();

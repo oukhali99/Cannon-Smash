@@ -55,7 +55,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ammo.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\AntigravityBall.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\Ball.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\BallPooler.cs" />
@@ -63,12 +62,14 @@
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Destructible.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Fire.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\GameOverHandler.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\Ammo.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\AmmoWheel.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\ChooseAmmoPanel.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\GameOverPanel.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\PausePanel.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\Score.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\TopRightPanel.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\SaveManager.cs" />
-     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Score.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Static.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Store.cs" />
      <Compile Include="Assets\_Project\Scenes\Scene0\Scripts\GreetingsHandler.cs" />
