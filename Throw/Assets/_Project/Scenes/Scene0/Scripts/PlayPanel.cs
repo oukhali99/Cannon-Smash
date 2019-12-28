@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayPanel : MonoBehaviour
 {
     [SerializeField] private TMPro.TextMeshProUGUI Level1Percent;
+    [SerializeField] private TMPro.TextMeshProUGUI Level2Percent;
 
     void Start()
     {
@@ -15,6 +16,7 @@ public class PlayPanel : MonoBehaviour
     private void RefreshLevelPercents()
     {
         RefreshLevelPercent("Level1", Level1Percent);
+        RefreshLevelPercent("Level2", Level2Percent);
     }
     private void RefreshLevelPercent(string levelName, TMPro.TextMeshProUGUI highScoreText)
     {

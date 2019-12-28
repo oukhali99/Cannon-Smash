@@ -2,7 +2,7 @@
 
 public class Fire : MonoBehaviour
 {
-    [SerializeField] private Pooler BallPooler;
+    [SerializeField] private BallPooler MyBallPooler;
     [SerializeField] private GameObject Arrow;
     [SerializeField] private float ForceMagnitude;
     [SerializeField] private float MaxAngleHor;
@@ -29,7 +29,7 @@ public class Fire : MonoBehaviour
 	
 	void Update ()
     {
-        if (Arrow.activeInHierarchy && verTimestamp != 0 && heightTimestamp != 0)
+        if ((Arrow.activeInHierarchy && verTimestamp != 0 && heightTimestamp != 0) || Ammo.Instance.ammo == 0)
         {
             float periodFraction = ((Time.time - verTimestamp) % Period) / Period;
 
@@ -49,9 +49,9 @@ public class Fire : MonoBehaviour
                 Vector3 forceUnitDir = Arrow.transform.up.normalized;
                 Vector3 force = forceUnitDir * ForceMagnitude;
 
-                Ball newBall = (Ball)BallPooler.GetObject();
+                Ball newBall = MyBallPooler.GetBall();
                 Rigidbody newBallRigidbody = newBall.Rigidbody;
-                newBall.transform.position = BallPooler.transform.position;
+                newBall.transform.position = MyBallPooler.transform.position;
                 newBallRigidbody.velocity = Vector3.zero;
                 newBallRigidbody.AddForce(force);
             }

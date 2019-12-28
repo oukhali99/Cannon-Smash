@@ -7,17 +7,15 @@ public class Ammo : MonoBehaviour
 {
     public static Ammo Instance { get; private set; }
 
+    [SerializeField] public int MaxAmmo;
     [SerializeField] private TextMeshProUGUI Text;
-    [SerializeField] private int InitialAmmo;
-    [SerializeField] private Pooler BallPooler;
 
-    public int ammo { get; private set; }
+    public int ammo { get; set; }
 
     void Awake()
     {
-        ammo = InitialAmmo;
+        ammo = 0;
         Instance = this;
-        BallPooler.PoolSize = InitialAmmo;
     }
 
     void Start()

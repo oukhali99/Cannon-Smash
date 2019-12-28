@@ -161,7 +161,7 @@ public class CanvasThemer : MonoBehaviour
         streamlinee.colorGradient = streamliner.colorGradient;
         streamlinee.overrideColorTags = streamliner.overrideColorTags;
         streamlinee.fontSize = streamliner.fontSize;
-        streamlinee.alignment = streamliner.alignment;
+        //streamlinee.alignment = streamliner.alignment;
         streamlinee.enableKerning = streamliner.enableKerning;
     }
 }

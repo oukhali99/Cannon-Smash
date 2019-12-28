@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using System.Xml.Serialization;
 
 public class SaveManager : MonoBehaviour
 {
@@ -10,13 +12,29 @@ public class SaveManager : MonoBehaviour
     [SerializeField] private string UIScaleSaveName;
     [SerializeField] private string PlayerNameSaveName;
     [SerializeField] private string ScoreSaveName;
-    [SerializeField] private string MaxScoreSaveName;    
+    [SerializeField] private string MaxScoreSaveName;
+    [SerializeField] private string NormalBallCountSaveName;
+    [SerializeField] private string ExplosiveBallCountSaveName;
+    [SerializeField] private string AntigravityBallCountSaveName;
 
     void Awake()
     {
         Instance = this;
     }
-    
+
+    public void SaveNormalBallCount(int newCount)
+    {
+        PlayerPrefs.SetInt(NormalBallCountSaveName, newCount);
+    }
+    public void SaveExplosiveBallCount(int newCount)
+    {
+        PlayerPrefs.SetInt(ExplosiveBallCountSaveName, newCount);
+    }
+    public void SaveAntigravityBallCount(int newCount)
+    {
+        PlayerPrefs.SetInt(AntigravityBallCountSaveName, newCount);
+    }
+
     public void ClearSavedData()
     {
         PlayerPrefs.DeleteAll();
@@ -53,7 +71,25 @@ public class SaveManager : MonoBehaviour
         SaveMaxScore(LevelName, maxScore);
     }
 
+    public void SaveBalance(int newBalance)
+    {
+        PlayerPrefs.SetInt("Balance", newBalance);
+    }
+
     // Getters
+    public int LoadNormalBallCount()
+    {
+        return PlayerPrefs.GetInt(NormalBallCountSaveName);
+    }
+    public int LoadExplosiveBallCount()
+    {
+        return PlayerPrefs.GetInt(ExplosiveBallCountSaveName);
+    }
+    public int LoadAntigravityBallCount()
+    {
+        return PlayerPrefs.GetInt(AntigravityBallCountSaveName);
+    }
+
     public int LoadUIScale()
     {
         return PlayerPrefs.GetInt(UIScaleSaveName);
@@ -77,6 +113,11 @@ public class SaveManager : MonoBehaviour
     public int LoadCurrentLevelScore()
     {
         return LoadScore(LevelName);
+    }
+
+    public int LoadBalance()
+    {
+        return PlayerPrefs.GetInt("Balance");
     }
 
     // Helpers

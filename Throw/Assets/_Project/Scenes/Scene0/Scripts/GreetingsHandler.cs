@@ -9,7 +9,7 @@ public class GreetingsHandler : MonoBehaviour
     [SerializeField] private TextMeshProUGUI GreetingsText;
     [SerializeField] private string PlayerNameDefault;
 
-    void OnEnable()
+    void Start()
     {
         Refresh();
     }

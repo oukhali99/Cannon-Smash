@@ -9,7 +9,6 @@ public class GameOverPanel : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        gameObject.SetActive(false);
     }
 
     public void Unpause()

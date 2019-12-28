@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class GameOverHandler : MonoBehaviour
 {
     [SerializeField] float WaitOnLastScore;
+    [SerializeField] GameObject PausePanel;
+    [SerializeField] GameObject GameOverPanel;
     
     private float lastScoreTimestamp;
     private int previousFrameScore;
@@ -23,8 +25,7 @@ public class GameOverHandler : MonoBehaviour
     }
 
     void Update()
-    {     
-
+    {
         if (Ammo.Instance.ammo == 0)
         {
             ScoreCheck();
@@ -57,9 +58,9 @@ public class GameOverHandler : MonoBehaviour
         HighScoreCheck();
         gameOver = true;
 
-        PausePanel.Instance.gameObject.SetActive(false);
+        PausePanel.gameObject.SetActive(false);
         TopRightPanel.Instance.gameObject.SetActive(false);
-        GameOverPanel.Instance.gameObject.SetActive(true);
+        GameOverPanel.gameObject.SetActive(true);
         CanvasThemer.Instance.Themeify();
     }
 

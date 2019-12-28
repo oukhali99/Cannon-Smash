@@ -48,3 +48,6 @@ MonoBehaviour:
   PlayerNameSaveName: PlayerName
   ScoreSaveName: Score
   MaxScoreSaveName: MaxScore
+  NormalBallCountSaveName: NormalBallCount
+  ExplosiveBallCountSaveName: ExplosiveBallCount
+  AntigravityBallCountSaveName: AntigravityBallCount
