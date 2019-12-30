@@ -47,7 +47,11 @@ MonoBehaviour:
   - {fileID: 898153152719101415, guid: 257cd1830e8209143ab1d7a625778272, type: 3}
   - {fileID: 653005246309036785, guid: 40bff49d72e77b84abd35f85a38ad22b, type: 3}
   - {fileID: 6974644480078940565, guid: 388d9141206015f4da9c1f9fa64c8be2, type: 3}
-  XCoordinate: 20
+  - {fileID: -6761391590759827611, guid: fdc24213aef9bed4a97eb2caefcf4ee4, type: 3}
+  - {fileID: 973934055230906145, guid: df34a3bc0cdb53940b412167ec9a157b, type: 3}
+  - {fileID: 4381868586239592995, guid: fa27f9ff3207de940a0b579285483d45, type: 3}
+  - {fileID: 253929875547918729, guid: f608855db6dfef44c9a651ab67d2c9bb, type: 3}
+  XCoordinate: 5
   ZGap: 2
   ZBuildingCount: 30
   XDistanceFromCenterToCurbEnd: 10

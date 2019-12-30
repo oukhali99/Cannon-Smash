@@ -11,9 +11,9 @@ public class TopRightPanel : MonoBehaviour
         Instance = this;
     }
 
-    public void ReloadScene()
+    public void Aim()
     {
-        Static.ReloadScene();
+        Fire.Instance.Aim();
     }
 
     public void Pause()

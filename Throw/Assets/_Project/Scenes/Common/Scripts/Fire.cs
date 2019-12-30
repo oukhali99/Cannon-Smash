@@ -2,6 +2,8 @@
 
 public class Fire : MonoBehaviour
 {
+    public static Fire Instance { get; private set; }
+
     [SerializeField] private GameObject Arrow;
     [SerializeField] private float ForceMagnitude;
     [SerializeField] private float MaxAngleHor;
@@ -13,30 +15,38 @@ public class Fire : MonoBehaviour
     [SerializeField] private AudioSource NoAmmoSound;
     
     private float lastFire;
-    private float verTimestamp;
-    private float heightTimestamp;
+    private int state;
+    private float heightPhase;
+    private float verticalPhase;
+    private float horizontalPhase;
 
-	// Use this for initialization
-	void Start ()
+    void Awake()
     {
+        Instance = this;
+        heightPhase = 0;
+        verticalPhase = 0;
+        horizontalPhase = 0;
         lastFire = -Cooldown;
-        verTimestamp = 0;
-        heightTimestamp = 0;
-
-        // Initial arrow positioning
-        InitialArrowPoint();
+        Aim();
+        HeightPoint(heightPhase);
+        VerticalPoint(verticalPhase);
+        HorizontalPoint(horizontalPhase);
     }
 	
 	void Update ()
     {
-        if ((Arrow.activeInHierarchy && verTimestamp != 0 && heightTimestamp != 0) || Ammo.Instance.ammo == -1)
+        if (Ammo.Instance.ammo == 0 && Time.timeScale != 0)
         {
-            float periodFraction = ((Time.time - verTimestamp) % Period) / Period;
+            Arrow.SetActive(false);
+        }
+
+        if ((Arrow.activeInHierarchy && state == 2) || Ammo.Instance.ammo == -1)
+        {
+            horizontalPhase += Time.deltaTime;
+            float periodFraction = (horizontalPhase % Period) / Period;
 
             // Angle
-            float newAngleY = MaxAngleHor * Mathf.Sin(periodFraction * 2 * Mathf.PI);
-            Vector3 oldEulerAngles = Arrow.transform.eulerAngles;
-            Arrow.transform.eulerAngles = new Vector3(oldEulerAngles.x, newAngleY, oldEulerAngles.z);
+            HorizontalPoint(periodFraction);
 
             if (Ammo.Instance.ammo == 0 || Ammo.Instance.ammo == -1)
             {
@@ -69,36 +79,39 @@ public class Fire : MonoBehaviour
                 }
             }
         }
-        else if (Arrow.activeInHierarchy && heightTimestamp != 0)
+        else if (Arrow.activeInHierarchy && state == 1)
         {
-            float periodFraction = (Time.time % Period - heightTimestamp) / Period;
+            verticalPhase += Time.deltaTime;
+            float periodFraction = (verticalPhase % Period) / Period;
 
             // Angle
-            float oldAngleX = Arrow.transform.eulerAngles.x;
-            float newAngleX = MaxAngleHor + MaxAngleHor * Mathf.Sin(periodFraction * 2 * Mathf.PI);
-            float deltaAngleX = newAngleX - oldAngleX;
-            Arrow.transform.Rotate(deltaAngleX, 0, 0, Space.Self);
+            VerticalPoint(periodFraction);
 
             if (Press())
             {
-                verTimestamp = Time.time;
+                state++;
             }
         }
-        else if (Arrow.activeInHierarchy)
+        else if (Arrow.activeInHierarchy && state == 0)
         {
-            float periodFraction = (Time.time % Period) / Period;
+            heightPhase += Time.deltaTime;
+            float periodFraction = (heightPhase % Period) / Period;
 
             // Height
-            float oldHeight = transform.position.y;
-            float newHeight = (MinHeight + MaxHeight) / 2 + ((MaxHeight - MinHeight) / 2) * Mathf.Sin(periodFraction * 2 * Mathf.PI);
-            float deltaHeight = newHeight - oldHeight;
-            transform.Translate(0, deltaHeight, 0);
+            HeightPoint(periodFraction);
 
             if (Press())
             {
-                heightTimestamp = Time.time;
+                state++;
             }
         }
+    }
+
+    public void Aim()
+    {
+        state = 0;
+        horizontalPhase = 0;
+        HorizontalPoint(horizontalPhase);
     }
 
     // Helpers
@@ -120,15 +133,24 @@ public class Fire : MonoBehaviour
         }
     }
 
-    private void InitialArrowPoint()
+    private void HorizontalPoint(float periodFraction)
     {
-        float oldAngleY = Arrow.transform.eulerAngles.z;
-        float newAngleY = 0;
-        float deltaAngleY = newAngleY - oldAngleY;
-        Arrow.transform.Rotate(0, 0, deltaAngleY, Space.Self);
+        float newAngleY = MaxAngleHor * Mathf.Sin(periodFraction * 2 * Mathf.PI);
+        Vector3 oldEulerAngles = Arrow.transform.eulerAngles;
+        Arrow.transform.eulerAngles = new Vector3(oldEulerAngles.x, newAngleY, oldEulerAngles.z);
+    }
+    private void VerticalPoint(float periodFraction)
+    {
         float oldAngleX = Arrow.transform.eulerAngles.x;
-        float newAngleX = MaxAngleHor;
+        float newAngleX = MaxAngleHor + MaxAngleHor * Mathf.Sin(periodFraction * 2 * Mathf.PI);
         float deltaAngleX = newAngleX - oldAngleX;
         Arrow.transform.Rotate(deltaAngleX, 0, 0, Space.Self);
+    }
+    private void HeightPoint(float periodFraction)
+    {
+        float oldHeight = transform.position.y;
+        float newHeight = (MinHeight + MaxHeight) / 2 + ((MaxHeight - MinHeight) / 2) * Mathf.Sin(periodFraction * 2 * Mathf.PI);
+        float deltaHeight = newHeight - oldHeight;
+        transform.Translate(0, deltaHeight, 0);
     }
 }

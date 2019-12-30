@@ -10,6 +10,7 @@ TagManager:
   - Text1
   - Panel1
   - Text2
+  - Destructible
   layers:
   - Default
   - TransparentFX

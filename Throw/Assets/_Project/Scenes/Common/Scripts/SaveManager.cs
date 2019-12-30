@@ -13,6 +13,8 @@ public class SaveManager : MonoBehaviour
     [SerializeField] private string PlayerNameSaveName;
     [SerializeField] private string ScoreSaveName;
     [SerializeField] private string MaxScoreSaveName;
+    [SerializeField] private string LevelTimesPlayedSaveName;
+    [Header("Ammo Names")]
     [SerializeField] private string NormalBallCountSaveName;
     [SerializeField] private string ExplosiveBallCountSaveName;
     [SerializeField] private string AntigravityBallCountSaveName;
@@ -76,6 +78,11 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetInt("Balance", newBalance);
     }
 
+    public void SaveCurrentLevelTimesPlayed(int timesPlayed)
+    {
+        PlayerPrefs.SetInt(LevelName + LevelTimesPlayedSaveName, timesPlayed);
+    }
+
     // Getters
     public int LoadNormalBallCount()
     {
@@ -120,5 +127,8 @@ public class SaveManager : MonoBehaviour
         return PlayerPrefs.GetInt("Balance");
     }
 
-    // Helpers
+    public int LoadCurrentLevelTimesPlayed()
+    {
+        return PlayerPrefs.GetInt(LevelName + LevelTimesPlayedSaveName);
+    }
 }

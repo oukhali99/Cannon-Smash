@@ -74,14 +74,9 @@ public class ChooseAmmoPanel : MonoBehaviour
 
     public void ClickedPlay()
     {
-        Time.timeScale = 1;
         gameObject.SetActive(false);
         Ammo.Instance.RefreshText();
-
-        if (Ammo.Instance.ammo == 0)
-        {
-            Ammo.Instance.ammo--;
-        }
+        Time.timeScale = 1;
     }
 
     // Helpers

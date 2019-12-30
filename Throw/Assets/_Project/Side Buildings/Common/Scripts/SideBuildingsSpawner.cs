@@ -21,6 +21,15 @@ public class SideBuildingsSpawner : MonoBehaviour
     // Helpers
     private void PopulateRow(float xCoordinate, float yRotation)
     {
+        if (xCoordinate > 0)
+        {
+            xCoordinate += XDistanceFromCenterToCurbEnd;
+        }
+        else
+        {
+            xCoordinate -= XDistanceFromCenterToCurbEnd;
+        }
+
         nextZ = 0;
         for (int i = 0; i < ZBuildingCount; i++)
         {
@@ -38,19 +47,23 @@ public class SideBuildingsSpawner : MonoBehaviour
             nextZ += ZGap;
 
             // Resize road
-            Transform roadTransform = newObject.GetComponent<SideBuilding>().Path.transform;
-            float requiredXScaleMultiplier;
-            
-            if (xCoordinate > 0)
+            SideBuilding sideBuildingScript = newObject.GetComponent<SideBuilding>();
+            if (sideBuildingScript.Path != null)
             {
-                requiredXScaleMultiplier = (xCoordinate - XDistanceFromCenterToCurbEnd) / roadTransform.lossyScale.x;
+                Transform roadTransform = sideBuildingScript.Path.transform;
+                float requiredXScaleMultiplier;
+
+                if (xCoordinate > 0)
+                {
+                    requiredXScaleMultiplier = (xCoordinate - XDistanceFromCenterToCurbEnd) / roadTransform.lossyScale.x;
+                }
+                else
+                {
+                    requiredXScaleMultiplier = -(xCoordinate + XDistanceFromCenterToCurbEnd) / roadTransform.lossyScale.x;
+                }
+
+                roadTransform.localScale = new Vector3(roadTransform.localScale.x * requiredXScaleMultiplier, roadTransform.localScale.y, roadTransform.localScale.z);
             }
-            else
-            {
-                requiredXScaleMultiplier = -(xCoordinate + XDistanceFromCenterToCurbEnd) / roadTransform.lossyScale.x;
-            }
-            
-            roadTransform.localScale = new Vector3(roadTransform.localScale.x * requiredXScaleMultiplier, roadTransform.localScale.y, roadTransform.localScale.z);
         }
     }
 

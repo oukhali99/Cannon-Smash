@@ -48,6 +48,7 @@ MonoBehaviour:
   PlayerNameSaveName: PlayerName
   ScoreSaveName: Score
   MaxScoreSaveName: MaxScore
+  LevelTimesPlayedSaveName: TimesPlayed
   NormalBallCountSaveName: NormalBallCount
   ExplosiveBallCountSaveName: ExplosiveBallCount
   AntigravityBallCountSaveName: AntigravityBallCount

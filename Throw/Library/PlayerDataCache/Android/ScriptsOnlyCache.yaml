@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Ammo
+    - AmmoWheel
     - AntigravityBall
     - Ball
     - BallPooler
@@ -10,7 +11,7 @@ ScriptsOnlyBuild:
     - Destructible
     - ExplosiveBall
     - Fire
-    - GameOverHandler
+    - GameOverChecker
     - GameOverPanel
     - GreetingsHandler
     - PausePanel
@@ -116,39 +117,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10484}
     - Class: 114
-      Script: {instanceID: 10792}
+      Script: {instanceID: 10794}
     - Class: 114
-      Script: {instanceID: 10850}
+      Script: {instanceID: 10852}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 10984}
     - Class: 114
-      Script: {instanceID: 10996}
+      Script: {instanceID: 10998}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11442}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11798}
+      Script: {instanceID: 11800}
     - Class: 114
-      Script: {instanceID: 11820}
+      Script: {instanceID: 11822}
     - Class: 114
-      Script: {instanceID: 11956}
+      Script: {instanceID: 11958}
     - Class: 114
-      Script: {instanceID: 12106}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12492}
+      Script: {instanceID: 12494}
     - Class: 114
-      Script: {instanceID: 12660}
+      Script: {instanceID: 12662}
     - Class: 114
-      Script: {instanceID: 12772}
+      Script: {instanceID: 12774}
     - Class: 114
-      Script: {instanceID: 12822}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 17584}
+      Script: {instanceID: 17588}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -223,45 +224,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10650}
     - Class: 114
-      Script: {instanceID: 10684}
+      Script: {instanceID: 10664}
     - Class: 114
-      Script: {instanceID: 10688}
+      Script: {instanceID: 10686}
     - Class: 114
-      Script: {instanceID: 10706}
+      Script: {instanceID: 10690}
     - Class: 114
-      Script: {instanceID: 10792}
+      Script: {instanceID: 10708}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 10794}
     - Class: 114
-      Script: {instanceID: 10998}
+      Script: {instanceID: 10984}
     - Class: 114
-      Script: {instanceID: 11442}
+      Script: {instanceID: 11000}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11798}
+      Script: {instanceID: 11450}
     - Class: 114
-      Script: {instanceID: 11830}
+      Script: {instanceID: 11800}
     - Class: 114
-      Script: {instanceID: 11932}
+      Script: {instanceID: 11832}
     - Class: 114
-      Script: {instanceID: 12106}
+      Script: {instanceID: 11934}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12234}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12246}
+      Script: {instanceID: 12236}
     - Class: 114
-      Script: {instanceID: 12462}
+      Script: {instanceID: 12248}
     - Class: 114
-      Script: {instanceID: 12482}
+      Script: {instanceID: 12464}
     - Class: 114
-      Script: {instanceID: 12772}
+      Script: {instanceID: 12484}
     - Class: 114
       Script: {instanceID: 12774}
     - Class: 114
-      Script: {instanceID: 12822}
+      Script: {instanceID: 12776}
+    - Class: 114
+      Script: {instanceID: 12824}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -330,45 +333,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10650}
     - Class: 114
-      Script: {instanceID: 10684}
+      Script: {instanceID: 10664}
     - Class: 114
-      Script: {instanceID: 10688}
+      Script: {instanceID: 10686}
     - Class: 114
-      Script: {instanceID: 10706}
+      Script: {instanceID: 10690}
     - Class: 114
-      Script: {instanceID: 10792}
+      Script: {instanceID: 10708}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 10794}
     - Class: 114
-      Script: {instanceID: 10998}
+      Script: {instanceID: 10984}
     - Class: 114
-      Script: {instanceID: 11442}
+      Script: {instanceID: 11000}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11798}
+      Script: {instanceID: 11450}
     - Class: 114
-      Script: {instanceID: 11830}
+      Script: {instanceID: 11800}
     - Class: 114
-      Script: {instanceID: 11932}
+      Script: {instanceID: 11832}
     - Class: 114
-      Script: {instanceID: 12106}
+      Script: {instanceID: 11934}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12234}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12246}
+      Script: {instanceID: 12236}
     - Class: 114
-      Script: {instanceID: 12462}
+      Script: {instanceID: 12248}
     - Class: 114
-      Script: {instanceID: 12482}
+      Script: {instanceID: 12464}
     - Class: 114
-      Script: {instanceID: 12772}
+      Script: {instanceID: 12484}
     - Class: 114
       Script: {instanceID: 12774}
     - Class: 114
-      Script: {instanceID: 12822}
+      Script: {instanceID: 12776}
+    - Class: 114
+      Script: {instanceID: 12824}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -406,7 +411,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: 349ea6eb6a1e4fe1aedc8eb33722151d
+      Hash: 2d1ddabd6209afc3ffc21dbc9461dba0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ExplosiveBall
@@ -638,6 +643,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Ball
+  - hash:
+      serializedVersion: 2
+      Hash: 8f88499e9d6f7f668c0cc53cf16ff9dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AmmoWheel
   - hash:
       serializedVersion: 2
       Hash: d251bf88db6c95a6b1aa0b69298da9ef
@@ -1126,7 +1137,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 3359de896a58440a42309cccd12dba70
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameOverPanel
@@ -1186,10 +1197,10 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 80ef0765b7df65f5d0e82c40d6c3524e
+      Hash: 3c20d88fee3b0c00503351694ae57afc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GameOverHandler
+    className: GameOverChecker
   - hash:
       serializedVersion: 2
       Hash: 8fe3b158e6f8955b3fa2c43abb143abd
@@ -1288,13 +1299,13 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: ab8734527b9bfa28978f22ade0296c79
+      Hash: efbdf3d92f096d1b380dac9e6e8a7509
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SaveManager
   - hash:
       serializedVersion: 2
-      Hash: 6ac093c188ecf915d11490fab435630a
+      Hash: c3959a6d8594453e48056938740376f4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Fire
