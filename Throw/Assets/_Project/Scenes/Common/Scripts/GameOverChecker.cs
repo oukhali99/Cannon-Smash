@@ -1,14 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class GameOverChecker : MonoBehaviour
 {
-    [SerializeField] float WaitOnLastScore;
-    [SerializeField] PausePanel MyPausePanel;
-    [SerializeField] GameOverPanel MyGameOverPanel;
+    public static GameOverChecker Instance { get; private set; }
     
+    [SerializeField] private float WaitOnLastScore;
+    [SerializeField] private PausePanel MyPausePanel;
+    [SerializeField] private GameOverPanel MyGameOverPanel;
+    [SerializeField] private Slider CountdownMeter;
+    [SerializeField] private float MeterIncrement;
+
     private float lastScoreTimestamp;
     private int previousFrameScore;
     private bool gameOver;
@@ -17,6 +19,7 @@ public class GameOverChecker : MonoBehaviour
     {
         lastScoreTimestamp = float.MaxValue;
         gameOver = false;
+        Instance = this;
     }
 
     void Start()
@@ -31,8 +34,22 @@ public class GameOverChecker : MonoBehaviour
             ScoreCheck();
             GameOverCheck();
         }
+
+        if (CountdownMeter.gameObject.activeSelf) CountdownMeter.value = 1 - (Time.time - lastScoreTimestamp) / WaitOnLastScore; 
     }
     
+    public void PressedSpace()
+    {
+        if (CountdownMeter.value + MeterIncrement <= 1)
+        {
+            lastScoreTimestamp += MeterIncrement;
+        }
+        else
+        {
+            lastScoreTimestamp = Time.time;
+        }
+    }
+
     // Helpers
     private void ScoreCheck()
     {
@@ -42,6 +59,7 @@ public class GameOverChecker : MonoBehaviour
         {
             previousFrameScore = score;
             lastScoreTimestamp = Time.time;
+            CountdownMeter.gameObject.SetActive(true);
         }
     }
 

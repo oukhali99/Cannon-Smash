@@ -62,5 +62,10 @@ public class BallPooler : MonoBehaviour
         Ball ballScript = ballObject.GetComponent<Ball>();
         LargeBallList.AddFirst(ballScript);
     }
+
+    public bool AllEmpty()
+    {
+        return NormalBallList.Count == 0 && ExplosiveBallList.Count == 0 && AntigravityBallList.Count == 0 && LargeBallList.Count == 0;
+    }
 }
 

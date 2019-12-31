@@ -17,7 +17,11 @@ public class Static
     {
         LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-        
+    public static void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     public static string GetPercentageString(int score, int maxScore)
     {
         if (maxScore != 0)

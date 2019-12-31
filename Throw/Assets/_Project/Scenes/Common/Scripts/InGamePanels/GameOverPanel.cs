@@ -43,6 +43,11 @@ public class GameOverPanel : MonoBehaviour
         Static.LoadScene(index);
     }
 
+    public void LoadNextScene()
+    {
+        Static.LoadNextScene();
+    }
+
     public void AdjustPayoutToTimesPlayed()
     {
         string text = "/" + SaveManager.Instance.LoadCurrentLevelTimesPlayed() + " (times played today)\n";
@@ -93,12 +98,12 @@ public class GameOverPanel : MonoBehaviour
             multiplier *= 2;
         }
 
-        return Mathf.CeilToInt(multiplier * Score.Instance.score);
+        return Mathf.CeilToInt(multiplier * GetRawPayout());
     }
 
     private int GetRawPayout()
     {
-        return Score.Instance.score;
+        return Mathf.CeilToInt(Score.Instance.score / 4);
     }
 
     private void HighscoreCheck()

@@ -40,19 +40,22 @@ public class Fire : MonoBehaviour
             Arrow.SetActive(false);
         }
 
-        if ((Arrow.activeInHierarchy && state == 2) || Ammo.Instance.ammo == -1)
+        if (state == 2 || Ammo.Instance.ammo == -1)
         {
-            horizontalPhase += Time.deltaTime;
-            float periodFraction = (horizontalPhase % Period) / Period;
+            if (Arrow.activeInHierarchy)
+            {
+                horizontalPhase += Time.deltaTime;
+                float periodFraction = (horizontalPhase % Period) / Period;
 
-            // Angle
-            HorizontalPoint(periodFraction);
+                // Angle
+                HorizontalPoint(periodFraction);
+            }
 
-            if (Ammo.Instance.ammo == 0 || Ammo.Instance.ammo == -1)
+            if (Ammo.Instance.ammo < 1)
             {
                 Arrow.SetActive(false);
             }
-            else if (Press() && Time.time - lastFire > Cooldown)
+            if (Press() && Time.time - lastFire > Cooldown)
             {
                 Ball newBall = BallPooler.Instance.GetBall();
 
@@ -75,7 +78,9 @@ public class Fire : MonoBehaviour
                 }
                 else
                 {
+                    lastFire = Time.time;
                     NoAmmoSound.Play();
+                    GameOverChecker.Instance.PressedSpace();
                 }
             }
         }
@@ -109,7 +114,7 @@ public class Fire : MonoBehaviour
 
     public void Aim()
     {
-        state = 0;
+        if (state != 0) state--;
         horizontalPhase = 0;
         HorizontalPoint(horizontalPhase);
     }

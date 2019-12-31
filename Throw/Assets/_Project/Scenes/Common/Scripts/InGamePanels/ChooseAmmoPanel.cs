@@ -5,6 +5,7 @@ using TMPro;
 
 public class ChooseAmmoPanel : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI TitleText;
     [SerializeField] private Ball NormalBall;
     [SerializeField] private ExplosiveBall ExplosiveBall;
     [SerializeField] private AntigravityBall AntigravityBall;
@@ -19,6 +20,10 @@ public class ChooseAmmoPanel : MonoBehaviour
     
     void Start()
     {
+        string levelNameSaveName = SaveManager.Instance.LevelName;
+        int levelNumber = int.Parse(levelNameSaveName.Substring(5, 1));
+        TitleText.text = "Level " + levelNumber;
+
         Time.timeScale = 0;
         picksLeft = Ammo.Instance.MaxAmmo;
         RefreshPicksLeft();

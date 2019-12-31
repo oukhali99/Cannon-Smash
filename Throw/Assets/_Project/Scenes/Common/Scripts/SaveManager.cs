@@ -8,7 +8,7 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance { get; private set; }
 
-    [SerializeField] private string LevelName;
+    public string LevelName;
     [SerializeField] private string UIScaleSaveName;
     [SerializeField] private string PlayerNameSaveName;
     [SerializeField] private string ScoreSaveName;

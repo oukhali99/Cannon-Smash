@@ -15,15 +15,17 @@ public class AmmoWheel : MonoBehaviour
     [SerializeField] private string LargeAmmoName;
 
     private int selectedIndex;
+    private bool allEmpty;
 
     void Awake()
     {
         Instance = this;
+        allEmpty = false;
+        selectedIndex = 0;
     }
 
     void Start()
     {
-        selectedIndex = 0;
         SelectedAmmoText.text = NormalAmmoName;
         BallPooler.Instance.SelectedAmmo = BallPooler.Instance.NormalBallList;
         Refresh();
@@ -36,7 +38,15 @@ public class AmmoWheel : MonoBehaviour
 
     public void Clicked()
     {
-        if (selectedIndex == 0)
+        if (allEmpty)
+        {
+            // Do nothing
+        }
+        else if (BallPooler.Instance.AllEmpty())
+        {
+            allEmpty = true;
+        }
+        else if (selectedIndex == 0)
         {
             SelectedAmmoText.text = ExplosiveAmmoName;
             BallPooler.Instance.SelectedAmmo = BallPooler.Instance.ExplosiveBallList;
