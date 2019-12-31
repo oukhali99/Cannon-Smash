@@ -19,9 +19,11 @@ public class Fire : MonoBehaviour
     private float heightPhase;
     private float verticalPhase;
     private float horizontalPhase;
+    private bool fireSignal;
 
     void Awake()
     {
+        fireSignal = false;
         Instance = this;
         heightPhase = 0;
         verticalPhase = 0;
@@ -55,7 +57,7 @@ public class Fire : MonoBehaviour
             {
                 Arrow.SetActive(false);
             }
-            if (Press() && Time.time - lastFire > Cooldown)
+            if (fireSignal && Time.time - lastFire > Cooldown)
             {
                 Ball newBall = BallPooler.Instance.GetBall();
 
@@ -68,10 +70,10 @@ public class Fire : MonoBehaviour
                     Vector3 forceUnitDir = Arrow.transform.up.normalized;
                     Vector3 force = forceUnitDir * ForceMagnitude;
 
-
                     newBall.transform.position = BallPooler.Instance.transform.position;
                     newBallRigidbody.velocity = Vector3.zero;
                     newBallRigidbody.AddForce(force);
+                    newBall.Fired();
 
                     // Ammo Wheel refresh
                     AmmoWheel.Instance.Refresh();
@@ -92,7 +94,7 @@ public class Fire : MonoBehaviour
             // Angle
             VerticalPoint(periodFraction);
 
-            if (Press())
+            if (fireSignal)
             {
                 state++;
             }
@@ -105,11 +107,18 @@ public class Fire : MonoBehaviour
             // Height
             HeightPoint(periodFraction);
 
-            if (Press())
+            if (fireSignal)
             {
                 state++;
             }
         }
+
+        fireSignal = false;
+    }
+
+    public void FireSignal()
+    {
+        fireSignal = true;
     }
 
     public void Aim()

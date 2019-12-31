@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class LargeBall : Ball
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float VelocityMultiplier;
 
-    // Update is called once per frame
-    void Update()
+    new public void Fired()
     {
-        
+        Rigidbody.velocity = Rigidbody.velocity * VelocityMultiplier;
     }
 }

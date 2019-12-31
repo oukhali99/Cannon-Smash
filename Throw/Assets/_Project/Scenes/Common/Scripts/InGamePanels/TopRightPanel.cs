@@ -16,6 +16,11 @@ public class TopRightPanel : MonoBehaviour
         Fire.Instance.Aim();
     }
 
+    public void FireSignal()
+    {
+        Fire.Instance.FireSignal();
+    }
+
     public void Pause()
     {
         Static.Pause();

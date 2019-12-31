@@ -1740,7 +1740,7 @@ ScriptsOnlyBuild:
     className: VertexShakeB
   - hash:
       serializedVersion: 2
-      Hash: 349ea6eb6a1e4fe1aedc8eb33722151d
+      Hash: 617d56235bc44af141f996f46e494a2c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LargeBall
@@ -1956,7 +1956,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: fa22a2f0e30bfe7c4c5548f4c8041b84
+      Hash: c5e41a78c1545704bdd764afc0384932
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MusicHandler
