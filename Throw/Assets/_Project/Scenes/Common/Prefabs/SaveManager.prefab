@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702c5ffe1f87ea442a9c50a3bee20215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: Level1
+  LevelName: MainMenu
   UIScaleSaveName: UIScale
   PlayerNameSaveName: PlayerName
   ScoreSaveName: Score
@@ -52,3 +52,4 @@ MonoBehaviour:
   NormalBallCountSaveName: NormalBallCount
   ExplosiveBallCountSaveName: ExplosiveBallCount
   AntigravityBallCountSaveName: AntigravityBallCount
+  LargeBallCountSaveName: LargeBallCount

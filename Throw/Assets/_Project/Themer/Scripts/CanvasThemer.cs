@@ -7,21 +7,24 @@ using UnityEngine.SceneManagement;
 public class CanvasThemer : MonoBehaviour
 {
     public static CanvasThemer Instance { get; private set; }
-
-    [SerializeField] private Camera SceneCamera;
+    
     [SerializeField] private CanvasScaler CanvasScaler;
     [SerializeField] private GameObject Button1;
     [SerializeField] private GameObject Button2;
     [SerializeField] private GameObject Text1;
     [SerializeField] private GameObject Text2;
     [SerializeField] private GameObject Panel1;
+    [SerializeField] private GameObject Panel2;
     [SerializeField] private float[] UIScales;
     [SerializeField] private float HeightFactor;
+
+    private Camera sceneCamera;
 
     // Start is called before the first frame update
     void Awake()
     {
         Instance = this;
+        sceneCamera = Camera.main;
     }
 
     void Start()
@@ -35,7 +38,7 @@ public class CanvasThemer : MonoBehaviour
     {
         int UIScaleIndex = SaveManager.Instance.LoadUIScale();
 
-        CanvasScaler.scaleFactor = SceneCamera.pixelHeight * UIScales[UIScaleIndex] / HeightFactor;
+        CanvasScaler.scaleFactor = sceneCamera.pixelHeight * UIScales[UIScaleIndex] / HeightFactor;
     }
 
     public void SaveGUISmall()
@@ -151,6 +154,7 @@ public class CanvasThemer : MonoBehaviour
         streamlinee.raycastTarget = streamliner.raycastTarget;
         streamlinee.type = streamliner.type;
         streamlinee.preserveAspect = streamliner.preserveAspect;
+        streamlinee.pixelsPerUnitMultiplier = streamliner.pixelsPerUnitMultiplier;
     }
     private void StreamLineTextMeshPro(TMPro.TextMeshProUGUI streamliner, TMPro.TextMeshProUGUI streamlinee)
     {

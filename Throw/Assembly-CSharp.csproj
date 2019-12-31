@@ -59,6 +59,7 @@
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\Ball.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\BallPooler.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\ExplosiveBall.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\LargeBall.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Destructible.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Fire.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\GameOverChecker.cs" />
@@ -77,6 +78,8 @@
      <Compile Include="Assets\_Project\Side Buildings\Common\Scripts\SideBuilding.cs" />
      <Compile Include="Assets\_Project\Side Buildings\Common\Scripts\SideBuildingsSpawner.cs" />
      <Compile Include="Assets\_Project\Themer\Scripts\CanvasThemer.cs" />
+     <Compile Include="Assets\CameraShakeFX\Scripts\StressReceiver.cs" />
+     <Compile Include="Assets\CameraShakeFX\Scripts\TraumaInducer.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />

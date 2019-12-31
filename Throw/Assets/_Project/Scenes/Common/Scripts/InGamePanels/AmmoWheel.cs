@@ -12,6 +12,7 @@ public class AmmoWheel : MonoBehaviour
     [SerializeField] private string NormalAmmoName;
     [SerializeField] private string ExplosiveAmmoName;
     [SerializeField] private string AntigravityAmmoName;
+    [SerializeField] private string LargeAmmoName;
 
     private int selectedIndex;
 
@@ -35,14 +36,21 @@ public class AmmoWheel : MonoBehaviour
             SelectedAmmoText.text = ExplosiveAmmoName;
             BallPooler.Instance.SelectedAmmo = BallPooler.Instance.ExplosiveBallList;
             Refresh();
-            selectedIndex = 1;
+            selectedIndex++;
         }
         else if (selectedIndex == 1)
         {
             SelectedAmmoText.text = AntigravityAmmoName;
             BallPooler.Instance.SelectedAmmo = BallPooler.Instance.AntigravityBallList;
             Refresh();
-            selectedIndex = 2;
+            selectedIndex++;
+        }
+        else if (selectedIndex == 2)
+        {
+            SelectedAmmoText.text = LargeAmmoName;
+            BallPooler.Instance.SelectedAmmo = BallPooler.Instance.LargeBallList;
+            Refresh();
+            selectedIndex++;
         }
         else
         {

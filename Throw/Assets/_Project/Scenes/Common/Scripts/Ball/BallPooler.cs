@@ -10,6 +10,7 @@ public class BallPooler : MonoBehaviour
     public LinkedList<Ball> NormalBallList { get; private set; }
     public LinkedList<Ball> ExplosiveBallList { get; private set; }
     public LinkedList<Ball> AntigravityBallList { get; private set; }
+    public LinkedList<Ball> LargeBallList { get; private set; }
 
     void Awake()
     {
@@ -17,6 +18,7 @@ public class BallPooler : MonoBehaviour
         NormalBallList = new LinkedList<Ball>();
         ExplosiveBallList = new LinkedList<Ball>();
         AntigravityBallList = new LinkedList<Ball>();
+        LargeBallList = new LinkedList<Ball>();
         SelectedAmmo = NormalBallList;
     }
 
@@ -53,6 +55,12 @@ public class BallPooler : MonoBehaviour
         GameObject ballObject = Instantiate(ball.gameObject);
         AntigravityBall ballScript = ballObject.GetComponent<AntigravityBall>();
         AntigravityBallList.AddFirst(ballScript);
+    }
+    public void AddLargeBall(Ball ball)
+    {
+        GameObject ballObject = Instantiate(ball.gameObject);
+        Ball ballScript = ballObject.GetComponent<Ball>();
+        LargeBallList.AddFirst(ballScript);
     }
 }
 

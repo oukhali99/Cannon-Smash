@@ -8,10 +8,12 @@ public class ChooseAmmoPanel : MonoBehaviour
     [SerializeField] private Ball NormalBall;
     [SerializeField] private ExplosiveBall ExplosiveBall;
     [SerializeField] private AntigravityBall AntigravityBall;
+    [SerializeField] private Ball LargeBall;
     [SerializeField] private TextMeshProUGUI PicksLeftText;
     [SerializeField] private TextMeshProUGUI NormalBallsLeftText;
     [SerializeField] private TextMeshProUGUI ExplosiveBallsLeftText;
     [SerializeField] private TextMeshProUGUI AntigravityBallsLeftText;
+    [SerializeField] private TextMeshProUGUI LargeBallsLeftText;
 
     private int picksLeft;
     
@@ -71,6 +73,22 @@ public class ChooseAmmoPanel : MonoBehaviour
             Ammo.Instance.ammo++;
         }
     }
+    public void ClickedLarge()
+    {
+        int LargeBallsLeft = SaveManager.Instance.LoadLargeBallCount();
+
+        if (picksLeft > 0 && LargeBallsLeft > 0)
+        {
+            BallPooler.Instance.AddLargeBall(LargeBall);
+
+            picksLeft--;
+            RefreshPicksLeft();
+
+            SaveManager.Instance.SaveLargeBallCount(LargeBallsLeft - 1);
+            RefreshStockText();
+            Ammo.Instance.ammo++;
+        }
+    }
 
     public void ClickedPlay()
     {
@@ -90,5 +108,6 @@ public class ChooseAmmoPanel : MonoBehaviour
         NormalBallsLeftText.text = "Left: " + SaveManager.Instance.LoadNormalBallCount();
         ExplosiveBallsLeftText.text = "Left: " + SaveManager.Instance.LoadExplosiveBallCount();
         AntigravityBallsLeftText.text = "Left: " + SaveManager.Instance.LoadAntigravityBallCount();
+        LargeBallsLeftText.text = "Left: " + SaveManager.Instance.LoadLargeBallCount();
     }
 }

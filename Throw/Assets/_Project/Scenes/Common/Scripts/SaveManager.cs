@@ -18,10 +18,22 @@ public class SaveManager : MonoBehaviour
     [SerializeField] private string NormalBallCountSaveName;
     [SerializeField] private string ExplosiveBallCountSaveName;
     [SerializeField] private string AntigravityBallCountSaveName;
+    [SerializeField] private string LargeBallCountSaveName;
 
     void Awake()
     {
         Instance = this;
+
+        if (!PlayerPrefs.HasKey(UIScaleSaveName))
+        {
+            FirstTime();
+        }
+    }
+
+    private void FirstTime()
+    {
+        PlayerPrefs.SetInt(UIScaleSaveName, 2);
+        PlayerPrefs.SetInt("Balance", 10);
     }
 
     public void SaveNormalBallCount(int newCount)
@@ -36,10 +48,15 @@ public class SaveManager : MonoBehaviour
     {
         PlayerPrefs.SetInt(AntigravityBallCountSaveName, newCount);
     }
+    public void SaveLargeBallCount(int newCount)
+    {
+        PlayerPrefs.SetInt(LargeBallCountSaveName, newCount);
+    }
 
     public void ClearSavedData()
     {
         PlayerPrefs.DeleteAll();
+        FirstTime();
     }
 
     public void SaveUIScale(int scale)
@@ -95,6 +112,10 @@ public class SaveManager : MonoBehaviour
     public int LoadAntigravityBallCount()
     {
         return PlayerPrefs.GetInt(AntigravityBallCountSaveName);
+    }
+    public int LoadLargeBallCount()
+    {
+        return PlayerPrefs.GetInt(LargeBallCountSaveName);
     }
 
     public int LoadUIScale()

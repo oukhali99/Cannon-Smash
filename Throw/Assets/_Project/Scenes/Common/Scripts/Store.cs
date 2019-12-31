@@ -8,14 +8,17 @@ public class Store : MonoBehaviour
     [SerializeField] private TextMeshProUGUI BalanceText;
     [SerializeField] private int AddFundsAmount;
     [SerializeField] private int BuyNormalAmmoCount;    
-    [SerializeField] private int BuyExplosiveAmmoCount;    
+    [SerializeField] private int BuyExplosiveAmmoCount;
     [SerializeField] private int BuyAntigravityAmmoCount;
+    [SerializeField] private int BuyLargeAmmoCount;
     [SerializeField] private int NormalAmmoPrice;
     [SerializeField] private int ExplosiveAmmoPrice;
     [SerializeField] private int AntigravityAmmoPrice;
+    [SerializeField] private int LargeAmmoPrice;
     [SerializeField] private TextMeshProUGUI NormalAmmoCountText;
     [SerializeField] private TextMeshProUGUI ExplosiveAmmoCountText;
     [SerializeField] private TextMeshProUGUI AntigravityAmmoCountText;
+    [SerializeField] private TextMeshProUGUI LargeAmmoCountText;
 
     void Start()
     {
@@ -61,6 +64,17 @@ public class Store : MonoBehaviour
             RefreshAmmoCounts();
         }            
     }
+    public void ClickedBuyLargeAmmo()
+    {
+        if (SaveManager.Instance.LoadBalance() >= LargeAmmoPrice)
+        {
+            int lastCount = SaveManager.Instance.LoadLargeBallCount();
+            SaveManager.Instance.SaveLargeBallCount(lastCount + BuyLargeAmmoCount);
+            AddFunds(-LargeAmmoPrice);
+            RefreshBalanceText();
+            RefreshAmmoCounts();
+        }
+    }
 
     // Helpers
     private void AddFunds(int amount)
@@ -80,5 +94,6 @@ public class Store : MonoBehaviour
         NormalAmmoCountText.text = SaveManager.Instance.LoadNormalBallCount().ToString();
         ExplosiveAmmoCountText.text = SaveManager.Instance.LoadExplosiveBallCount().ToString();
         AntigravityAmmoCountText.text = SaveManager.Instance.LoadAntigravityBallCount().ToString();
+        LargeAmmoCountText.text = SaveManager.Instance.LoadLargeBallCount().ToString();
     }
 }

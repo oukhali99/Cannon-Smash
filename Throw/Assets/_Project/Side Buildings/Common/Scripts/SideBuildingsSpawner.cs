@@ -5,23 +5,24 @@ using UnityEngine;
 public class SideBuildingsSpawner : MonoBehaviour
 {
     [SerializeField] private SideBuilding[] BuildingPrefabs;
-    [SerializeField] private float XCoordinate;
     [SerializeField] private float ZGap;
     [SerializeField] private int ZBuildingCount;
+    [SerializeField] private float XDistanceFromCurb;
     [SerializeField] private float XDistanceFromCenterToCurbEnd;
+    [SerializeField] private float XCenter;
 
     private float nextZ;
     
     void Start()
     {
-        PopulateRow(XCoordinate, 0);
-        PopulateRow(-XCoordinate, 180);
+        PopulateRow(XDistanceFromCurb + XCenter, 0);
+        PopulateRow(-XDistanceFromCurb + XCenter, 180);
     }
 
     // Helpers
     private void PopulateRow(float xCoordinate, float yRotation)
     {
-        if (xCoordinate > 0)
+        if (yRotation == 0)
         {
             xCoordinate += XDistanceFromCenterToCurbEnd;
         }
@@ -45,25 +46,6 @@ public class SideBuildingsSpawner : MonoBehaviour
 
             nextZ += nextZIncrement;
             nextZ += ZGap;
-
-            // Resize road
-            SideBuilding sideBuildingScript = newObject.GetComponent<SideBuilding>();
-            if (sideBuildingScript.Path != null)
-            {
-                Transform roadTransform = sideBuildingScript.Path.transform;
-                float requiredXScaleMultiplier;
-
-                if (xCoordinate > 0)
-                {
-                    requiredXScaleMultiplier = (xCoordinate - XDistanceFromCenterToCurbEnd) / roadTransform.lossyScale.x;
-                }
-                else
-                {
-                    requiredXScaleMultiplier = -(xCoordinate + XDistanceFromCenterToCurbEnd) / roadTransform.lossyScale.x;
-                }
-
-                roadTransform.localScale = new Vector3(roadTransform.localScale.x * requiredXScaleMultiplier, roadTransform.localScale.y, roadTransform.localScale.z);
-            }
         }
     }
 

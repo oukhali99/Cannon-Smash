@@ -6,32 +6,31 @@ using TMPro;
 public class GameOverPanel : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI PayoutText;
-    [SerializeField] private float ScoreUpTime;
+    [SerializeField] private TextMeshProUGUI PayoutModifierText;
+    [SerializeField] private Animator MyAnimator;
+    [SerializeField] private AudioSource ScoreUpAudio;
          
     private int currentPayoutText;
     private int payout;
     private float lastIncrementTimestamp;
     private bool beatenHighScore;
     private float waitBetweenIncrement;
+    private int timesPlayed;
 
     void Awake()
     {
         beatenHighScore = false;
         lastIncrementTimestamp = 0;
         currentPayoutText = 0;
-        waitBetweenIncrement = ScoreUpTime / Score.Instance.score;
 
         SaveManager.Instance.SaveCurrentLevelTimesPlayed(SaveManager.Instance.LoadCurrentLevelTimesPlayed() + 1);
         HighscoreCheck();
         payout = GetPayout();
         SaveManager.Instance.SaveBalance(SaveManager.Instance.LoadBalance() + payout);
-    }
 
-    void Update()
-    {
-        RefreshPayoutText();
+        timesPlayed = SaveManager.Instance.LoadCurrentLevelTimesPlayed();
     }
-
+    
     public void Unpause()
     {
         Static.Unpause();
@@ -42,15 +41,37 @@ public class GameOverPanel : MonoBehaviour
         Static.LoadScene(index);
     }
 
-    // Helpers
-    private void RefreshPayoutText()
+    public void AdjustPayoutToTimesPlayed()
+    {
+        string text = "/" + SaveManager.Instance.LoadCurrentLevelTimesPlayed() + " (times played today)\n";
+
+        if (beatenHighScore)
+        {
+            text += "x2 (beaten daily high score)";
+        }
+
+        PayoutText.text = GetPayout().ToString();
+        PayoutModifierText.text = text;
+        ScoreUpAudio.Play();
+    }
+    
+    public void ScoreUpOne()
     {
         PayoutText.text = currentPayoutText.ToString();
-        if (currentPayoutText != payout && Time.time - lastIncrementTimestamp > waitBetweenIncrement)
+        if (currentPayoutText == payout * timesPlayed)
+        {
+            MyAnimator.SetBool("DoneScoreUp", true);
+        }
+        else
         {
             lastIncrementTimestamp = Time.time;
-            currentPayoutText++;            
+            ScoreUpAudio.Play();
+            currentPayoutText++;
         }
+    }
+
+    public void DoNothing()
+    {
     }
 
     private int GetPayout()
