@@ -27,6 +27,11 @@ public class AmmoWheel : MonoBehaviour
         SelectedAmmoText.text = NormalAmmoName;
         BallPooler.Instance.SelectedAmmo = BallPooler.Instance.NormalBallList;
         Refresh();
+
+        if (BallPooler.Instance.SelectedAmmo.Count == 0)
+        {
+            Clicked();
+        }
     }
 
     public void Clicked()
@@ -37,6 +42,10 @@ public class AmmoWheel : MonoBehaviour
             BallPooler.Instance.SelectedAmmo = BallPooler.Instance.ExplosiveBallList;
             Refresh();
             selectedIndex++;
+            if (BallPooler.Instance.SelectedAmmo.Count == 0)
+            {
+                Clicked();
+            }
         }
         else if (selectedIndex == 1)
         {
@@ -44,6 +53,10 @@ public class AmmoWheel : MonoBehaviour
             BallPooler.Instance.SelectedAmmo = BallPooler.Instance.AntigravityBallList;
             Refresh();
             selectedIndex++;
+            if (BallPooler.Instance.SelectedAmmo.Count == 0)
+            {
+                Clicked();
+            }
         }
         else if (selectedIndex == 2)
         {
@@ -51,6 +64,10 @@ public class AmmoWheel : MonoBehaviour
             BallPooler.Instance.SelectedAmmo = BallPooler.Instance.LargeBallList;
             Refresh();
             selectedIndex++;
+            if (BallPooler.Instance.SelectedAmmo.Count == 0)
+            {
+                Clicked();
+            }
         }
         else
         {
@@ -58,6 +75,10 @@ public class AmmoWheel : MonoBehaviour
             BallPooler.Instance.SelectedAmmo = BallPooler.Instance.NormalBallList;
             Refresh();
             selectedIndex = 0;
+            if (BallPooler.Instance.SelectedAmmo.Count == 0)
+            {
+                Clicked();
+            }
         }
     }
 

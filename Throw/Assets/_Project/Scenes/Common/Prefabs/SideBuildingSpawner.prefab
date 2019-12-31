@@ -54,7 +54,7 @@ MonoBehaviour:
   - {fileID: 4381868586239592995, guid: fa27f9ff3207de940a0b579285483d45, type: 3}
   - {fileID: 253929875547918729, guid: f608855db6dfef44c9a651ab67d2c9bb, type: 3}
   ZGap: 2
-  ZBuildingCount: 30
+  ZBuildingCount: 10
   XDistanceFromCurb: 11
   XDistanceFromCenterToCurbEnd: 4
   XCenter: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8686916461015163134}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc62d45a13bc78d4a914d9cfd48fb4c7, type: 3}
   m_Name: 
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8686916461015163134}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc62d45a13bc78d4a914d9cfd48fb4c7, type: 3}
   m_Name: 

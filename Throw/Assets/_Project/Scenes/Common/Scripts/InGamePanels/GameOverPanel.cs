@@ -16,16 +16,18 @@ public class GameOverPanel : MonoBehaviour
     private bool beatenHighScore;
     private float waitBetweenIncrement;
     private int timesPlayed;
+    private bool perfectScore;
 
-    void Awake()
+    void Start()
     {
         beatenHighScore = false;
         lastIncrementTimestamp = 0;
         currentPayoutText = 0;
 
         SaveManager.Instance.SaveCurrentLevelTimesPlayed(SaveManager.Instance.LoadCurrentLevelTimesPlayed() + 1);
+        PerfectScoreCheck();
         HighscoreCheck();
-        payout = GetPayout();
+        payout = GetRawPayout();
         SaveManager.Instance.SaveBalance(SaveManager.Instance.LoadBalance() + payout);
 
         timesPlayed = SaveManager.Instance.LoadCurrentLevelTimesPlayed();
@@ -47,7 +49,11 @@ public class GameOverPanel : MonoBehaviour
 
         if (beatenHighScore)
         {
-            text += "x2 (beaten daily high score)";
+            text += "x2 (beaten daily high score)\n";
+        }
+        if (perfectScore)
+        {
+            text += "x2 (perfect score!)";
         }
 
         PayoutText.text = GetPayout().ToString();
@@ -58,7 +64,7 @@ public class GameOverPanel : MonoBehaviour
     public void ScoreUpOne()
     {
         PayoutText.text = currentPayoutText.ToString();
-        if (currentPayoutText == payout * timesPlayed)
+        if (currentPayoutText == payout)
         {
             MyAnimator.SetBool("DoneScoreUp", true);
         }
@@ -82,8 +88,17 @@ public class GameOverPanel : MonoBehaviour
         {
             multiplier *= 2;
         }
+        if (perfectScore)
+        {
+            multiplier *= 2;
+        }
 
         return Mathf.CeilToInt(multiplier * Score.Instance.score);
+    }
+
+    private int GetRawPayout()
+    {
+        return Score.Instance.score;
     }
 
     private void HighscoreCheck()
@@ -100,6 +115,18 @@ public class GameOverPanel : MonoBehaviour
         else
         {
             beatenHighScore = false;
+        }
+    }
+
+    private void PerfectScoreCheck()
+    {
+        if (Score.Instance.score == Score.Instance.maxScore)
+        {
+            perfectScore = true;
+        }
+        else
+        {
+            perfectScore = false;
         }
     }
 }
