@@ -9,15 +9,15 @@ public class Store : MonoBehaviour
     [SerializeField] private int AddFundsAmount;
     [SerializeField] private int BuyNormalAmmoCount;    
     [SerializeField] private int BuyExplosiveAmmoCount;
-    [SerializeField] private int BuyAntigravityAmmoCount;
+    [SerializeField] private int BuyGuidedAmmoCount;
     [SerializeField] private int BuyLargeAmmoCount;
     [SerializeField] private int NormalAmmoPrice;
     [SerializeField] private int ExplosiveAmmoPrice;
-    [SerializeField] private int AntigravityAmmoPrice;
+    [SerializeField] private int GuidedAmmoPrice;
     [SerializeField] private int LargeAmmoPrice;
     [SerializeField] private TextMeshProUGUI NormalAmmoCountText;
     [SerializeField] private TextMeshProUGUI ExplosiveAmmoCountText;
-    [SerializeField] private TextMeshProUGUI AntigravityAmmoCountText;
+    [SerializeField] private TextMeshProUGUI GuidedAmmoCountText;
     [SerializeField] private TextMeshProUGUI LargeAmmoCountText;
 
     void Start()
@@ -53,13 +53,13 @@ public class Store : MonoBehaviour
             RefreshAmmoCounts();
         }        
     }
-    public void ClickedBuyAntigravityAmmo()
+    public void ClickedBuyGuidedAmmo()
     {
-        if (SaveManager.Instance.LoadBalance() >= AntigravityAmmoPrice)
+        if (SaveManager.Instance.LoadBalance() >= GuidedAmmoPrice)
         {
-            int lastCount = SaveManager.Instance.LoadAntigravityBallCount();
-            SaveManager.Instance.SaveAntigravityBallCount(lastCount + BuyAntigravityAmmoCount);
-            AddFunds(-AntigravityAmmoPrice);
+            int lastCount = SaveManager.Instance.LoadGuidedBallCount();
+            SaveManager.Instance.SaveGuidedBallCount(lastCount + BuyGuidedAmmoCount);
+            AddFunds(-GuidedAmmoPrice);
             RefreshBalanceText();
             RefreshAmmoCounts();
         }            
@@ -93,7 +93,7 @@ public class Store : MonoBehaviour
     {
         NormalAmmoCountText.text = SaveManager.Instance.LoadNormalBallCount().ToString();
         ExplosiveAmmoCountText.text = SaveManager.Instance.LoadExplosiveBallCount().ToString();
-        AntigravityAmmoCountText.text = SaveManager.Instance.LoadAntigravityBallCount().ToString();
+        GuidedAmmoCountText.text = SaveManager.Instance.LoadGuidedBallCount().ToString();
         LargeAmmoCountText.text = SaveManager.Instance.LoadLargeBallCount().ToString();
     }
 }

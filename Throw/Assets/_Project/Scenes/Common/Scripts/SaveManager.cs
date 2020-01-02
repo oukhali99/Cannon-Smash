@@ -17,7 +17,7 @@ public class SaveManager : MonoBehaviour
     [Header("Ammo Names")]
     [SerializeField] private string NormalBallCountSaveName;
     [SerializeField] private string ExplosiveBallCountSaveName;
-    [SerializeField] private string AntigravityBallCountSaveName;
+    [SerializeField] private string GuidedBallCountSaveName;
     [SerializeField] private string LargeBallCountSaveName;
 
     void Awake()
@@ -44,9 +44,9 @@ public class SaveManager : MonoBehaviour
     {
         PlayerPrefs.SetInt(ExplosiveBallCountSaveName, newCount);
     }
-    public void SaveAntigravityBallCount(int newCount)
+    public void SaveGuidedBallCount(int newCount)
     {
-        PlayerPrefs.SetInt(AntigravityBallCountSaveName, newCount);
+        PlayerPrefs.SetInt(GuidedBallCountSaveName, newCount);
     }
     public void SaveLargeBallCount(int newCount)
     {
@@ -109,9 +109,9 @@ public class SaveManager : MonoBehaviour
     {
         return PlayerPrefs.GetInt(ExplosiveBallCountSaveName);
     }
-    public int LoadAntigravityBallCount()
+    public int LoadGuidedBallCount()
     {
-        return PlayerPrefs.GetInt(AntigravityBallCountSaveName);
+        return PlayerPrefs.GetInt(GuidedBallCountSaveName);
     }
     public int LoadLargeBallCount()
     {

@@ -51,5 +51,5 @@ MonoBehaviour:
   LevelTimesPlayedSaveName: TimesPlayed
   NormalBallCountSaveName: NormalBallCount
   ExplosiveBallCountSaveName: ExplosiveBallCount
-  AntigravityBallCountSaveName: AntigravityBallCount
+  GuidedBallCountSaveName: GuidedBallCount
   LargeBallCountSaveName: LargeBallCount

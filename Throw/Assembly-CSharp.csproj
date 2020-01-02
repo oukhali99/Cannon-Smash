@@ -55,11 +55,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\AntigravityBall.cs" />
-     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\Ball.cs" />
-     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\BallPooler.cs" />
-     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\ExplosiveBall.cs" />
-     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Ball\LargeBall.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Balls\Ball.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Balls\BallPooler.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Balls\ExplosiveBall.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Balls\GuidedBall.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Balls\LargeBall.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Balls\NormalBall.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Destructible.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Fire.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\GameOverChecker.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\PausePanel.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\Score.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\TopRightPanel.cs" />
+     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Joystick.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\MusicHandler.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\SaveManager.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Static.cs" />
@@ -89,6 +91,9 @@
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\SimpleTouchController\Scripts\InfoTouches.cs" />
+     <Compile Include="Assets\SimpleTouchController\Scripts\PlayerMoveController.cs" />
+     <Compile Include="Assets\SimpleTouchController\Scripts\SimpleTouchController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -122,6 +127,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <None Include="Assets\SimpleTouchController\README.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />

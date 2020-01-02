@@ -11,7 +11,7 @@ public class AmmoWheel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI SelectedAmmoCountText;
     [SerializeField] private string NormalAmmoName;
     [SerializeField] private string ExplosiveAmmoName;
-    [SerializeField] private string AntigravityAmmoName;
+    [SerializeField] private string GuidedAmmoName;
     [SerializeField] private string LargeAmmoName;
 
     private int selectedIndex;
@@ -59,8 +59,8 @@ public class AmmoWheel : MonoBehaviour
         }
         else if (selectedIndex == 1)
         {
-            SelectedAmmoText.text = AntigravityAmmoName;
-            BallPooler.Instance.SelectedAmmo = BallPooler.Instance.AntigravityBallList;
+            SelectedAmmoText.text = GuidedAmmoName;
+            BallPooler.Instance.SelectedAmmo = BallPooler.Instance.GuidedBallList;
             Refresh();
             selectedIndex++;
             if (BallPooler.Instance.SelectedAmmo.Count == 0)

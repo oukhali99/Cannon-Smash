@@ -8,12 +8,12 @@ public class ChooseAmmoPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI TitleText;
     [SerializeField] private Ball NormalBall;
     [SerializeField] private ExplosiveBall ExplosiveBall;
-    [SerializeField] private AntigravityBall AntigravityBall;
+    [SerializeField] private GuidedBall GuidedBall;
     [SerializeField] private Ball LargeBall;
     [SerializeField] private TextMeshProUGUI PicksLeftText;
     [SerializeField] private TextMeshProUGUI NormalBallsLeftText;
     [SerializeField] private TextMeshProUGUI ExplosiveBallsLeftText;
-    [SerializeField] private TextMeshProUGUI AntigravityBallsLeftText;
+    [SerializeField] private TextMeshProUGUI GuidedBallsLeftText;
     [SerializeField] private TextMeshProUGUI LargeBallsLeftText;
 
     private int picksLeft;
@@ -62,18 +62,18 @@ public class ChooseAmmoPanel : MonoBehaviour
             Ammo.Instance.ammo++;
         }
     }
-    public void ClickedAntigravity()
+    public void ClickedGuided()
     {
-        int AntigravityBallsLeft = SaveManager.Instance.LoadAntigravityBallCount();
+        int GuidedBallsLeft = SaveManager.Instance.LoadGuidedBallCount();
 
-        if (picksLeft > 0 && AntigravityBallsLeft > 0)
+        if (picksLeft > 0 && GuidedBallsLeft > 0)
         {
-            BallPooler.Instance.AddAntigravtityBall(AntigravityBall);
+            BallPooler.Instance.AddAntigravtityBall(GuidedBall);
 
             picksLeft--;
             RefreshPicksLeft();
 
-            SaveManager.Instance.SaveAntigravityBallCount(AntigravityBallsLeft - 1);
+            SaveManager.Instance.SaveGuidedBallCount(GuidedBallsLeft - 1);
             RefreshStockText();
             Ammo.Instance.ammo++;
         }
@@ -112,7 +112,7 @@ public class ChooseAmmoPanel : MonoBehaviour
     {
         NormalBallsLeftText.text = "Left: " + SaveManager.Instance.LoadNormalBallCount();
         ExplosiveBallsLeftText.text = "Left: " + SaveManager.Instance.LoadExplosiveBallCount();
-        AntigravityBallsLeftText.text = "Left: " + SaveManager.Instance.LoadAntigravityBallCount();
+        GuidedBallsLeftText.text = "Left: " + SaveManager.Instance.LoadGuidedBallCount();
         LargeBallsLeftText.text = "Left: " + SaveManager.Instance.LoadLargeBallCount();
     }
 }
