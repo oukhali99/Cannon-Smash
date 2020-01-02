@@ -6,7 +6,7 @@ public class GuidedBall : Ball
 {
     [SerializeField] private float GuidedTime;
     [SerializeField] private Vector3 CameraBallRelativePosition;
-    [SerializeField] private PlayerMoveController ControllerScript;
+    [SerializeField] private PlayerMoveController Controller;
     
     private static Vector3 cameraInitialPosition;
     private static Quaternion cameraInitialRotation;
@@ -39,10 +39,14 @@ public class GuidedBall : Ball
                 firedTimestamp = 0;
 
                 // Go back to normal mode
-                ControllerScript.leftController = null;
                 TopRightPanel.Instance.gameObject.SetActive(true);
-                Joystick.Instance.gameObject.SetActive(false);
+                SimpleTouchController.Instance.gameObject.SetActive(false);
+                Controller.leftController = null;
                 cam.transform.position = cameraInitialPosition;
+
+                // Set Transform
+                cam.transform.position = cameraInitialPosition;
+                cam.transform.rotation = cameraInitialRotation;
             }
         }
     }
@@ -51,8 +55,8 @@ public class GuidedBall : Ball
     {
         firedTimestamp = Time.time;
         TopRightPanel.Instance.gameObject.SetActive(false);
-        Joystick.Instance.gameObject.SetActive(true);
-        ControllerScript.leftController = Joystick.Instance.Stick;
+        SimpleTouchController.Instance.gameObject.SetActive(true);
+        Controller.leftController = SimpleTouchController.Instance;
         cameraInitialPosition = cam.transform.position;
         cameraInitialRotation = cam.transform.rotation;
     }

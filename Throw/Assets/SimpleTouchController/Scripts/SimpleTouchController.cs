@@ -3,7 +3,9 @@ using UnityEngine.UI;
 using System.Collections;
 
 
-public class SimpleTouchController : MonoBehaviour {
+public class SimpleTouchController : MonoBehaviour
+{
+    public static SimpleTouchController Instance { get; private set; }
 
 	// PUBLIC
 	public delegate void TouchDelegate(Vector2 value);
@@ -18,6 +20,11 @@ public class SimpleTouchController : MonoBehaviour {
 	private bool touchPresent = false;
 	private Vector2 movementVector;
 
+    void Awake()
+    {
+        Instance = this;
+        gameObject.SetActive(false);
+    }
 
 	public Vector2 GetTouchPosition
 	{

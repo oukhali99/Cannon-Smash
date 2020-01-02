@@ -71,7 +71,6 @@
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\PausePanel.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\Score.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\InGamePanels\TopRightPanel.cs" />
-     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Joystick.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\MusicHandler.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\SaveManager.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Static.cs" />

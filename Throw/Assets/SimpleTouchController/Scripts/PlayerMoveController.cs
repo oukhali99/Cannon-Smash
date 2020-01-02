@@ -9,7 +9,7 @@ public class PlayerMoveController : MonoBehaviour {
 	public SimpleTouchController leftController;
 	public SimpleTouchController rightController;
 	public Transform headTrans;
-	public float ForceMovement = 5f;
+	public float speedMovements = 5f;
 	public float speedContinuousLook = 100f;
 	public float speedProgressiveLook = 3000f;
 
@@ -20,7 +20,7 @@ public class PlayerMoveController : MonoBehaviour {
 	void Awake()
 	{
 		_rigidbody = GetComponent<Rigidbody>();
-        if (rightController != null) rightController.TouchEvent += RightController_TouchEvent;
+		if (rightController != null) rightController.TouchEvent += RightController_TouchEvent;
 	}
 
 	public bool ContinuousRightController
@@ -39,14 +39,20 @@ public class PlayerMoveController : MonoBehaviour {
 	void Update()
 	{
         // move
-        if (leftController != null) _rigidbody.AddForce(Time.time * ForceMovement * ((Vector3.forward * leftController.GetTouchPosition.y) +
-			(Vector3.right * leftController.GetTouchPosition.x)));
+        if (leftController != null)
+        {
+            Vector2 touchPosition = leftController.GetTouchPosition;
 
-		if(continuousRightController)
-		{
-			if (rightController != null) UpdateAim(rightController.GetTouchPosition);
-		}
-	}
+            if (!touchPosition.Equals(Vector2.zero)) _rigidbody.AddForce(Time.deltaTime * speedMovements * ((Vector3.forward * touchPosition.y) +
+                (Vector3.right * touchPosition.x)));
+            else _rigidbody.AddForce(-Time.deltaTime * speedMovements * _rigidbody.velocity.normalized);
+        }
+
+        if (continuousRightController)
+        {
+            if (rightController != null) UpdateAim(rightController.GetTouchPosition);
+        }
+    }
 
 	void UpdateAim(Vector2 value)
 	{
