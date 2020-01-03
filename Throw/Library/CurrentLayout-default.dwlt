@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 3}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 738, y: 494}
-  m_MaxSize: {x: 16008, y: 14044}
+  m_MinSize: {x: 742, y: 494}
+  m_MaxSize: {x: 16012, y: 14044}
   vertical: 0
-  controlID: 57
+  controlID: 186
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 1426
     height: 947
-  m_MinSize: {x: 463, y: 494}
-  m_MaxSize: {x: 12008, y: 14044}
+  m_MinSize: {x: 465, y: 494}
+  m_MaxSize: {x: 12010, y: 14044}
   vertical: 1
-  controlID: 58
+  controlID: 89
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,10 +188,10 @@ MonoBehaviour:
     y: 0
     width: 1426
     height: 596
-  m_MinSize: {x: 463, y: 222}
-  m_MaxSize: {x: 12008, y: 4022}
+  m_MinSize: {x: 465, y: 222}
+  m_MaxSize: {x: 12010, y: 4022}
   vertical: 0
-  controlID: 59
+  controlID: 90
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,8 +211,8 @@ MonoBehaviour:
     y: 0
     width: 241
     height: 596
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   Collection:
     filter: 0
-    lastUpdateTime: Jan 2, 02:41
+    lastUpdateTime: Jan 2, 22:20
     listPackagesOffline:
     - Name: com.unity.2d.sprite
       DisplayName: 2D Sprite
@@ -118666,6 +118666,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -118683,6 +118684,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -118900,6 +118902,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -118917,6 +118920,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -119019,6 +119023,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -119036,6 +119041,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -119138,6 +119144,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -119155,6 +119162,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -119257,6 +119265,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -119274,6 +119283,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -119376,6 +119386,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -119393,6 +119404,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -119495,6 +119507,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -119512,6 +119525,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -119614,6 +119628,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -119631,6 +119646,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -119733,6 +119749,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -119750,6 +119767,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -119852,6 +119870,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -119869,6 +119888,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -119971,6 +119991,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -119988,6 +120009,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -120090,6 +120112,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -120107,6 +120130,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -120209,6 +120233,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -120226,6 +120251,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -120328,6 +120354,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -120345,6 +120372,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -120376,6 +120404,127 @@ MonoBehaviour:
     - Name: com.unity.xr.arcore
       DisplayName: ARCore XR Plugin
       _Version: 3.1.0-preview.1
+      Description: 'Provides native Google ARCore integration for use with Unity''s
+        multi-platform XR API.
+
+        =Supported Features=
+
+        -Efficient Background Rendering
+
+        -Horizontal Planes
+
+        -Depth Data
+
+        -Anchors
+
+        -Hit Testing'
+      Category: 
+      State: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      IsDiscoverable: 1
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.xr.arcore@3.0.1
+        m_IsDirectDependency: 0
+        m_Version: 3.0.1
+        m_Source: 1
+        m_ResolvedPath: 
+        m_AssetPath: Packages/com.unity.xr.arcore
+        m_Name: com.unity.xr.arcore
+        m_DisplayName: ARCore XR Plugin
+        m_Category: 
+        m_Type: 
+        m_Description: 'Provides native Google ARCore integration for use with Unity''s
+          multi-platform XR API.
+
+          =Supported Features=
+
+          -Efficient Background Rendering
+
+          -Horizontal Planes
+
+          -Depth Data
+
+          -Anchors
+
+          -Hit Testing'
+        m_Status: 1
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0-preview.24
+          - 2.0.2
+          - 2.1.0-preview.4
+          - 2.1.0-preview.5
+          - 2.1.0
+          - 2.1.1
+          - 2.1.2
+          - 2.2.0-preview.1
+          - 2.2.0-preview.2
+          - 2.2.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.1
+          - 3.1.0-preview.1
+          - 3.1.0-preview.2
+          m_Compatible:
+          - 1.0.0-preview.24
+          - 2.0.2
+          - 2.1.0-preview.4
+          - 2.1.0-preview.5
+          - 2.1.0
+          - 2.1.1
+          - 2.1.2
+          - 2.2.0-preview.1
+          - 2.2.0-preview.2
+          - 2.2.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.1
+          - 3.1.0-preview.1
+          - 3.1.0-preview.2
+          m_Recommended: 2.0.2
+        m_Dependencies:
+        - m_Name: com.unity.xr.arsubsystems
+          m_Version: 3.0.0
+        - m_Name: com.unity.xr.management
+          m_Version: 3.0.4
+        - m_Name: com.unity.modules.androidjni
+          m_Version: 1.0.0
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - arcore
+        - ar
+        - augmented
+        - xr
+        - reality
+        - core
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+        m_HideInEditor: 1
+        m_DatePublishedTicks: 637109284420000000
+      IsInstalled: 0
+    - Name: com.unity.xr.arcore
+      DisplayName: ARCore XR Plugin
+      _Version: 3.1.0-preview.2
       Description: 'Provides native Google ARCore integration for use with Unity''s
         multi-platform XR API.
 
@@ -120447,6 +120596,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.24
           - 2.0.2
@@ -120464,6 +120614,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -120561,6 +120712,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -120591,6 +120743,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -120686,6 +120839,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -120716,6 +120870,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -120811,6 +120966,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -120841,6 +120997,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -120936,6 +121093,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -120966,6 +121124,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -121061,6 +121220,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -121091,6 +121251,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -121186,6 +121347,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -121216,6 +121378,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -121311,6 +121474,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -121341,6 +121505,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -121436,6 +121601,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -121466,6 +121632,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -121561,6 +121728,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -121591,6 +121759,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -121686,6 +121855,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -121716,6 +121886,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -121811,6 +121982,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -121841,6 +122013,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -121936,6 +122109,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -121966,6 +122140,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -122061,6 +122236,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -122091,6 +122267,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -122312,6 +122489,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -122342,6 +122520,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -122437,6 +122616,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -122467,6 +122647,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -122562,6 +122743,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -122592,6 +122774,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -122687,6 +122870,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -122717,6 +122901,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -122812,6 +122997,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -122842,6 +123028,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -122937,6 +123124,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -122967,6 +123155,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -123062,6 +123251,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -123092,6 +123282,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -123187,6 +123378,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -123217,6 +123409,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -123312,6 +123505,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -123342,6 +123536,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -123437,6 +123632,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -123467,6 +123663,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -123562,6 +123759,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -123592,6 +123790,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -123687,6 +123886,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -123717,6 +123917,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -123812,6 +124013,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -123842,6 +124044,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -123937,6 +124140,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -123967,6 +124171,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -123996,6 +124201,133 @@ MonoBehaviour:
     - Name: com.unity.xr.arfoundation
       DisplayName: AR Foundation
       _Version: 3.1.0-preview.1
+      Description: "A collection of MonoBehaviours and C# utilities for working with
+        AR Subsystems. \n\nIncludes: \n GameObject menu items for creating an AR setup
+        \n MonoBehaviours that control AR session lifecycle and create GameObjects
+        from detected, real-world trackable features \n Scale handling \n Face tracking\n\nSamples
+        available at https://github.com/Unity-Technologies/arfoundation-samples"
+      Category: 
+      State: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      IsDiscoverable: 1
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.xr.arfoundation@3.0.1
+        m_IsDirectDependency: 0
+        m_Version: 3.0.1
+        m_Source: 1
+        m_ResolvedPath: 
+        m_AssetPath: Packages/com.unity.xr.arfoundation
+        m_Name: com.unity.xr.arfoundation
+        m_DisplayName: AR Foundation
+        m_Category: 
+        m_Type: 
+        m_Description: "A collection of MonoBehaviours and C# utilities for working
+          with AR Subsystems. \n\nIncludes: \n GameObject menu items for creating
+          an AR setup \n MonoBehaviours that control AR session lifecycle and create
+          GameObjects from detected, real-world trackable features \n Scale handling
+          \n Face tracking\n\nSamples available at https://github.com/Unity-Technologies/arfoundation-samples"
+        m_Status: 1
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0-preview.12
+          - 1.0.0-preview.13
+          - 1.0.0-preview.14
+          - 1.0.0-preview.17
+          - 1.0.0-preview.18
+          - 1.0.0-preview.19
+          - 1.0.0-preview.20
+          - 1.0.0-preview.22
+          - 1.1.0-preview.6
+          - 1.5.0-preview.2
+          - 1.5.0-preview.5
+          - 1.5.0-preview.6
+          - 1.5.0-preview.7
+          - 2.0.2
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.1
+          - 2.1.3
+          - 2.1.4
+          - 2.2.0-preview.2
+          - 2.2.0-preview.3
+          - 2.2.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.0-preview.6
+          - 3.0.1
+          - 3.1.0-preview.1
+          - 3.1.0-preview.3
+          m_Compatible:
+          - 1.0.0-preview.12
+          - 1.0.0-preview.13
+          - 1.0.0-preview.14
+          - 1.0.0-preview.17
+          - 1.0.0-preview.18
+          - 1.0.0-preview.19
+          - 1.0.0-preview.20
+          - 1.0.0-preview.22
+          - 1.1.0-preview.6
+          - 1.5.0-preview.2
+          - 1.5.0-preview.5
+          - 1.5.0-preview.6
+          - 1.5.0-preview.7
+          - 2.0.2
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.1
+          - 2.1.3
+          - 2.1.4
+          - 2.2.0-preview.2
+          - 2.2.0-preview.3
+          - 2.2.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.0-preview.6
+          - 3.0.1
+          - 3.1.0-preview.1
+          - 3.1.0-preview.3
+          m_Recommended: 2.0.2
+        m_Dependencies:
+        - m_Name: com.unity.xr.arsubsystems
+          m_Version: 3.0.0
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - xr
+        - ar
+        - augmented
+        - reality
+        - utility
+        - utilities
+        - foundation
+        - core
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+        m_HideInEditor: 1
+        m_DatePublishedTicks: 637109284530000000
+      IsInstalled: 0
+    - Name: com.unity.xr.arfoundation
+      DisplayName: AR Foundation
+      _Version: 3.1.0-preview.3
       Description: "A collection of MonoBehaviours and C# utilities for working with
         AR Subsystems. \n\nIncludes: \n GameObject menu items for creating an AR setup
         \n MonoBehaviours that control AR session lifecycle and create GameObjects
@@ -124062,6 +124394,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Compatible:
           - 1.0.0-preview.12
           - 1.0.0-preview.13
@@ -124092,6 +124425,7 @@ MonoBehaviour:
           - 3.0.0-preview.6
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.3
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -124211,6 +124545,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -124239,6 +124574,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -124357,6 +124693,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -124385,6 +124722,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -124503,6 +124841,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -124531,6 +124870,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -124649,6 +124989,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -124677,6 +125018,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -124795,6 +125137,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -124823,6 +125166,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -124941,6 +125285,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -124969,6 +125314,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -125087,6 +125433,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -125115,6 +125462,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -125233,6 +125581,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -125261,6 +125610,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -125379,6 +125729,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -125407,6 +125758,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -125525,6 +125877,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -125553,6 +125906,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -125815,6 +126169,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -125843,6 +126198,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -125961,6 +126317,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -125989,6 +126346,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -126107,6 +126465,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -126135,6 +126494,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -126253,6 +126613,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -126281,6 +126642,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -126399,6 +126761,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -126427,6 +126790,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -126545,6 +126909,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -126573,6 +126938,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -126691,6 +127057,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -126719,6 +127086,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -126837,6 +127205,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -126865,6 +127234,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -126983,6 +127353,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -127011,6 +127382,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -127129,6 +127501,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -127157,6 +127530,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -127275,6 +127649,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -127303,6 +127678,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -127421,6 +127797,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -127449,6 +127826,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -127567,6 +127945,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -127595,6 +127974,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -127713,6 +128093,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -127741,6 +128122,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -127859,6 +128241,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -127887,6 +128270,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -127915,6 +128299,154 @@ MonoBehaviour:
     - Name: com.unity.xr.arkit
       DisplayName: ARKit XR Plugin
       _Version: 3.1.0-preview.1
+      Description: 'Provides native Apple ARKit integration for use with Unity''s
+        multi-platform XR API.
+
+        =Supported Features=
+
+        -Efficient Background Rendering
+
+        -Horizontal Planes
+
+        -Depth Data
+
+        -Reference Points
+
+        -Hit Testing
+
+        -Face Tracking
+
+        -Environment Probes'
+      Category: 
+      State: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      IsDiscoverable: 1
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.xr.arkit@3.0.1
+        m_IsDirectDependency: 0
+        m_Version: 3.0.1
+        m_Source: 1
+        m_ResolvedPath: 
+        m_AssetPath: Packages/com.unity.xr.arkit
+        m_Name: com.unity.xr.arkit
+        m_DisplayName: ARKit XR Plugin
+        m_Category: 
+        m_Type: 
+        m_Description: 'Provides native Apple ARKit integration for use with Unity''s
+          multi-platform XR API.
+
+          =Supported Features=
+
+          -Efficient Background Rendering
+
+          -Horizontal Planes
+
+          -Depth Data
+
+          -Reference Points
+
+          -Hit Testing
+
+          -Face Tracking
+
+          -Environment Probes'
+        m_Status: 1
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0-preview.11
+          - 1.0.0-preview.12
+          - 1.0.0-preview.13
+          - 1.0.0-preview.14
+          - 1.0.0-preview.15
+          - 1.0.0-preview.16
+          - 1.0.0-preview.17
+          - 1.0.0-preview.20
+          - 1.0.0-preview.23
+          - 1.0.0-preview.27
+          - 2.0.1
+          - 2.1.0-preview.3
+          - 2.1.0-preview.5
+          - 2.1.1
+          - 2.1.2
+          - 2.2.0-preview.1
+          - 2.2.0-preview.2
+          - 2.2.0-preview.3
+          - 2.2.0-preview.4
+          - 2.2.0-preview.5
+          - 2.2.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.1
+          - 3.1.0-preview.1
+          - 3.1.0-preview.2
+          m_Compatible:
+          - 1.0.0-preview.11
+          - 1.0.0-preview.12
+          - 1.0.0-preview.13
+          - 1.0.0-preview.14
+          - 1.0.0-preview.15
+          - 1.0.0-preview.16
+          - 1.0.0-preview.17
+          - 1.0.0-preview.20
+          - 1.0.0-preview.23
+          - 1.0.0-preview.27
+          - 2.0.1
+          - 2.1.0-preview.3
+          - 2.1.0-preview.5
+          - 2.1.1
+          - 2.1.2
+          - 2.2.0-preview.1
+          - 2.2.0-preview.2
+          - 2.2.0-preview.3
+          - 2.2.0-preview.4
+          - 2.2.0-preview.5
+          - 2.2.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.1
+          - 3.1.0-preview.1
+          - 3.1.0-preview.2
+          m_Recommended: 2.0.1
+        m_Dependencies:
+        - m_Name: com.unity.xr.arsubsystems
+          m_Version: 3.0.0
+        - m_Name: com.unity.xr.management
+          m_Version: 3.0.4
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - arkit
+        - ar
+        - augmented
+        - xr
+        - reality
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+        m_HideInEditor: 1
+        m_DatePublishedTicks: 637109284710000000
+      IsInstalled: 0
+    - Name: com.unity.xr.arkit
+      DisplayName: ARKit XR Plugin
+      _Version: 3.1.0-preview.2
       Description: 'Provides native Apple ARKit integration for use with Unity''s
         multi-platform XR API.
 
@@ -128005,6 +128537,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.11
           - 1.0.0-preview.12
@@ -128033,6 +128566,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.xr.arsubsystems
@@ -128110,6 +128644,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -128127,6 +128662,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -128199,6 +128735,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -128216,6 +128753,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -128288,6 +128826,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -128305,6 +128844,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -128377,6 +128917,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -128394,6 +128935,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -128466,6 +129008,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -128483,6 +129026,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -128555,6 +129099,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -128572,6 +129117,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -128644,6 +129190,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -128661,6 +129208,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -128733,6 +129281,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -128750,6 +129299,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -128822,6 +129372,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -128839,6 +129390,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -128911,6 +129463,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -128928,6 +129481,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -129000,6 +129554,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -129017,6 +129572,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -129089,6 +129645,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -129106,6 +129663,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -129178,6 +129736,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -129195,6 +129754,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -129267,6 +129827,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -129284,6 +129845,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -129356,6 +129918,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -129373,6 +129936,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -129396,6 +129960,97 @@ MonoBehaviour:
     - Name: com.unity.xr.arkit-face-tracking
       DisplayName: ARKit Face Tracking
       _Version: 3.1.0-preview.1
+      Description: "Support for face tracking on ARKit.\n\nIncludes support for: \n
+        Face pose tracking \n Blendshapes \n\nNote: Only supported on devices with
+        a forward-facing depth camera, like the iPhone X"
+      Category: 
+      State: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      IsDiscoverable: 1
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.xr.arkit-face-tracking@3.0.1
+        m_IsDirectDependency: 0
+        m_Version: 3.0.1
+        m_Source: 1
+        m_ResolvedPath: 
+        m_AssetPath: Packages/com.unity.xr.arkit-face-tracking
+        m_Name: com.unity.xr.arkit-face-tracking
+        m_DisplayName: ARKit Face Tracking
+        m_Category: 
+        m_Type: 
+        m_Description: "Support for face tracking on ARKit.\n\nIncludes support for:
+          \n Face pose tracking \n Blendshapes \n\nNote: Only supported on devices
+          with a forward-facing depth camera, like the iPhone X"
+        m_Status: 1
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0-preview.4
+          - 1.0.0-preview.6
+          - 1.0.1
+          - 1.0.2
+          - 1.1.0-preview.1
+          - 1.1.0-preview.2
+          - 1.1.0-preview.3
+          - 1.1.0-preview.4
+          - 1.1.0-preview.5
+          - 1.1.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.1
+          - 3.1.0-preview.1
+          - 3.1.0-preview.2
+          m_Compatible:
+          - 1.0.0-preview.4
+          - 1.0.0-preview.6
+          - 1.0.1
+          - 1.0.2
+          - 1.1.0-preview.1
+          - 1.1.0-preview.2
+          - 1.1.0-preview.3
+          - 1.1.0-preview.4
+          - 1.1.0-preview.5
+          - 1.1.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.1
+          - 3.1.0-preview.1
+          - 3.1.0-preview.2
+          m_Recommended: 
+        m_Dependencies:
+        - m_Name: com.unity.xr.arkit
+          m_Version: 3.0.1
+        - m_Name: com.unity.xr.arsubsystems
+          m_Version: 3.0.0
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+        m_HideInEditor: 1
+        m_DatePublishedTicks: 637109284620000000
+      IsInstalled: 0
+    - Name: com.unity.xr.arkit-face-tracking
+      DisplayName: ARKit Face Tracking
+      _Version: 3.1.0-preview.2
       Description: "Support for face tracking on ARKit.\n\nIncludes support for: \n
         Face pose tracking \n Blendshapes \n\nNote: Only supported on devices with
         a forward-facing depth camera, like the iPhone X"
@@ -129445,6 +130100,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 1.0.0-preview.4
           - 1.0.0-preview.6
@@ -129462,6 +130118,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.1
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.xr.arkit
@@ -129614,6 +130271,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -129629,6 +130287,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -129698,6 +130357,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -129713,6 +130373,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -129782,6 +130443,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -129797,6 +130459,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -129866,6 +130529,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -129881,6 +130545,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -129950,6 +130615,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -129965,6 +130631,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -130034,6 +130701,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -130049,6 +130717,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -130118,6 +130787,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -130133,6 +130803,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -130202,6 +130873,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -130217,6 +130889,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -130286,6 +130959,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -130301,6 +130975,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -130370,6 +131045,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -130385,6 +131061,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -130454,6 +131131,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -130469,6 +131147,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -130538,6 +131217,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -130553,6 +131233,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -130577,6 +131258,92 @@ MonoBehaviour:
     - Name: com.unity.xr.arsubsystems
       DisplayName: AR Subsystems
       _Version: 3.1.0-preview.1
+      Description: Contains definitions for AR Subsystems. This package is a dependency
+        of provider packages as well as AR Foundation
+      Category: 
+      State: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      IsDiscoverable: 1
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.xr.arsubsystems@3.0.0
+        m_IsDirectDependency: 0
+        m_Version: 3.0.0
+        m_Source: 1
+        m_ResolvedPath: 
+        m_AssetPath: Packages/com.unity.xr.arsubsystems
+        m_Name: com.unity.xr.arsubsystems
+        m_DisplayName: AR Subsystems
+        m_Category: 
+        m_Type: 
+        m_Description: Contains definitions for AR Subsystems. This package is a dependency
+          of provider packages as well as AR Foundation
+        m_Status: 1
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 2.0.2
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0
+          - 2.1.1
+          - 2.2.0-preview.2
+          - 2.2.0-preview.3
+          - 2.2.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.0
+          - 3.1.0-preview.1
+          - 3.1.0-preview.2
+          m_Compatible:
+          - 2.0.2
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0
+          - 2.1.1
+          - 2.2.0-preview.2
+          - 2.2.0-preview.3
+          - 2.2.0-preview.6
+          - 3.0.0-preview.1
+          - 3.0.0-preview.2
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          - 3.0.0
+          - 3.1.0-preview.1
+          - 3.1.0-preview.2
+          m_Recommended: 2.0.2
+        m_Dependencies:
+        - m_Name: com.unity.subsystemregistration
+          m_Version: 1.0.6
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - subsystem
+        - XR
+        - AR
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+        m_HideInEditor: 1
+        m_DatePublishedTicks: 637109284810000000
+      IsInstalled: 0
+    - Name: com.unity.xr.arsubsystems
+      DisplayName: AR Subsystems
+      _Version: 3.1.0-preview.2
       Description: Contains definitions for AR Subsystems. This package is a dependency
         of provider packages as well as AR Foundation
       Category: 
@@ -130622,6 +131389,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Compatible:
           - 2.0.2
           - 2.1.0-preview.1
@@ -130637,6 +131405,7 @@ MonoBehaviour:
           - 3.0.0-preview.4
           - 3.0.0
           - 3.1.0-preview.1
+          - 3.1.0-preview.2
           m_Recommended: 2.0.2
         m_Dependencies:
         - m_Name: com.unity.subsystemregistration
@@ -135665,8 +136434,8 @@ MonoBehaviour:
         m_HideInEditor: 1
         m_DatePublishedTicks: 636898887280000000
       IsInstalled: 0
-    listPackagesVersion: 149
-    listPackagesOfflineVersion: 148
+    listPackagesVersion: 150
+    listPackagesOfflineVersion: 149
     searchOperationOngoing: 0
     listOperationOngoing: 0
     listOperationOfflineOngoing: 0
@@ -136257,9 +137026,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: fa380000
       m_LastClickedID: 0
-      m_ExpandedIDs: 84a2fdffb4a3fdfff0a3fdff7ab8fdffd6ccfdff00e3fdffcaf4fdffa81cfeff9435feffa635feff4850feff9650feffa050feff36ccfeff6a8bffffbc8bffff54e0ffffacf5ffff6cfbffff44f40000
+      m_ExpandedIDs: 6cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -136421,20 +137190,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Project/Scenes/Common/Prefabs
+    - Assets/EffectExamples
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/_Project/Scenes/Common/Prefabs
+  - Assets/EffectExamples
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\Gaming\Documents\GitHub\Unity-Projects\Throw
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 24}
-    m_SelectedIDs: 50450000
-    m_LastClickedID: 17744
-    m_ExpandedIDs: 000000002e34000086340000b63500005e3800000a3900009a3a0000fa3a00006e3c000016410000be41000006420000984200007c440000504500009a4500008e4a0000904a0000924a0000944a000000ca9a3b
+    scrollPos: {x: 0, y: 52}
+    m_SelectedIDs: 7e350000
+    m_LastClickedID: 13694
+    m_ExpandedIDs: 000000002c34000084340000b43500005c38000008390000983a0000f83a00006c3c000014410000bc41000004420000964200007a440000984500008a4a00008c4a00008e4a0000904a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -136462,7 +137231,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e4fbffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e34000086340000b6350000563700005e3800000a390000123a0000fa3a00002e3b00006e3c0000843f000016410000be41000006420000984200007c440000504500009a4500008e4a0000904a0000924a0000944a0000
+    m_ExpandedIDs: 000000002c34000084340000b43500005c380000083900006c3c000014410000bc410000044200007a440000984500008a4a00008c4a00008e4a0000904a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -136489,7 +137258,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300000c0b0000140b0000f40a0000fc0a0000280e00001869000064a400009435f9ffec0a0000cc400000860de1fffe5100004a390000b239000040390000663d0000ec3500005e3b000044390000d63c000068390000223b00005a0a0000840a0000822b000012410000e84f0000f8410000f446000038b6f8ffe4390000ee84000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
