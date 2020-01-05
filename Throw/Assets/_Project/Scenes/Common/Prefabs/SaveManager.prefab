@@ -49,6 +49,7 @@ MonoBehaviour:
   ScoreSaveName: Score
   MaxScoreSaveName: MaxScore
   LevelTimesPlayedSaveName: TimesPlayed
+  LastLoginSaveName: LastLogin
   NormalBallCountSaveName: NormalBallCount
   ExplosiveBallCountSaveName: ExplosiveBallCount
   GuidedBallCountSaveName: GuidedBallCount

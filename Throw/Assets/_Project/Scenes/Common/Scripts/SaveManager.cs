@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Xml.Serialization;
+using System;
 
 public class SaveManager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class SaveManager : MonoBehaviour
     [SerializeField] private string ScoreSaveName;
     [SerializeField] private string MaxScoreSaveName;
     [SerializeField] private string LevelTimesPlayedSaveName;
+    [SerializeField] private string LastLoginSaveName;
     [Header("Ammo Names")]
     [SerializeField] private string NormalBallCountSaveName;
     [SerializeField] private string ExplosiveBallCountSaveName;
@@ -28,12 +30,6 @@ public class SaveManager : MonoBehaviour
         {
             FirstTime();
         }
-    }
-
-    private void FirstTime()
-    {
-        PlayerPrefs.SetInt(UIScaleSaveName, 2);
-        PlayerPrefs.SetInt("Balance", 10);
     }
 
     public void SaveNormalBallCount(int newCount)
@@ -95,12 +91,21 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetInt("Balance", newBalance);
     }
 
+    public void SaveLevelTimesPlayed(string levelName, int timesPlayed)
+    {
+        PlayerPrefs.SetInt(levelName + LevelTimesPlayedSaveName, timesPlayed);
+    }
+
     public void SaveCurrentLevelTimesPlayed(int timesPlayed)
     {
         PlayerPrefs.SetInt(LevelName + LevelTimesPlayedSaveName, timesPlayed);
     }
+    
+    public void SaveLastLogin(DateTime loginDate)
+    {
+        PlayerPrefs.SetString(LastLoginSaveName, loginDate.ToString());
+    }
 
-    // Getters
     public int LoadNormalBallCount()
     {
         return PlayerPrefs.GetInt(NormalBallCountSaveName);
@@ -151,5 +156,16 @@ public class SaveManager : MonoBehaviour
     public int LoadCurrentLevelTimesPlayed()
     {
         return PlayerPrefs.GetInt(LevelName + LevelTimesPlayedSaveName);
+    }
+
+    public DateTime LoadLastLogin()
+    {
+        return DateTime.Parse(PlayerPrefs.GetString(LastLoginSaveName));
+    }
+
+    private void FirstTime()
+    {
+        SaveUIScale(2);
+        SaveLastLogin(new DateTime(0, DateTimeKind.Utc));
     }
 }

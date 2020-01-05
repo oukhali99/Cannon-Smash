@@ -74,9 +74,10 @@
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\MusicHandler.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\SaveManager.cs" />
      <Compile Include="Assets\_Project\Scenes\Common\Scripts\Static.cs" />
-     <Compile Include="Assets\_Project\Scenes\Common\Scripts\Store.cs" />
+     <Compile Include="Assets\_Project\Scenes\Scene0\Scripts\DailyLogin.cs" />
      <Compile Include="Assets\_Project\Scenes\Scene0\Scripts\GreetingsHandler.cs" />
      <Compile Include="Assets\_Project\Scenes\Scene0\Scripts\PlayPanel.cs" />
+     <Compile Include="Assets\_Project\Scenes\Scene0\Scripts\Store.cs" />
      <Compile Include="Assets\_Project\Side Buildings\Common\Scripts\SideBuilding.cs" />
      <Compile Include="Assets\_Project\Side Buildings\Common\Scripts\SideBuildingsSpawner.cs" />
      <Compile Include="Assets\_Project\Themer\Scripts\CanvasThemer.cs" />

@@ -31,6 +31,7 @@ public class PlayPanel : MonoBehaviour
         int levelScore = SaveManager.Instance.LoadScore(levelName);
         int levelMaxScore = SaveManager.Instance.LoadMaxScore(levelName);
 
+        DailyLogin.Instance.ResetScore(levelName);
         highScoreText.text = Static.GetPercentageString(levelScore, levelMaxScore);
     }
 }
