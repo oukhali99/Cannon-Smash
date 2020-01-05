@@ -43,9 +43,7 @@ public class PlayerMoveController : MonoBehaviour {
         {
             Vector2 touchPosition = leftController.GetTouchPosition;
 
-            if (!touchPosition.Equals(Vector2.zero)) _rigidbody.AddForce(Time.deltaTime * speedMovements * ((Vector3.forward * touchPosition.y) +
-                (Vector3.right * touchPosition.x)));
-            else _rigidbody.AddForce(-Time.deltaTime * speedMovements * _rigidbody.velocity.normalized);
+            _rigidbody.AddForce(Time.deltaTime * speedMovements * ((Vector3.forward * 0) + (Vector3.right * touchPosition.x)));
         }
 
         if (continuousRightController)

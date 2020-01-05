@@ -29,7 +29,6 @@ public class CanvasThemer : MonoBehaviour
 
     void Start()
     {
-        Application.targetFrameRate = 30;
         ScaleUI();
         Themeify();
     }
