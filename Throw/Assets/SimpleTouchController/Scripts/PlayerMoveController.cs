@@ -16,8 +16,9 @@ public class PlayerMoveController : MonoBehaviour {
 	// PRIVATE
 	private Rigidbody _rigidbody;
 	[SerializeField] bool continuousRightController = true;
+    [SerializeField] private float ForwardDriveForce;
 
-	void Awake()
+    void Awake()
 	{
 		_rigidbody = GetComponent<Rigidbody>();
 		if (rightController != null) rightController.TouchEvent += RightController_TouchEvent;
@@ -43,7 +44,7 @@ public class PlayerMoveController : MonoBehaviour {
         {
             Vector2 touchPosition = leftController.GetTouchPosition;
 
-            _rigidbody.AddForce(Time.deltaTime * speedMovements * ((Vector3.forward * 0) + (Vector3.right * touchPosition.x)));
+            _rigidbody.AddForce(Time.deltaTime * speedMovements * ((Vector3.forward * ForwardDriveForce) + (Vector3.right * touchPosition.x)));
         }
 
         if (continuousRightController)

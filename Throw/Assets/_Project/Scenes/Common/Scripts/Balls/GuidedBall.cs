@@ -7,19 +7,16 @@ public class GuidedBall : Ball
     [SerializeField] private float GuidedTime;
     [SerializeField] private Vector3 CameraBallRelativePosition;
     [SerializeField] private PlayerMoveController Controller;
-    [SerializeField] private float SloMoTimescale;
     
     private static Vector3 cameraInitialPosition;
     private static Quaternion cameraInitialRotation;
     private static Camera cam;
 
     private float firedTimestamp;
-    private float fixedDeltaTimeScale;
 
     void Start()
     {
         firedTimestamp = 0;
-        fixedDeltaTimeScale = Time.fixedDeltaTime / Time.timeScale;
 
         if (cam == null)
         {
@@ -46,9 +43,6 @@ public class GuidedBall : Ball
 
     override public void Fired()
     {
-        Time.timeScale = SloMoTimescale;
-        Time.fixedDeltaTime = Time.timeScale * 0.02f;
-
         firedTimestamp = Time.time;
 
         TopRightPanel.Instance.gameObject.SetActive(false);
@@ -56,13 +50,12 @@ public class GuidedBall : Ball
         Controller.leftController = SimpleTouchController.Instance;
         cameraInitialPosition = cam.transform.position;
         cameraInitialRotation = cam.transform.rotation;
+
+        GameOverChecker.Instance.PressedSpace();
     }
 
     private void DoneFiring()
     {
-        Time.timeScale = 1;
-        Time.fixedDeltaTime = Time.timeScale * 0.02f;
-
         firedTimestamp = 0;
 
         // Go back to normal mode
@@ -74,5 +67,7 @@ public class GuidedBall : Ball
         // Set Transform
         cam.transform.position = cameraInitialPosition;
         cam.transform.rotation = cameraInitialRotation;
+
+        GameOverChecker.Instance.PressedSpace();
     }
 }

@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using System;
 
 public class Store : MonoBehaviour
 {
+    public static Store Instance { get; private set; }
+
     [SerializeField] private TextMeshProUGUI BalanceText;
-    [SerializeField] private int AddFundsAmount;
+    [SerializeField] private int PaycheckAmmount;
     [SerializeField] private int BuyNormalAmmoCount;    
     [SerializeField] private int BuyExplosiveAmmoCount;
     [SerializeField] private int BuyGuidedAmmoCount;
@@ -19,17 +23,46 @@ public class Store : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ExplosiveAmmoCountText;
     [SerializeField] private TextMeshProUGUI GuidedAmmoCountText;
     [SerializeField] private TextMeshProUGUI LargeAmmoCountText;
+    [SerializeField] private double LoginGapDay;
+    [SerializeField] private Button PaycheckButton;
+    [SerializeField] private Button PlayButton;
+    [SerializeField] private AudioSource MoneyAudio;
+
+    private bool isDailyLogin;
+
+    void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
         RefreshBalanceText();
         RefreshAmmoCounts();
+
+        DateTime lastLogin = SaveManager.Instance.LoadLastLogin();
+        TimeSpan loginDifference = DateTime.Now.Subtract(lastLogin);
+
+        if (loginDifference.TotalDays > LoginGapDay)
+        {
+            isDailyLogin = true;
+            PaycheckButton.gameObject.SetActive(true);
+            PlayButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            isDailyLogin = false;
+            PaycheckButton.gameObject.SetActive(false);
+            PlayButton.gameObject.SetActive(true);
+        }
     }
        
-    public void ClickedAddFunds()
+    public void ClickedPaycheck()
     {
-        AddFunds(AddFundsAmount);
+        MoneyAudio.Play();
+        AddFunds(PaycheckAmmount);
         RefreshBalanceText();
+        CollectedPaycheck();
     }
     public void ClickedBuyNormalAmmo()
     {
@@ -75,7 +108,25 @@ public class Store : MonoBehaviour
             RefreshAmmoCounts();
         }
     }
-    
+
+    public void ResetScore(string levelName)
+    {
+        if (isDailyLogin)
+        {
+            SaveManager.Instance.SaveScore(levelName, 0);
+            SaveManager.Instance.SaveMaxScore(levelName, 0);
+            SaveManager.Instance.SaveLevelTimesPlayed(levelName, 0);
+        }
+    }
+
+    public void CollectedPaycheck()
+    {
+
+        SaveManager.Instance.SaveLastLogin(DateTime.Now);
+        PaycheckButton.gameObject.SetActive(false);
+        PlayButton.gameObject.SetActive(true);
+    }
+
     // Helpers
     private void AddFunds(int amount)
     {

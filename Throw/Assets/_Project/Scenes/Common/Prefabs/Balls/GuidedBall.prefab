@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 328346843140985736}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2, y: -0.5, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -103,9 +103,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328346843140985736}
   serializedVersion: 2
-  m_Mass: 4
-  m_Drag: 0.05
-  m_AngularDrag: 0.05
+  m_Mass: 25
+  m_Drag: 0
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -124,10 +124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rigidbody: {fileID: 7745855156698816445}
-  GuidedTime: 1
+  GuidedTime: 4
   CameraBallRelativePosition: {x: 0, y: 1, z: -2}
   Controller: {fileID: -8191131218270592263}
-  SloMoTimescale: 0.25
 --- !u!114 &-8191131218270592263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +142,8 @@ MonoBehaviour:
   leftController: {fileID: 0}
   rightController: {fileID: 0}
   headTrans: {fileID: 0}
-  speedMovements: 5000
+  speedMovements: 15000
   speedContinuousLook: 100
   speedProgressiveLook: 3000
   continuousRightController: 1
+  ForwardDriveForce: 0.65

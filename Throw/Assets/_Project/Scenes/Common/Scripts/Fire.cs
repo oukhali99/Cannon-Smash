@@ -13,6 +13,7 @@ public class Fire : MonoBehaviour
     [SerializeField] private float Period;
     [SerializeField] private float Cooldown;
     [SerializeField] private AudioSource NoAmmoSound;
+    [SerializeField] private Animator MyAnimator;
     
     private float lastFire;
     private int state;
@@ -20,6 +21,8 @@ public class Fire : MonoBehaviour
     private float verticalPhase;
     private float horizontalPhase;
     private bool fireSignal;
+    private Vector3 cameraPosition;
+    private Quaternion cameraRotation;
 
     void Awake()
     {
@@ -33,6 +36,10 @@ public class Fire : MonoBehaviour
         HeightPoint(heightPhase);
         VerticalPoint(verticalPhase);
         HorizontalPoint(horizontalPhase);
+
+        Transform cameraTransform = Camera.main.transform;
+        cameraPosition = cameraTransform.position;
+        cameraRotation = cameraTransform.rotation;
     }
 	
 	void Update ()
@@ -42,7 +49,7 @@ public class Fire : MonoBehaviour
             Arrow.SetActive(false);
         }
 
-        if (state == 2 || Ammo.Instance.ammo == -1)
+        if (state == 3 || Ammo.Instance.ammo == -1)
         {
             if (Arrow.activeInHierarchy)
             {
@@ -86,7 +93,7 @@ public class Fire : MonoBehaviour
                 }
             }
         }
-        else if (Arrow.activeInHierarchy && state == 1)
+        else if (Arrow.activeInHierarchy && state == 2)
         {
             verticalPhase += Time.deltaTime;
             float periodFraction = (verticalPhase % Period) / Period;
@@ -99,7 +106,7 @@ public class Fire : MonoBehaviour
                 state++;
             }
         }
-        else if (Arrow.activeInHierarchy && state == 0)
+        else if (Arrow.activeInHierarchy && state == 1)
         {
             heightPhase += Time.deltaTime;
             float periodFraction = (heightPhase % Period) / Period;
@@ -110,6 +117,18 @@ public class Fire : MonoBehaviour
             if (fireSignal)
             {
                 state++;
+            }
+        }
+        else if (state == 0)
+        {
+            if (fireSignal)
+            {
+                state++;
+                MyAnimator.enabled = false;
+
+                Transform camera = Camera.main.transform;
+                camera.transform.position = cameraPosition;
+                camera.transform.rotation = cameraRotation;
             }
         }
 
