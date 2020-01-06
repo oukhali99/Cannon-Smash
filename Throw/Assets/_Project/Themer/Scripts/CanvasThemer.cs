@@ -69,6 +69,7 @@ public class CanvasThemer : MonoBehaviour
         ThemeifyTMProText("Text1", Text1);
         ThemeifyTMProText("Text2", Text2);
         ThemeifyPanel("Panel1", Panel1);
+        ThemeifyPanel("Panel2", Panel2);
     }
 
     private void ThemeifyButtons(string tag, GameObject buttonGameObject)

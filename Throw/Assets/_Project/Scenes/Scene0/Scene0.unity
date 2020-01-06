@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 24971986}
   m_Layer: 5
   m_Name: Percent
-  m_TagString: Untagged
+  m_TagString: Text1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2898,7 +2898,7 @@ GameObject:
   - component: {fileID: 570727291}
   m_Layer: 5
   m_Name: Level2Percent
-  m_TagString: Untagged
+  m_TagString: Text1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3683,7 +3683,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1856
+  m_Name: pb_Mesh-327084
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4008,7 +4008,7 @@ GameObject:
   - component: {fileID: 640111580}
   m_Layer: 5
   m_Name: Percent
-  m_TagString: Untagged
+  m_TagString: Text1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4156,7 +4156,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1854
+  m_Name: pb_Mesh-327082
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4790,7 +4790,7 @@ GameObject:
   - component: {fileID: 714429357}
   m_Layer: 5
   m_Name: Count (2)
-  m_TagString: Untagged
+  m_TagString: Text1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5051,9 +5051,9 @@ MonoBehaviour:
   Button1: {fileID: 1289044672023718, guid: bbbd734b781e033409ca231e0f5f9e39, type: 3}
   Button2: {fileID: 1990736051941296, guid: 125d02880e3ed7147a39c4c1a9f44ae8, type: 3}
   Text1: {fileID: 5767628584401941272, guid: c08ada3e767a1be4b9ad274ae46d9e58, type: 3}
-  Text2: {fileID: 5750127584267484071, guid: 90c7877c48548454a80c7103e48d706d, type: 3}
-  Panel1: {fileID: 8502153897982405527, guid: 02a27819e6ea88741b47600a3909f06b, type: 3}
-  Panel2: {fileID: 0}
+  Text2: {fileID: 8879067756150435863, guid: 03cca2e0eba66a145bb042419b1830d7, type: 3}
+  Panel1: {fileID: 4411734196475532101, guid: 02a27819e6ea88741b47600a3909f06b, type: 3}
+  Panel2: {fileID: 8502153897982405527, guid: 84dd46c4dbd552f48913527fa5a5d01d, type: 3}
   UIScales:
   - 1
   - 1.5
@@ -5065,7 +5065,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1858
+  m_Name: pb_Mesh-327086
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5375,7 +5375,7 @@ GameObject:
   - component: {fileID: 800801788}
   m_Layer: 5
   m_Name: Count
-  m_TagString: Untagged
+  m_TagString: Text1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7699,7 +7699,7 @@ GameObject:
   - component: {fileID: 1316763312}
   m_Layer: 5
   m_Name: Count
-  m_TagString: Untagged
+  m_TagString: Text1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8157,7 +8157,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2128
+  m_Name: pb_Mesh-327356
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8482,7 +8482,7 @@ GameObject:
   - component: {fileID: 1395970087}
   m_Layer: 5
   m_Name: Percent
-  m_TagString: Untagged
+  m_TagString: Text1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8637,7 +8637,7 @@ GameObject:
   - component: {fileID: 1400698867}
   m_Layer: 5
   m_Name: Level1Percent
-  m_TagString: Untagged
+  m_TagString: Text1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8932,7 +8932,7 @@ GameObject:
   - component: {fileID: 1466138310}
   m_Layer: 5
   m_Name: Percent
-  m_TagString: Untagged
+  m_TagString: Text1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10951,7 +10951,7 @@ GameObject:
   - component: {fileID: 1714729979}
   m_Layer: 5
   m_Name: Count (1)
-  m_TagString: Untagged
+  m_TagString: Text1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11475,7 +11475,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1540
+  m_Name: pb_Mesh-326768
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12339,7 +12339,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1538
+  m_Name: pb_Mesh-326766
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

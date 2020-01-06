@@ -11,6 +11,11 @@ public class PausePanel : MonoBehaviour
         Instance = this;
     }
 
+    void Start()
+    {
+        CanvasThemer.Instance.Themeify();
+    }
+
     public void Unpause()
     {
         Static.Unpause();

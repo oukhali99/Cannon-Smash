@@ -31,6 +31,8 @@ public class GameOverPanel : MonoBehaviour
         SaveManager.Instance.SaveBalance(SaveManager.Instance.LoadBalance() + payout);
 
         timesPlayed = SaveManager.Instance.LoadCurrentLevelTimesPlayed();
+
+        CanvasThemer.Instance.Themeify();
     }
     
     public void Unpause()
