@@ -8,6 +8,7 @@ public class Destructible : MonoBehaviour
     [SerializeField] private float FallVelocityThresholdSqr;
     [SerializeField] private float BallVelocityThresholdSqr;
     [SerializeField] private float BreakWait;
+    [SerializeField] private AudioClip[] BreakSounds;
 
     private bool scored;
     private float scoredTimestamp;
@@ -21,6 +22,7 @@ public class Destructible : MonoBehaviour
     void Start()
     {
         global::Score.Instance.NewDestructible();
+        ImpactSoundAudioSource.clip = BreakSounds[Random.Range(0, BreakSounds.Length)];
     }
 
     void Update()

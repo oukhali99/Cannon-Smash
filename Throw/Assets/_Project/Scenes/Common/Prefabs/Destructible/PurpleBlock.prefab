@@ -105,9 +105,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6739c01659ad96d47987f4ddee226b36, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4c3ac06a113a4ad4aaa1c370331b972f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -207,6 +207,14 @@ MonoBehaviour:
   FallVelocityThresholdSqr: 10
   BallVelocityThresholdSqr: 20
   BreakWait: 5
+  BreakSounds:
+  - {fileID: 8300000, guid: df8597097a1b8054383b41de3c050d04, type: 3}
+  - {fileID: 8300000, guid: 64e358d3941e5d446afd0a31b529c569, type: 3}
+  - {fileID: 8300000, guid: 1ed6132a2a6d7cc4c80263f0a9de4743, type: 3}
+  - {fileID: 8300000, guid: 9cb0959839772eb468e812a0ff041dd0, type: 3}
+  - {fileID: 8300000, guid: c4ee06a10cd0f444cba94dfbfb568478, type: 3}
+  - {fileID: 8300000, guid: 4c3ac06a113a4ad4aaa1c370331b972f, type: 3}
+  - {fileID: 8300000, guid: 819af311fb49a8245849ce39a31fd593, type: 3}
 --- !u!54 &1847794677381059719
 Rigidbody:
   m_ObjectHideFlags: 0
