@@ -11,6 +11,7 @@ public class GameOverPanel : MonoBehaviour
     [SerializeField] private AudioSource ScoreUpAudio;
     [SerializeField] private AudioSource RewardSound;
     [SerializeField] private GameObject Confetti;
+    [SerializeField] private float DimMusicRatio;
 
     private int currentPayoutText;
     private int payout;
@@ -20,6 +21,7 @@ public class GameOverPanel : MonoBehaviour
     private int timesPlayed;
     private bool perfectScore;
     private bool playedRewardSound;
+    private float playedRewardSoundTimestamp;
 
     void Start()
     {
@@ -27,6 +29,7 @@ public class GameOverPanel : MonoBehaviour
         beatenHighScore = false;
         lastIncrementTimestamp = 0;
         currentPayoutText = 0;
+        playedRewardSoundTimestamp = 0;
 
         SaveManager.Instance.SaveCurrentLevelTimesPlayed(SaveManager.Instance.LoadCurrentLevelTimesPlayed() + 1);
         PerfectScoreCheck();
@@ -44,8 +47,14 @@ public class GameOverPanel : MonoBehaviour
         if (!playedRewardSound && (beatenHighScore || perfectScore))
         {
             playedRewardSound = true;
+            playedRewardSoundTimestamp = Time.time;
+
             Confetti.SetActive(true);
-            MusicHandler.Instance.MusicSource.volume /= 2;
+            MusicHandler.Instance.MusicSource.volume /= DimMusicRatio;
+        }
+        else if (playedRewardSound && Time.time - playedRewardSoundTimestamp > RewardSound.clip.length)
+        {
+            MusicHandler.Instance.MusicSource.volume *= DimMusicRatio;
         }
     }
     

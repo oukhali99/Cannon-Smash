@@ -29,6 +29,7 @@ public class SimpleTouchController : MonoBehaviour
 	public Vector2 GetTouchPosition
 	{
 		get { return movementVector;}
+        set { movementVector = value; }
 	}
 
 

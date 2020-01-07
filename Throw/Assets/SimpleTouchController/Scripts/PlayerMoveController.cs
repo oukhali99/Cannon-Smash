@@ -15,6 +15,8 @@ public class PlayerMoveController : MonoBehaviour {
 
 	// PRIVATE
 	private Rigidbody _rigidbody;
+    private bool resetted;
+
 	[SerializeField] bool continuousRightController = true;
     [SerializeField] private float ForwardDriveForce;
 
@@ -22,6 +24,7 @@ public class PlayerMoveController : MonoBehaviour {
 	{
 		_rigidbody = GetComponent<Rigidbody>();
 		if (rightController != null) rightController.TouchEvent += RightController_TouchEvent;
+        resetted = false;
 	}
 
 	public bool ContinuousRightController
@@ -42,9 +45,17 @@ public class PlayerMoveController : MonoBehaviour {
         // move
         if (leftController != null)
         {
-            Vector2 touchPosition = leftController.GetTouchPosition;
+            if (!resetted)
+            {
+                leftController.GetTouchPosition = Vector2.zero;
+                resetted = true;
+            }
+            else
+            {
+                Vector2 touchPosition = leftController.GetTouchPosition;
 
-            _rigidbody.AddForce(Time.deltaTime * speedMovements * ((Vector3.forward * ForwardDriveForce) + (Vector3.right * touchPosition.x)));
+                _rigidbody.AddForce(Time.deltaTime * speedMovements * ((Vector3.forward * ForwardDriveForce) + (Vector3.right * touchPosition.x)));
+            }
         }
 
         if (continuousRightController)
