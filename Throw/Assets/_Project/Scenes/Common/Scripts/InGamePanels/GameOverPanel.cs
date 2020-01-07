@@ -9,7 +9,9 @@ public class GameOverPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI PayoutModifierText;
     [SerializeField] private Animator MyAnimator;
     [SerializeField] private AudioSource ScoreUpAudio;
-         
+    [SerializeField] private AudioSource RewardSound;
+    [SerializeField] private GameObject Confetti;
+
     private int currentPayoutText;
     private int payout;
     private float lastIncrementTimestamp;
@@ -17,9 +19,11 @@ public class GameOverPanel : MonoBehaviour
     private float waitBetweenIncrement;
     private int timesPlayed;
     private bool perfectScore;
+    private bool playedRewardSound;
 
     void Start()
     {
+        playedRewardSound = false;
         beatenHighScore = false;
         lastIncrementTimestamp = 0;
         currentPayoutText = 0;
@@ -33,6 +37,16 @@ public class GameOverPanel : MonoBehaviour
         timesPlayed = SaveManager.Instance.LoadCurrentLevelTimesPlayed();
 
         CanvasThemer.Instance.Themeify();
+    }
+
+    void Update()
+    {
+        if (!playedRewardSound && (beatenHighScore || perfectScore))
+        {
+            playedRewardSound = true;
+            Confetti.SetActive(true);
+            MusicHandler.Instance.MusicSource.volume /= 2;
+        }
     }
     
     public void Unpause()

@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rigidbody: {fileID: 7894787015639057406}
+  FiredSound: {fileID: 303420160822772459}
   ExplosionMagnitude: 10
   ExplosionRadius: 5
   ExplosionUpForce: 1
@@ -156,9 +157,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a764377339b869e459f5e53fb9258f73, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2e23e3e5474c226419804fbf1adaf88d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

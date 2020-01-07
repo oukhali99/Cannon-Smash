@@ -10,7 +10,6 @@ public class GameOverChecker : MonoBehaviour
     [SerializeField] private GameOverPanel MyGameOverPanel;
     [SerializeField] private Slider CountdownMeter;
     [SerializeField] private float MeterIncrement;
-    [SerializeField] private GameObject Confetti;
 
     private float lastScoreTimestamp;
     private int previousFrameScore;
@@ -80,6 +79,5 @@ public class GameOverChecker : MonoBehaviour
         TopRightPanel.Instance.gameObject.SetActive(false);
         MyGameOverPanel.gameObject.SetActive(true);
         CanvasThemer.Instance.Themeify();
-        Confetti.SetActive(true);
     }
 }

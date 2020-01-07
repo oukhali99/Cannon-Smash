@@ -80,6 +80,7 @@ public class Fire : MonoBehaviour
                     newBall.transform.position = BallPooler.Instance.transform.position;
                     newBallRigidbody.velocity = Vector3.zero;
                     newBallRigidbody.AddForce(force);
+                    newBall.FiredSound.Play();
                     newBall.Fired();
 
                     // Ammo Wheel refresh

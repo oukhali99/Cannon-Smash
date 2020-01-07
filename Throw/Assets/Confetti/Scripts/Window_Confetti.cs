@@ -8,13 +8,10 @@ public class Window_Confetti : MonoBehaviour {
     [SerializeField] private Transform pfConfetti;
     [SerializeField] private Color[] colorArray;
     [SerializeField] private int ConfettiCount;
-    [SerializeField] private AudioSource PartySound;
-    [SerializeField] private float WaitBeforeSound;
 
     private List<Confetti> confettiList;
     private float spawnTimer;
     private const float SPAWN_TIMER_MAX = 0.033f;
-    private float DoneSpawningTimestamp;
 
     private void Awake() {
         confettiList = new List<Confetti>();
@@ -23,8 +20,6 @@ public class Window_Confetti : MonoBehaviour {
         {
             SpawnConfetti();
         }
-
-        DoneSpawningTimestamp = Time.time;
     }
 
     private void Update() {
@@ -41,12 +36,6 @@ public class Window_Confetti : MonoBehaviour {
             for (int i = 0; i < spawnAmount; i++) {
                 //SpawnConfetti();
             }
-        }
-
-        if (Time.time - DoneSpawningTimestamp > WaitBeforeSound)
-        {
-            DoneSpawningTimestamp = float.MaxValue;
-            PartySound.Play();
         }
     }
 

@@ -32,12 +32,12 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CameraPan
+  m_Name: MenuPan
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
+    m_Name: Camera
     m_StateMachine: {fileID: 863007515654511659}
     m_Mask: {fileID: 0}
     m_Motions: []
@@ -55,7 +55,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: Camera
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -4924574241835315224}

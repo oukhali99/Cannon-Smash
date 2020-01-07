@@ -3124,6 +3124,8 @@ MonoBehaviour:
   PayoutModifierText: {fileID: 7899299839067134349}
   MyAnimator: {fileID: 1403789375}
   ScoreUpAudio: {fileID: 3860874303612185540}
+  RewardSound: {fileID: 1451258310544455085}
+  Confetti: {fileID: 7838117828204869289}
 --- !u!95 &1403789375
 Animator:
   serializedVersion: 3
@@ -4174,8 +4176,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -65, y: -60}
-  m_SizeDelta: {x: 110, y: 100}
+  m_AnchoredPosition: {x: -85, y: -60}
+  m_SizeDelta: {x: 150, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4905259228963115592
 CanvasRenderer:
@@ -4595,17 +4597,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8869292110535538758}
         m_MethodName: FireSignal
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4886565565141489575}
-        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5266,8 +5257,8 @@ MonoBehaviour:
   Button2: {fileID: 1990736051941296, guid: 125d02880e3ed7147a39c4c1a9f44ae8, type: 3}
   Text1: {fileID: 5767628584401941272, guid: c08ada3e767a1be4b9ad274ae46d9e58, type: 3}
   Text2: {fileID: 8182089258805800567, guid: 042227056aa5b2048ad746a0961cd9f1, type: 3}
-  Panel1: {fileID: 4411734196475532101, guid: 84dd46c4dbd552f48913527fa5a5d01d, type: 3}
-  Panel2: {fileID: 8502153897982405527, guid: 02a27819e6ea88741b47600a3909f06b, type: 3}
+  Panel1: {fileID: 4411734196475532101, guid: 02a27819e6ea88741b47600a3909f06b, type: 3}
+  Panel2: {fileID: 8502153897982405527, guid: 84dd46c4dbd552f48913527fa5a5d01d, type: 3}
   UIScales:
   - 1
   - 1.5
@@ -5290,7 +5281,6 @@ MonoBehaviour:
   MyGameOverPanel: {fileID: 7935211391815673652}
   CountdownMeter: {fileID: 2859287639017952021}
   MeterIncrement: 1
-  Confetti: {fileID: 7838117828204869289}
 --- !u!114 &5829772146396674748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6634,8 +6624,6 @@ MonoBehaviour:
   - {r: 0.3254902, g: 0.89019614, b: 0.37647063, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   ConfettiCount: 50
-  PartySound: {fileID: 1451258310544455085}
-  WaitBeforeSound: 1.3
 --- !u!82 &1451258310544455085
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6646,8 +6634,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f47dbe598ab7368499cf65d24bed5ac7, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 377aa716f06b4a84fa738eb1138aef21, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
   Loop: 0

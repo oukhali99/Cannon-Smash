@@ -5,6 +5,7 @@ using UnityEngine;
 abstract public class Ball : MonoBehaviour
 {
     public Rigidbody Rigidbody;
+    public AudioSource FiredSound;
 
     abstract public void Fired();
 }
