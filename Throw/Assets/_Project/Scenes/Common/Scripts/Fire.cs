@@ -3,7 +3,7 @@
 public class Fire : MonoBehaviour
 {
     public static Fire Instance { get; private set; }
-
+    
     [SerializeField] private GameObject Arrow;
     [SerializeField] private float ForceMagnitude;
     [SerializeField] private float MaxAngleHor;

@@ -33,6 +33,8 @@ public class BallPooler : MonoBehaviour
         else
         {
             SelectedAmmo.RemoveFirst();
+            ball.Value.gameObject.SetActive(true);
+
             return ball.Value;
         }
 
@@ -43,24 +45,36 @@ public class BallPooler : MonoBehaviour
         GameObject ballObject = Instantiate(ball.gameObject);
         Ball ballScript = ballObject.GetComponent<Ball>();
         NormalBallList.AddFirst(ballScript);
+
+        Vector3 position = ballScript.transform.position;
+        ballScript.transform.position = new Vector3(position.x, -100, position.z);
     }
     public void AddExplosiveBall(ExplosiveBall ball)
     {
         GameObject ballObject = Instantiate(ball.gameObject);
         ExplosiveBall ballScript = ballObject.GetComponent<ExplosiveBall>();
         ExplosiveBallList.AddFirst(ballScript);
+
+        Vector3 position = ballScript.transform.position;
+        ballScript.transform.position = new Vector3(position.x, -100, position.z);
     }
     public void AddAntigravtityBall(GuidedBall ball)
     {
         GameObject ballObject = Instantiate(ball.gameObject);
         GuidedBall ballScript = ballObject.GetComponent<GuidedBall>();
         GuidedBallList.AddFirst(ballScript);
+
+        Vector3 position = ballScript.transform.position;
+        ballScript.transform.position = new Vector3(position.x, -100, position.z);
     }
     public void AddLargeBall(Ball ball)
     {
         GameObject ballObject = Instantiate(ball.gameObject);
         Ball ballScript = ballObject.GetComponent<Ball>();
         LargeBallList.AddFirst(ballScript);
+
+        Vector3 position = ballScript.transform.position;
+        ballScript.transform.position = new Vector3(position.x, -100, position.z);
     }
 
     public bool AllEmpty()

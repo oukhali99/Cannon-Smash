@@ -13,6 +13,7 @@ public class GuidedBall : Ball
     private static Camera cam;
 
     private float firedTimestamp;
+    private Camera myCamera;
 
     void Start()
     {

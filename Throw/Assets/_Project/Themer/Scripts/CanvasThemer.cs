@@ -25,6 +25,7 @@ public class CanvasThemer : MonoBehaviour
     {
         Instance = this;
         sceneCamera = Camera.main;
+        Application.targetFrameRate = 30;
     }
 
     void Start()

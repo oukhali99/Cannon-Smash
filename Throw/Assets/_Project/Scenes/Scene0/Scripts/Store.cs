@@ -54,6 +54,7 @@ public class Store : MonoBehaviour
             isDailyLogin = false;
             PaycheckButton.gameObject.SetActive(false);
             PlayButton.gameObject.SetActive(true);
+            CanvasThemer.Instance.Themeify();
         }
     }
        
