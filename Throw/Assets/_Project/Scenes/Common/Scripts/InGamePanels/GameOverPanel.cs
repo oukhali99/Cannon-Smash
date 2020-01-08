@@ -88,7 +88,7 @@ public class GameOverPanel : MonoBehaviour
         PayoutText.text = GetPayout().ToString();
         PayoutModifierText.text = text;
         ScoreUpAudio.Play();
-        SaveManager.Instance.SaveBalance(SaveManager.Instance.LoadBalance() + payout);
+        SaveManager.Instance.SaveBalance(SaveManager.Instance.LoadBalance() + GetPayout());
     }
     
     public void ScoreUpOne()
