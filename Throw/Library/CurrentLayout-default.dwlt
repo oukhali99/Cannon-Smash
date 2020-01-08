@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 742, y: 494}
   m_MaxSize: {x: 16012, y: 14044}
   vertical: 0
-  controlID: 159
+  controlID: 94
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -442,9 +442,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 803b0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1af8f2ff46f9f2ff82f9f2ff660ef3ff1423f3ff8e39f3ffaa4bf3ffda73f3fffa8cf3ff0e8df3ff70fbffff42490000d4490000
+      m_ExpandedIDs: d455fffffa56ffff3257ffff1a6cffffcc80ffff4a97ffff6aa9ffff9ed1ffffd8eafffff0eaffff70fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -15.289315, y: -8.55076, z: -2.802325}
     speed: 2
-    m_Value: {x: -7.5170717, y: 0.46888924, z: 22.245094}
+    m_Value: {x: -15.289315, y: -8.55076, z: -2.802325}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -562,11 +562,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.1520117, y: -0.7722167, z: 0.2012975, w: 0.58314884}
     speed: 2
-    m_Value: {x: 0.18111928, y: -0.09494806, z: 0.020788321, w: 0.9786463}
+    m_Value: {x: -0.152011, y: 0.7722131, z: -0.20129657, w: -0.58314615}
   m_Size:
     m_Target: 54.90496
     speed: 2
-    m_Value: 12.236812
+    m_Value: 54.90496
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   Collection:
     filter: 0
-    lastUpdateTime: Jan 8, 15:58
+    lastUpdateTime: Jan 8, 17:37
     listPackagesOffline:
     - Name: com.unity.2d.sprite
       DisplayName: 2D Sprite
@@ -137449,8 +137449,8 @@ MonoBehaviour:
         m_HideInEditor: 1
         m_DatePublishedTicks: 636898887280000000
       IsInstalled: 0
-    listPackagesVersion: 295
-    listPackagesOfflineVersion: 294
+    listPackagesVersion: 296
+    listPackagesOfflineVersion: 295
     searchOperationOngoing: 0
     listOperationOngoing: 0
     listOperationOfflineOngoing: 0
@@ -137473,6 +137473,406 @@ MonoBehaviour:
         Expanded: 0
         SeeAllVersions: 0
         Selected: 1
+      - PackageId: com.unity.2d.ik@1.2.0-preview.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.2d.pixel-perfect@1.0.1-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.2d.psdimporter@1.2.0-preview.4
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.2d.sprite@1.0.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.2d.spriteshape@2.1.0-preview.11
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.2d.tilemap@1.0.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.adaptiveperformance@1.0.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.addressables@1.5.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.ads.mediation@1.0.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.ai.planner@0.1.1-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.formats.alembic@1.0.6
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.analytics@3.3.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.animation.rigging@0.2.5-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.adaptiveperformance.samsung.android@1.0.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.arfoundation@2.0.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.arsubsystems@2.0.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.arcore@2.0.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.arkit-face-tracking@3.0.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.arkit@2.0.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.assetbundlebrowser@1.7.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.assetgraph@1.6.0-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.barracuda@0.3.2-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.build-report-inspector@0.1.2-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.burst@1.1.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.cinemachine@2.3.4
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.collections@0.1.1-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.render-pipelines.core@6.9.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.ext.nunit@1.0.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.platforms.android@0.1.3-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.dots.editor@0.1.0-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.platforms.linux@0.1.3-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.platforms.macos@0.1.3-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.platforms@0.1.3-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.platforms.web@0.1.3-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.platforms.windows@0.1.3-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.editorcoroutines@0.1.0-preview.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.entities@0.1.1-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.formats.fbx@2.0.3-preview.3
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.film-tv.toolbox@0.2.0-preview.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.game.foundation@0.2.0-preview.3
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.google.resonance.audio@1.18.3
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.googlevr.android@1.18.4
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.googlevr.ios@1.18.5
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.havok.physics@0.1.1-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.render-pipelines.high-definition@6.9.2-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.rendering.hybrid@0.1.1-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.immediate-window@1.1.0-preview.3
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.purchasing@2.0.6
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.inputsystem@1.0.0-preview.3
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.jobs@0.1.1-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.render-pipelines.lightweight@6.9.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.mathematics@1.1.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.memoryprofiler@0.1.0-preview.9
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.mobile.notifications@1.0.3
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: nuget.mono-cecil@0.1.5-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.multiplayer-hlapi@1.0.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.oculus.android@1.38.6
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.oculus.standalone@1.38.4
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.openvr.standalone@1.0.5
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.package-manager-ui@2.2.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.package-validation-suite@0.7.13-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.playablegraph-visualizer@0.2.1-preview.3
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.polybrush@1.0.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.postprocessing@2.1.7
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.probuilder@4.0.5
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.performance.profile-analyzer@0.5.0-preview.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.progrids@3.0.3-preview.4
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.quicksearch@1.4.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.remote-config@1.0.8
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.ide.rider@1.1.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.scriptablebuildpipeline@1.5.4
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.shadergraph@6.9.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.connect.share@1.0.9-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.subsystemregistration@1.0.6
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.terrain-tools@2.0.2-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.test-framework@1.0.13
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.textmeshpro@2.0.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.ui.builder@0.10.0-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.aovrecorder@0.1.1-preview.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.collab-proxy@1.2.16
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.purchasing.udp@1.2.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.physics@0.2.4-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.recorder@2.1.0-preview.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.reflect@1.0.0-preview.19
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.renderstreaming@1.1.1-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.timeline@1.1.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.ugui@1.0.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.cloud.userreporting@0.2.4-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.formats.usd@1.0.2-preview.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.vectorgraphics@2.0.0-preview.11
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.visualeffectgraph@6.9.2-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.ide.vscode@1.1.3
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.ptc.vuforia.engine@8.5.9
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.webrtc@1.0.1-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.windowsmr.metro@3.0.6
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.windowsmr@1.0.0-preview.9
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xiaomi@1.0.3
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.interaction.toolkit@0.0.6-preview
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.legacyinputhelpers@2.0.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.management@3.0.3
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
     BuiltInSelection:
       States: []
 --- !u!114 &19
@@ -137629,20 +138029,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/EffectExamples
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets
+  - Assets/EffectExamples
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\Oussama\Documents\GitHub\Unity-Projects\Throw
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3a340000
-    m_LastClickedID: 13370
-    m_ExpandedIDs: 000000003a34000094340000c6360000723700007c3800004a3900005c3a0000e83a00004c3b00003c3f0000ea3f00008641000030420000784200002443000024440000ca4400000c450000e44500002e460000486000004a6000004c6000004e6000005060000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 371}
+    m_SelectedIDs: 92350000
+    m_LastClickedID: 13714
+    m_ExpandedIDs: 000000003a34000094340000d0360000823700009c3800006a3900008c3a00001e3b0000843b0000883f000036400000d841000084420000cc4200007e430000884400002e4500007445000056460000a0460000ce600000d0600000d2600000d4600000d660000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -137670,7 +138070,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e4fbffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003a34000094340000923500007c3800004a390000e83a00004c3b00003c3f0000ea3f00008641000030420000784200002443000024440000ca4400000c450000e44500002e460000486000004a6000004c6000004e60000050600000
+    m_ExpandedIDs: 000000003a34000094340000d0360000823700009c3800006a3900008c3a00001e3b0000843b0000883f000036400000d841000084420000cc4200007e430000884400002e4500007445000056460000a0460000ce600000d0600000d2600000d4600000d6600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -137697,7 +138097,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300000c0b0000140b0000f40a0000fc0a0000280e00001869000064a400009435f9ffec0a0000cc400000860de1fffe5100004a390000b239000040390000663d0000ec3500005e3b000044390000d63c000068390000223b00005a0a0000840a0000822b000012410000e84f0000f8410000f446000038b6f8ffe4390000ee84000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
