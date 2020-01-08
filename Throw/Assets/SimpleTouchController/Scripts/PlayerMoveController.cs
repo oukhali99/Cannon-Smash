@@ -9,7 +9,7 @@ public class PlayerMoveController : MonoBehaviour {
 	public SimpleTouchController leftController;
 	public SimpleTouchController rightController;
 	public Transform headTrans;
-	public float speedMovements = 5f;
+	public float XVelocityChange = 5f;
 	public float speedContinuousLook = 100f;
 	public float speedProgressiveLook = 3000f;
 
@@ -19,6 +19,7 @@ public class PlayerMoveController : MonoBehaviour {
     private bool slowMo;
 
 	[SerializeField] bool continuousRightController = true;
+    [SerializeField] private float XVelocitySlowdown;
 
     void Awake()
 	{
@@ -54,7 +55,24 @@ public class PlayerMoveController : MonoBehaviour {
             {
                 Vector2 touchPosition = leftController.GetTouchPosition;
 
-                _rigidbody.AddForce(Time.deltaTime * speedMovements * ((Vector3.forward * 0) + (Vector3.right * touchPosition.x)), ForceMode.VelocityChange);
+                if (touchPosition.x != 0)
+                {
+                    _rigidbody.velocity += Time.deltaTime * XVelocityChange * Vector3.right * touchPosition.x;
+                }
+                else
+                {
+                    Vector3 slowdown = XVelocitySlowdown * Vector3.right;
+                    Vector3 velocity = _rigidbody.velocity;
+                    
+                    if (velocity.x > slowdown.x)
+                    {
+                        velocity -= slowdown * Time.deltaTime;
+                    }
+                    else
+                    {
+                        velocity -= Vector3.right * velocity.x * Time.deltaTime;
+                    }
+                }
             }
         }
 

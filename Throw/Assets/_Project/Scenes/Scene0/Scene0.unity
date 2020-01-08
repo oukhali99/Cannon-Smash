@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5072,8 +5072,8 @@ MonoBehaviour:
   Button2: {fileID: 1990736051941296, guid: 125d02880e3ed7147a39c4c1a9f44ae8, type: 3}
   Text1: {fileID: 5767628584401941272, guid: c08ada3e767a1be4b9ad274ae46d9e58, type: 3}
   Text2: {fileID: 8182089258805800567, guid: 042227056aa5b2048ad746a0961cd9f1, type: 3}
-  Panel1: {fileID: 4411734196475532101, guid: 84dd46c4dbd552f48913527fa5a5d01d, type: 3}
-  Panel2: {fileID: 8502153897982405527, guid: 02a27819e6ea88741b47600a3909f06b, type: 3}
+  Panel1: {fileID: 4411734196475532101, guid: 02a27819e6ea88741b47600a3909f06b, type: 3}
+  Panel2: {fileID: 8502153897982405527, guid: 84dd46c4dbd552f48913527fa5a5d01d, type: 3}
   UIScales:
   - 1
   - 1.5
@@ -10056,11 +10056,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 15819515, guid: 8c96fe6129fa30f45983606ea6b32dfd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 15819515, guid: 8c96fe6129fa30f45983606ea6b32dfd, type: 3}
       propertyPath: ZBuildingCount
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5993771504731781917, guid: 8c96fe6129fa30f45983606ea6b32dfd,
         type: 3}
@@ -10120,12 +10120,12 @@ PrefabInstance:
     - target: {fileID: 6982227351784480766, guid: 8c96fe6129fa30f45983606ea6b32dfd,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6982227351784480766, guid: 8c96fe6129fa30f45983606ea6b32dfd,
         type: 3}
       propertyPath: ZBuildingCount
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8686916461015163134, guid: 8c96fe6129fa30f45983606ea6b32dfd,
         type: 3}
@@ -10135,7 +10135,7 @@ PrefabInstance:
     - target: {fileID: 8858326966257971063, guid: 8c96fe6129fa30f45983606ea6b32dfd,
         type: 3}
       propertyPath: ZBuildingCount
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c96fe6129fa30f45983606ea6b32dfd, type: 3}

@@ -14,7 +14,6 @@ public class GameOverPanel : MonoBehaviour
     [SerializeField] private float DimMusicRatio;
 
     private int currentPayoutText;
-    private int payout;
     private float lastIncrementTimestamp;
     private bool beatenHighScore;
     private float waitBetweenIncrement;
@@ -34,7 +33,7 @@ public class GameOverPanel : MonoBehaviour
         SaveManager.Instance.SaveCurrentLevelTimesPlayed(SaveManager.Instance.LoadCurrentLevelTimesPlayed() + 1);
         PerfectScoreCheck();
         HighscoreCheck();
-        payout = GetRawPayout();
+        SaveManager.Instance.SaveBalance(SaveManager.Instance.LoadBalance() + GetPayout());
 
         timesPlayed = SaveManager.Instance.LoadCurrentLevelTimesPlayed();
 
@@ -88,13 +87,12 @@ public class GameOverPanel : MonoBehaviour
         PayoutText.text = GetPayout().ToString();
         PayoutModifierText.text = text;
         ScoreUpAudio.Play();
-        SaveManager.Instance.SaveBalance(SaveManager.Instance.LoadBalance() + GetPayout());
     }
     
     public void ScoreUpOne()
     {
         PayoutText.text = currentPayoutText.ToString();
-        if (currentPayoutText == payout)
+        if (currentPayoutText == GetRawPayout())
         {
             MyAnimator.SetBool("DoneScoreUp", true);
         }
