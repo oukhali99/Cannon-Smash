@@ -7074,10 +7074,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BalanceText: {fileID: 58661555}
   PaycheckAmmount: 10
-  BuyNormalAmmoCount: 5
-  BuyExplosiveAmmoCount: 5
-  BuyGuidedAmmoCount: 5
-  BuyLargeAmmoCount: 5
+  BuyNormalAmmoCount: 1
+  BuyExplosiveAmmoCount: 1
+  BuyGuidedAmmoCount: 1
+  BuyLargeAmmoCount: 1
   NormalAmmoPrice: 1
   ExplosiveAmmoPrice: 3
   GuidedAmmoPrice: 3

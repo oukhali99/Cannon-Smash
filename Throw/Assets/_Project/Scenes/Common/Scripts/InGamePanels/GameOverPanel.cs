@@ -35,7 +35,6 @@ public class GameOverPanel : MonoBehaviour
         PerfectScoreCheck();
         HighscoreCheck();
         payout = GetRawPayout();
-        SaveManager.Instance.SaveBalance(SaveManager.Instance.LoadBalance() + payout);
 
         timesPlayed = SaveManager.Instance.LoadCurrentLevelTimesPlayed();
 
@@ -89,6 +88,7 @@ public class GameOverPanel : MonoBehaviour
         PayoutText.text = GetPayout().ToString();
         PayoutModifierText.text = text;
         ScoreUpAudio.Play();
+        SaveManager.Instance.SaveBalance(SaveManager.Instance.LoadBalance() + payout);
     }
     
     public void ScoreUpOne()
@@ -128,7 +128,7 @@ public class GameOverPanel : MonoBehaviour
 
     private int GetRawPayout()
     {
-        return Mathf.CeilToInt(Score.Instance.score / 4);
+        return Score.Instance.score;
     }
 
     private void HighscoreCheck()

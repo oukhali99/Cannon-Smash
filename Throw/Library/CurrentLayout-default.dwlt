@@ -211,8 +211,8 @@ MonoBehaviour:
     y: 0
     width: 284
     height: 541
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   Collection:
     filter: 0
-    lastUpdateTime: Jan 7, 16:56
+    lastUpdateTime: Jan 7, 17:37
     listPackagesOffline:
     - Name: com.unity.2d.sprite
       DisplayName: 2D Sprite
@@ -136850,8 +136850,8 @@ MonoBehaviour:
         m_HideInEditor: 1
         m_DatePublishedTicks: 636898887280000000
       IsInstalled: 0
-    listPackagesVersion: 231
-    listPackagesOfflineVersion: 230
+    listPackagesVersion: 232
+    listPackagesOfflineVersion: 231
     searchOperationOngoing: 0
     listOperationOngoing: 0
     listOperationOfflineOngoing: 0
@@ -137444,7 +137444,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 480cfdff9025fdffda35fdffca4ffdffb678fdff8c8bfdff2aa2fdff1617feffbc2dfeff9040feffea69feffd483feff2aacfeffbcbbfefffed4feff56fdfeff9616ffff2a3fffff
+      m_ExpandedIDs: 0656ffff2857ffff5a57ffff366cffffe480ffff5e97ffff7aa9ffffaad1ffffe8eaffff00ebffff6cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -137537,7 +137537,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.38107955, y: -0.04712084, z: 0.01945197, w: 0.9231367}
     speed: 2
-    m_Value: {x: 0.38107923, y: -0.0471208, z: 0.019451953, w: 0.92313594}
+    m_Value: {x: -0.38107958, y: 0.04712084, z: -0.01945197, w: -0.9231368}
   m_Size:
     m_Target: 22
     speed: 2
@@ -137606,20 +137606,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Project/Scenes/Common/Prefabs
+    - Assets/EffectExamples
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/_Project/Scenes/Common/Prefabs
+  - Assets/EffectExamples
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\Gaming\Documents\GitHub\Unity-Projects\Throw
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: b2840000
-    m_LastClickedID: 33970
-    m_ExpandedIDs: 0000000070790000be7900005c7a00001e7c00009a7c00009a7d0000ee7d0000ce800000268100003e8200008c820000a2820000f68200009e830000f283000026840000b2840000f084000096990000989900009a9900009c9900009e99000000ca9a3b
+    scrollPos: {x: 0, y: 205}
+    m_SelectedIDs: 92350000
+    m_LastClickedID: 13714
+    m_ExpandedIDs: 000000003a34000094340000923500007c3800004a390000e83a00004c3b00003e3f0000ec3f000088410000324200007a4200002643000026440000cc4400000e450000e6450000304600004a6000004c6000004e600000506000005260000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -137647,7 +137647,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e4fbffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000070790000be7900005c7a00001e7c00009a7c00009a7d0000ee7d0000268100003e8200008c820000a2820000f68200009e830000f283000026840000b2840000f084000096990000989900009a9900009c9900009e990000
+    m_ExpandedIDs: 000000003a34000094340000923500007c3800004a390000e83a00004c3b00003e3f0000ec3f000088410000324200007a4200002643000026440000cc4400000e450000e6450000304600004a6000004c6000004e6000005060000052600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -137674,7 +137674,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300000c0b0000140b0000f40a0000fc0a0000280e00001869000064a400009435f9ffec0a0000cc400000860de1fffe5100004a390000b239000040390000663d0000ec3500005e3b000044390000d63c000068390000223b00005a0a0000840a0000822b000012410000e84f0000f8410000f446000038b6f8ffe4390000ee84000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

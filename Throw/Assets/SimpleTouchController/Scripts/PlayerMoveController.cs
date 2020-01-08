@@ -16,9 +16,9 @@ public class PlayerMoveController : MonoBehaviour {
 	// PRIVATE
 	private Rigidbody _rigidbody;
     private bool resetted;
+    private bool slowMo;
 
 	[SerializeField] bool continuousRightController = true;
-    [SerializeField] private float ForwardDriveForce;
 
     void Awake()
 	{
@@ -54,7 +54,7 @@ public class PlayerMoveController : MonoBehaviour {
             {
                 Vector2 touchPosition = leftController.GetTouchPosition;
 
-                _rigidbody.AddForce(Time.deltaTime * speedMovements * ((Vector3.forward * ForwardDriveForce) + (Vector3.right * touchPosition.x)));
+                _rigidbody.AddForce(Time.deltaTime * speedMovements * ((Vector3.forward * 0) + (Vector3.right * touchPosition.x)), ForceMode.VelocityChange);
             }
         }
 

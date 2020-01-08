@@ -7,6 +7,7 @@ public class GuidedBall : Ball
     [SerializeField] private float GuidedTime;
     [SerializeField] private Vector3 CameraBallRelativePosition;
     [SerializeField] private PlayerMoveController Controller;
+    [SerializeField] private float SlowMotionTimescale;
     
     private static Vector3 cameraInitialPosition;
     private static Quaternion cameraInitialRotation;
@@ -14,10 +15,12 @@ public class GuidedBall : Ball
 
     private float firedTimestamp;
     private Camera myCamera;
+    private bool slowMotion;
 
     void Start()
     {
         firedTimestamp = 0;
+        slowMotion = false;
 
         if (cam == null)
         {
@@ -53,6 +56,13 @@ public class GuidedBall : Ball
         cameraInitialRotation = cam.transform.rotation;
 
         GameOverChecker.Instance.PressedSpace();
+
+        if (!slowMotion)
+        {
+            slowMotion = true;
+            Time.timeScale *= SlowMotionTimescale;
+            MusicHandler.Instance.MusicSource.pitch *= SlowMotionTimescale;
+        }
     }
 
     private void DoneFiring()
@@ -70,5 +80,12 @@ public class GuidedBall : Ball
         cam.transform.rotation = cameraInitialRotation;
 
         GameOverChecker.Instance.PressedSpace();
+
+        if (slowMotion)
+        {
+            slowMotion = false;
+            Time.timeScale /= SlowMotionTimescale;
+            MusicHandler.Instance.MusicSource.pitch /= SlowMotionTimescale;
+        }
     }
 }
