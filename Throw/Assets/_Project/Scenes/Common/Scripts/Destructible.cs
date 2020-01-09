@@ -50,6 +50,7 @@ public class Destructible : MonoBehaviour
             }
         }
 
+        ImpactSoundAudioSource.clip = BreakSounds[Random.Range(0, BreakSounds.Length)];
         ImpactSoundAudioSource.Play();
     }
 

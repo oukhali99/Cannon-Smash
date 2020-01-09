@@ -26,20 +26,7 @@ public class BallPooler : MonoBehaviour
         SelectedAmmo = NormalBallList;
         transform = gameObject.transform;
     }
-
-    void Update()
-    {
-        if (SelectedAmmo.Count > 1)
-        {
-            var firstNode = SelectedAmmo.Last;
-
-            if (firstNode != null)
-            {
-                firstNode.Value.transform.position = DisplayPosition + transform.position;
-            }
-        }
-    }
-
+    
     public Ball GetBall()
     {
         var ball = SelectedAmmo.First;
@@ -74,7 +61,6 @@ public class BallPooler : MonoBehaviour
         Transform ballTransform = ballObject.transform;
 
         ExplosiveBallList.AddFirst(ballScript);
-        ballObject.SetActive(false);
         ballTransform.position = new Vector3(0, 0, -100);
     }
     public void AddAntigravtityBall(GuidedBall ball)
@@ -84,8 +70,6 @@ public class BallPooler : MonoBehaviour
         Transform ballTransform = ballObject.transform;
 
         GuidedBallList.AddFirst(ballScript);
-        ballObject.SetActive(false);
-
         ballTransform.position = new Vector3(0, 0, -100);
     }
     public void AddLargeBall(LargeBall ball)
