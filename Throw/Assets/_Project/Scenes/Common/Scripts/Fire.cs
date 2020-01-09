@@ -33,7 +33,11 @@ public class Fire : MonoBehaviour
         heightPhase = 0;
         verticalPhase = 0;
         horizontalPhase = 0;
-        lastFire = -Cooldown;
+        lastFire = -Cooldown;        
+    }
+	
+    void Start()
+    {
         Aim();
         HeightPoint(heightPhase);
         VerticalPoint(verticalPhase);
@@ -43,7 +47,7 @@ public class Fire : MonoBehaviour
         cameraPosition = cameraTransform.position;
         cameraRotation = cameraTransform.rotation;
     }
-	
+
 	void Update ()
     {
         if (Ammo.Instance.ammo == 0 && Time.timeScale != 0)
@@ -73,19 +77,18 @@ public class Fire : MonoBehaviour
                 if (newBall != null)
                 {
                     Rigidbody newBallRigidbody = newBall.Rigidbody;
-
-                    Ammo.Instance.PlayerFires();
-                    lastFire = Time.time;
                     Vector3 forceUnitDir = ArrowTransform.up.normalized;
                     Vector3 force = forceUnitDir * ForceMagnitude;
 
+                    Ammo.Instance.PlayerFires();
+                    lastFire = Time.time;
+                    
                     newBall.transform.position = BallPooler.Instance.transform.position;
                     newBallRigidbody.velocity = Vector3.zero;
                     newBallRigidbody.AddForce(force, ForceMode.Acceleration);
                     newBall.FiredSound.Play();
                     newBall.Fired();
-
-                    // Ammo Wheel refresh
+                    
                     AmmoWheel.Instance.Refresh();
                 }
                 else

@@ -35,9 +35,11 @@ public class Destructible : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        string otherTag = collision.gameObject.tag;
+
         if (!scored)
         {
-            if (collision.gameObject.tag.Equals("Player")
+            if (otherTag.Equals("Player")
                 && collision.relativeVelocity.sqrMagnitude > BallVelocityThresholdSqr)
             {
                 Score();
@@ -47,6 +49,8 @@ public class Destructible : MonoBehaviour
                 Score();
             }
         }
+
+        ImpactSoundAudioSource.Play();
     }
 
 
@@ -56,6 +60,5 @@ public class Destructible : MonoBehaviour
         scored = true;
         global::Score.Instance.PlayerScores();
         scoredTimestamp = Time.time;
-        ImpactSoundAudioSource.Play();
     }
 }

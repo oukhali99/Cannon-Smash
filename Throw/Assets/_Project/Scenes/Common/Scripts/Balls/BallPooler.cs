@@ -12,6 +12,10 @@ public class BallPooler : MonoBehaviour
     public LinkedList<Ball> GuidedBallList { get; private set; }
     public LinkedList<Ball> LargeBallList { get; private set; }
 
+    [SerializeField] private Vector3 DisplayPosition;
+
+    private new Transform transform;
+
     void Awake()
     {
         Instance = this;
@@ -20,6 +24,20 @@ public class BallPooler : MonoBehaviour
         GuidedBallList = new LinkedList<Ball>();
         LargeBallList = new LinkedList<Ball>();
         SelectedAmmo = NormalBallList;
+        transform = gameObject.transform;
+    }
+
+    void Update()
+    {
+        if (SelectedAmmo.Count > 1)
+        {
+            var firstNode = SelectedAmmo.Last;
+
+            if (firstNode != null)
+            {
+                firstNode.Value.transform.position = DisplayPosition + transform.position;
+            }
+        }
     }
 
     public Ball GetBall()
@@ -40,41 +58,44 @@ public class BallPooler : MonoBehaviour
 
     }
 
-    public void AddNormalBall(Ball ball)
+    public void AddNormalBall(NormalBall ball)
     {
         GameObject ballObject = Instantiate(ball.gameObject);
-        Ball ballScript = ballObject.GetComponent<Ball>();
-        NormalBallList.AddFirst(ballScript);
+        NormalBall ballScript = ballObject.GetComponent<NormalBall>();
+        Transform ballTransform = ballObject.transform;
 
-        Vector3 position = ballScript.transform.position;
-        ballScript.transform.position = new Vector3(position.x, -100, position.z);
+        NormalBallList.AddFirst(ballScript);
+        ballTransform.position = new Vector3(0, 0, -100);
     }
     public void AddExplosiveBall(ExplosiveBall ball)
     {
         GameObject ballObject = Instantiate(ball.gameObject);
         ExplosiveBall ballScript = ballObject.GetComponent<ExplosiveBall>();
-        ExplosiveBallList.AddFirst(ballScript);
+        Transform ballTransform = ballObject.transform;
 
-        Vector3 position = ballScript.transform.position;
-        ballScript.transform.position = new Vector3(position.x, -100, position.z);
+        ExplosiveBallList.AddFirst(ballScript);
+        ballObject.SetActive(false);
+        ballTransform.position = new Vector3(0, 0, -100);
     }
     public void AddAntigravtityBall(GuidedBall ball)
     {
         GameObject ballObject = Instantiate(ball.gameObject);
         GuidedBall ballScript = ballObject.GetComponent<GuidedBall>();
-        GuidedBallList.AddFirst(ballScript);
+        Transform ballTransform = ballObject.transform;
 
-        Vector3 position = ballScript.transform.position;
-        ballScript.transform.position = new Vector3(position.x, -100, position.z);
+        GuidedBallList.AddFirst(ballScript);
+        ballObject.SetActive(false);
+
+        ballTransform.position = new Vector3(0, 0, -100);
     }
-    public void AddLargeBall(Ball ball)
+    public void AddLargeBall(LargeBall ball)
     {
         GameObject ballObject = Instantiate(ball.gameObject);
-        Ball ballScript = ballObject.GetComponent<Ball>();
-        LargeBallList.AddFirst(ballScript);
+        LargeBall ballScript = ballObject.GetComponent<LargeBall>();
+        Transform ballTransform = ballObject.transform;
 
-        Vector3 position = ballScript.transform.position;
-        ballScript.transform.position = new Vector3(position.x, -100, position.z);
+        LargeBallList.AddFirst(ballScript);
+        ballTransform.position = new Vector3(0, 0, -100);
     }
 
     public bool AllEmpty()

@@ -6,10 +6,10 @@ using TMPro;
 public class ChooseAmmoPanel : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI TitleText;
-    [SerializeField] private Ball NormalBall;
+    [SerializeField] private NormalBall NormalBall;
     [SerializeField] private ExplosiveBall ExplosiveBall;
     [SerializeField] private GuidedBall GuidedBall;
-    [SerializeField] private Ball LargeBall;
+    [SerializeField] private LargeBall LargeBall;
     [SerializeField] private TextMeshProUGUI PicksLeftText;
     [SerializeField] private TextMeshProUGUI NormalBallsLeftText;
     [SerializeField] private TextMeshProUGUI ExplosiveBallsLeftText;

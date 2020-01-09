@@ -12,6 +12,7 @@ public class GameOverPanel : MonoBehaviour
     [SerializeField] private AudioSource RewardSound;
     [SerializeField] private GameObject Confetti;
     [SerializeField] private float DimMusicRatio;
+    [SerializeField] private float PayoutDivider;
 
     private int currentPayoutText;
     private float lastIncrementTimestamp;
@@ -126,7 +127,7 @@ public class GameOverPanel : MonoBehaviour
 
     private int GetRawPayout()
     {
-        return Score.Instance.score;
+        return Mathf.CeilToInt(Score.Instance.score / PayoutDivider);
     }
 
     private void HighscoreCheck()

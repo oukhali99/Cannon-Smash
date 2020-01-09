@@ -130,6 +130,8 @@ MonoBehaviour:
   SlowMotionTimescale: 0.25
   XSpeed: 40
   XVelocityDividePerSecond: 10000
+  UncontrollableTime: 0.2
+  WaitBeforeDoneFiring: 0.5
 --- !u!82 &-2867549156351530629
 AudioSource:
   m_ObjectHideFlags: 0

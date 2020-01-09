@@ -27,18 +27,11 @@ public class GuidedBall : Ball
         firedTimestamp = 0;
         slowMotion = false;
 
-        if (cam == null)
-        {
-            cam = Camera.main;
-            cameraTransform = cam.transform;
-            cameraInitialPosition = cameraTransform.position;
-            cameraInitialRotation = cameraTransform.rotation;
-        }
+        GetCamera();
     }
 
     void Update()
     {
-        FollowFinger();
         if (firedTimestamp != 0)
         {
             CameraFollows();
@@ -54,12 +47,12 @@ public class GuidedBall : Ball
     override public void Fired()
     {
         firedTimestamp = Time.time;
-
         TopRightPanel.Instance.gameObject.SetActive(false);
+        GameOverChecker.Instance.PressedSpace();
+
+        GetCamera();
         cameraInitialPosition = cameraTransform.position;
         cameraInitialRotation = cameraTransform.rotation;
-
-        GameOverChecker.Instance.PressedSpace();
 
         if (!slowMotion)
         {
@@ -125,5 +118,16 @@ public class GuidedBall : Ball
     {
         cameraTransform.position = transform.position + CameraBallRelativePosition;
         cameraTransform.rotation = cameraInitialRotation;
+    }
+
+    private void GetCamera()
+    {
+        if (cam == null)
+        {
+            cam = Camera.main;
+            cameraTransform = cam.transform;
+            cameraInitialPosition = cameraTransform.position;
+            cameraInitialRotation = cameraTransform.rotation;
+        }
     }
 }
