@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 738, y: 494}
   m_MaxSize: {x: 16008, y: 14044}
   vertical: 0
-  controlID: 188
+  controlID: 94
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 463, y: 494}
   m_MaxSize: {x: 12008, y: 14044}
   vertical: 1
-  controlID: 134
+  controlID: 95
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 202
     y: 0
-    width: 59
+    width: 115
     height: 363
   m_MinSize: {x: 59, y: 58}
   m_MaxSize: {x: 4004, y: 4022}
@@ -233,21 +233,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 261
+    x: 317
     y: 0
-    width: 783
+    width: 727
     height: 363
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 14}
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 13}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,9 +327,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 261
+    x: 317
     y: 73
-    width: 781
+    width: 725
     height: 344
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &14
@@ -353,26 +353,26 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 261
+    x: 317
     y: 73
-    width: 781
+    width: 725
     height: 344
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000005000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000001000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -540
-    m_HBaseRangeMax: 540
-    m_VBaseRangeMin: -960
-    m_VBaseRangeMax: 960
+    m_HBaseRangeMin: -240
+    m_HBaseRangeMax: 240
+    m_VBaseRangeMin: -400
+    m_VBaseRangeMax: 400
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -390,25 +390,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 781
+      width: 725
       height: 327
-    m_Scale: {x: 0.17031248, y: 0.1703125}
-    m_Translation: {x: 390.5, y: 163.5}
+    m_Scale: {x: 0.40875, y: 0.40875}
+    m_Translation: {x: 362.5, y: 163.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -2292.8442
-      y: -960.00006
-      width: 4585.6885
-      height: 1920.0001
+      x: -886.85016
+      y: -400
+      width: 1773.7003
+      height: 800
     m_MinimalGUI: 1
-  m_defaultScale: 0.1703125
+  m_defaultScale: 0.40875
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 781, y: 344}
+  m_LastWindowPixelSize: {x: 725, y: 344}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000100000100
@@ -444,7 +444,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6cfbffff
+      m_ExpandedIDs: 325df2ff565ef2ff925ef2ffaa7af2ff088ff2ffe6b2f2ffaec6f2ff64dbf2ffb4f2f2ffd804f3ff102df3ff4e46f3ff6646f3ff6256f3ffb468f3ff088ff3ff9aa4f3ff0ce6f4ff7afff4ff643af9fff27efdfff67efdffa08efdff7ab0fdff60d6fdfffceafdffa8fbfdffcc0efeff621efeffd087fefffe8bfeff6cfbffffc6da000014db000072db00009adb00000cdc000014dc00007edc000092dc000070dd0000badd0000dcdd0000e6dd0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -490,7 +490,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 202
     y: 73
-    width: 57
+    width: 113
     height: 344
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &17
@@ -514,9 +514,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 261
+    x: 317
     y: 73
-    width: 781
+    width: 725
     height: 344
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -529,9 +529,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 257.35242, y: 443.2412, z: 0}
+    m_Target: {x: 248.69067, y: 540.0143, z: -0.000030517578}
     speed: 2
-    m_Value: {x: 257.35242, y: 443.2412, z: 0}
+    m_Value: {x: 248.69067, y: 540.0143, z: -0.000030517578}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -564,9 +564,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1085.0334
+    m_Target: 365.28876
     speed: 2
-    m_Value: 1085.0334
+    m_Value: 365.28876
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   Collection:
     filter: 0
-    lastUpdateTime: Jan 9, 18:14
+    lastUpdateTime: Jan 10, 17:41
     listPackagesOffline:
     - Name: com.unity.2d.sprite
       DisplayName: 2D Sprite
@@ -4650,6 +4650,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -4728,6 +4729,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -4806,6 +4808,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -4884,6 +4887,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -4962,6 +4966,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -25143,6 +25148,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -25221,6 +25227,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -25299,6 +25306,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -25377,6 +25385,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -25455,6 +25464,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -41674,6 +41684,7 @@ MonoBehaviour:
         m_Versions:
           m_All:
           - 0.1.1-preview
+          - 0.1.2-preview
           m_Compatible:
           - 0.1.1-preview
           m_Recommended: 
@@ -60240,6 +60251,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Compatible:
           - 1.1.1
           - 1.1.2
@@ -60251,6 +60263,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.mathematics
@@ -60357,6 +60370,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Compatible:
           - 1.1.1
           - 1.1.2
@@ -60368,6 +60382,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.mathematics
@@ -60474,6 +60489,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Compatible:
           - 1.1.1
           - 1.1.2
@@ -60485,6 +60501,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.mathematics
@@ -60591,6 +60608,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Compatible:
           - 1.1.1
           - 1.1.2
@@ -60602,6 +60620,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.mathematics
@@ -60708,6 +60727,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Compatible:
           - 1.1.1
           - 1.1.2
@@ -60719,6 +60739,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.mathematics
@@ -60825,6 +60846,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Compatible:
           - 1.1.1
           - 1.1.2
@@ -60836,6 +60858,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.mathematics
@@ -60942,6 +60965,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Compatible:
           - 1.1.1
           - 1.1.2
@@ -60953,6 +60977,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.mathematics
@@ -61059,6 +61084,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Compatible:
           - 1.1.1
           - 1.1.2
@@ -61070,6 +61096,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.mathematics
@@ -61176,6 +61203,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Compatible:
           - 1.1.1
           - 1.1.2
@@ -61187,6 +61215,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.mathematics
@@ -61208,6 +61237,125 @@ MonoBehaviour:
     - Name: com.unity.burst
       DisplayName: Burst
       _Version: 1.2.0-preview.11
+      Description: Burst is a compiler, it translates from IL/.NET bytecode to highly
+        optimized native code using LLVM.
+      Category: 
+      State: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      IsDiscoverable: 1
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.burst@1.1.2
+        m_IsDirectDependency: 0
+        m_Version: 1.1.2
+        m_Source: 1
+        m_ResolvedPath: 
+        m_AssetPath: Packages/com.unity.burst
+        m_Name: com.unity.burst
+        m_DisplayName: Burst
+        m_Category: 
+        m_Type: 
+        m_Description: Burst is a compiler, it translates from IL/.NET bytecode to
+          highly optimized native code using LLVM.
+        m_Status: 1
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.2.4-preview.5
+          - 0.2.4-preview.7
+          - 0.2.4-preview.11
+          - 0.2.4-preview.12
+          - 0.2.4-preview.13
+          - 0.2.4-preview.14
+          - 0.2.4-preview.15
+          - 0.2.4-preview.16
+          - 0.2.4-preview.17
+          - 0.2.4-preview.18
+          - 0.2.4-preview.19
+          - 0.2.4-preview.20
+          - 0.2.4-preview.21
+          - 0.2.4-preview.22
+          - 0.2.4-preview.23
+          - 0.2.4-preview.24
+          - 0.2.4-preview.25
+          - 0.2.4-preview.30
+          - 0.2.4-preview.31
+          - 0.2.4-preview.33
+          - 0.2.4-preview.34
+          - 0.2.4-preview.37
+          - 0.2.4-preview.41
+          - 0.2.4-preview.45
+          - 0.2.4-preview.48
+          - 0.2.4-preview.50
+          - 1.0.0-preview.1
+          - 1.0.0-preview.2
+          - 1.0.0-preview.3
+          - 1.0.0-preview.4
+          - 1.0.0-preview.5
+          - 1.0.0-preview.6
+          - 1.0.0-preview.7
+          - 1.0.0-preview.8
+          - 1.0.0-preview.9
+          - 1.0.0-preview.10
+          - 1.0.0-preview.12
+          - 1.0.0-preview.13
+          - 1.0.0
+          - 1.0.2
+          - 1.0.4
+          - 1.1.0-preview.2
+          - 1.1.0-preview.3
+          - 1.1.0-preview.4
+          - 1.1.1
+          - 1.1.2
+          - 1.1.3-preview.3
+          - 1.2.0-preview.1
+          - 1.2.0-preview.5
+          - 1.2.0-preview.6
+          - 1.2.0-preview.8
+          - 1.2.0-preview.9
+          - 1.2.0-preview.10
+          - 1.2.0-preview.11
+          - 1.2.0-preview.12
+          m_Compatible:
+          - 1.1.1
+          - 1.1.2
+          - 1.1.3-preview.3
+          - 1.2.0-preview.1
+          - 1.2.0-preview.5
+          - 1.2.0-preview.6
+          - 1.2.0-preview.8
+          - 1.2.0-preview.9
+          - 1.2.0-preview.10
+          - 1.2.0-preview.11
+          - 1.2.0-preview.12
+          m_Recommended: 
+        m_Dependencies:
+        - m_Name: com.unity.mathematics
+          m_Version: 1.1.0
+        m_ResolvedDependencies: []
+        m_Keywords: []
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+        m_HideInEditor: 1
+        m_DatePublishedTicks: 637002180640000000
+      IsInstalled: 0
+    - Name: com.unity.burst
+      DisplayName: Burst
+      _Version: 1.2.0-preview.12
       Description: Burst is a compiler, it translates from IL/.NET bytecode to highly
         optimized native code using LLVM.
       Category: 
@@ -61293,6 +61441,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Compatible:
           - 1.1.1
           - 1.1.2
@@ -61304,6 +61453,7 @@ MonoBehaviour:
           - 1.2.0-preview.9
           - 1.2.0-preview.10
           - 1.2.0-preview.11
+          - 1.2.0-preview.12
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.mathematics
@@ -62552,6 +62702,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -62630,6 +62781,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -62708,6 +62860,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -62786,6 +62939,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -62864,6 +63018,7 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.3
           - 1.3.4
+          - 1.3.5
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -78357,9 +78512,9 @@ MonoBehaviour:
       Samples: []
       HasFullFetch: 0
       Info:
-        m_PackageId: com.unity.memoryprofiler@0.1.0-preview.9
+        m_PackageId: com.unity.memoryprofiler@0.2.0-preview.1
         m_IsDirectDependency: 0
-        m_Version: 0.1.0-preview.9
+        m_Version: 0.2.0-preview.1
         m_Source: 1
         m_ResolvedPath: 
         m_AssetPath: Packages/com.unity.memoryprofiler
@@ -78384,6 +78539,7 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Compatible:
           - 0.1.0-preview.1
           - 0.1.0-preview.2
@@ -78394,10 +78550,11 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.editorcoroutines
-          m_Version: 0.0.2-preview.1
+          m_Version: 0.1.0-preview.1
         m_ResolvedDependencies: []
         m_Keywords:
         - profiler
@@ -78416,7 +78573,7 @@ MonoBehaviour:
           m_Url: https://packages.unity.com
           m_IsDefault: 1
         m_HideInEditor: 1
-        m_DatePublishedTicks: 637102982060000000
+        m_DatePublishedTicks: 637142501010000000
       IsInstalled: 0
     - Name: com.unity.memoryprofiler
       DisplayName: Memory Profiler
@@ -78438,9 +78595,9 @@ MonoBehaviour:
       Samples: []
       HasFullFetch: 0
       Info:
-        m_PackageId: com.unity.memoryprofiler@0.1.0-preview.9
+        m_PackageId: com.unity.memoryprofiler@0.2.0-preview.1
         m_IsDirectDependency: 0
-        m_Version: 0.1.0-preview.9
+        m_Version: 0.2.0-preview.1
         m_Source: 1
         m_ResolvedPath: 
         m_AssetPath: Packages/com.unity.memoryprofiler
@@ -78465,6 +78622,7 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Compatible:
           - 0.1.0-preview.1
           - 0.1.0-preview.2
@@ -78475,10 +78633,11 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.editorcoroutines
-          m_Version: 0.0.2-preview.1
+          m_Version: 0.1.0-preview.1
         m_ResolvedDependencies: []
         m_Keywords:
         - profiler
@@ -78497,7 +78656,7 @@ MonoBehaviour:
           m_Url: https://packages.unity.com
           m_IsDefault: 1
         m_HideInEditor: 1
-        m_DatePublishedTicks: 637102982060000000
+        m_DatePublishedTicks: 637142501010000000
       IsInstalled: 0
     - Name: com.unity.memoryprofiler
       DisplayName: Memory Profiler
@@ -78519,9 +78678,9 @@ MonoBehaviour:
       Samples: []
       HasFullFetch: 0
       Info:
-        m_PackageId: com.unity.memoryprofiler@0.1.0-preview.9
+        m_PackageId: com.unity.memoryprofiler@0.2.0-preview.1
         m_IsDirectDependency: 0
-        m_Version: 0.1.0-preview.9
+        m_Version: 0.2.0-preview.1
         m_Source: 1
         m_ResolvedPath: 
         m_AssetPath: Packages/com.unity.memoryprofiler
@@ -78546,6 +78705,7 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Compatible:
           - 0.1.0-preview.1
           - 0.1.0-preview.2
@@ -78556,10 +78716,11 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.editorcoroutines
-          m_Version: 0.0.2-preview.1
+          m_Version: 0.1.0-preview.1
         m_ResolvedDependencies: []
         m_Keywords:
         - profiler
@@ -78578,7 +78739,7 @@ MonoBehaviour:
           m_Url: https://packages.unity.com
           m_IsDefault: 1
         m_HideInEditor: 1
-        m_DatePublishedTicks: 637102982060000000
+        m_DatePublishedTicks: 637142501010000000
       IsInstalled: 0
     - Name: com.unity.memoryprofiler
       DisplayName: Memory Profiler
@@ -78600,9 +78761,9 @@ MonoBehaviour:
       Samples: []
       HasFullFetch: 0
       Info:
-        m_PackageId: com.unity.memoryprofiler@0.1.0-preview.9
+        m_PackageId: com.unity.memoryprofiler@0.2.0-preview.1
         m_IsDirectDependency: 0
-        m_Version: 0.1.0-preview.9
+        m_Version: 0.2.0-preview.1
         m_Source: 1
         m_ResolvedPath: 
         m_AssetPath: Packages/com.unity.memoryprofiler
@@ -78627,6 +78788,7 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Compatible:
           - 0.1.0-preview.1
           - 0.1.0-preview.2
@@ -78637,10 +78799,11 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.editorcoroutines
-          m_Version: 0.0.2-preview.1
+          m_Version: 0.1.0-preview.1
         m_ResolvedDependencies: []
         m_Keywords:
         - profiler
@@ -78659,7 +78822,7 @@ MonoBehaviour:
           m_Url: https://packages.unity.com
           m_IsDefault: 1
         m_HideInEditor: 1
-        m_DatePublishedTicks: 637102982060000000
+        m_DatePublishedTicks: 637142501010000000
       IsInstalled: 0
     - Name: com.unity.memoryprofiler
       DisplayName: Memory Profiler
@@ -78681,9 +78844,9 @@ MonoBehaviour:
       Samples: []
       HasFullFetch: 0
       Info:
-        m_PackageId: com.unity.memoryprofiler@0.1.0-preview.9
+        m_PackageId: com.unity.memoryprofiler@0.2.0-preview.1
         m_IsDirectDependency: 0
-        m_Version: 0.1.0-preview.9
+        m_Version: 0.2.0-preview.1
         m_Source: 1
         m_ResolvedPath: 
         m_AssetPath: Packages/com.unity.memoryprofiler
@@ -78708,6 +78871,7 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Compatible:
           - 0.1.0-preview.1
           - 0.1.0-preview.2
@@ -78718,10 +78882,11 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.editorcoroutines
-          m_Version: 0.0.2-preview.1
+          m_Version: 0.1.0-preview.1
         m_ResolvedDependencies: []
         m_Keywords:
         - profiler
@@ -78740,7 +78905,7 @@ MonoBehaviour:
           m_Url: https://packages.unity.com
           m_IsDefault: 1
         m_HideInEditor: 1
-        m_DatePublishedTicks: 637102982060000000
+        m_DatePublishedTicks: 637142501010000000
       IsInstalled: 0
     - Name: com.unity.memoryprofiler
       DisplayName: Memory Profiler
@@ -78762,9 +78927,9 @@ MonoBehaviour:
       Samples: []
       HasFullFetch: 0
       Info:
-        m_PackageId: com.unity.memoryprofiler@0.1.0-preview.9
+        m_PackageId: com.unity.memoryprofiler@0.2.0-preview.1
         m_IsDirectDependency: 0
-        m_Version: 0.1.0-preview.9
+        m_Version: 0.2.0-preview.1
         m_Source: 1
         m_ResolvedPath: 
         m_AssetPath: Packages/com.unity.memoryprofiler
@@ -78789,6 +78954,7 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Compatible:
           - 0.1.0-preview.1
           - 0.1.0-preview.2
@@ -78799,10 +78965,11 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.editorcoroutines
-          m_Version: 0.0.2-preview.1
+          m_Version: 0.1.0-preview.1
         m_ResolvedDependencies: []
         m_Keywords:
         - profiler
@@ -78821,7 +78988,7 @@ MonoBehaviour:
           m_Url: https://packages.unity.com
           m_IsDefault: 1
         m_HideInEditor: 1
-        m_DatePublishedTicks: 637102982060000000
+        m_DatePublishedTicks: 637142501010000000
       IsInstalled: 0
     - Name: com.unity.memoryprofiler
       DisplayName: Memory Profiler
@@ -78843,9 +79010,9 @@ MonoBehaviour:
       Samples: []
       HasFullFetch: 0
       Info:
-        m_PackageId: com.unity.memoryprofiler@0.1.0-preview.9
+        m_PackageId: com.unity.memoryprofiler@0.2.0-preview.1
         m_IsDirectDependency: 0
-        m_Version: 0.1.0-preview.9
+        m_Version: 0.2.0-preview.1
         m_Source: 1
         m_ResolvedPath: 
         m_AssetPath: Packages/com.unity.memoryprofiler
@@ -78870,6 +79037,7 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Compatible:
           - 0.1.0-preview.1
           - 0.1.0-preview.2
@@ -78880,10 +79048,11 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.editorcoroutines
-          m_Version: 0.0.2-preview.1
+          m_Version: 0.1.0-preview.1
         m_ResolvedDependencies: []
         m_Keywords:
         - profiler
@@ -78902,7 +79071,7 @@ MonoBehaviour:
           m_Url: https://packages.unity.com
           m_IsDefault: 1
         m_HideInEditor: 1
-        m_DatePublishedTicks: 637102982060000000
+        m_DatePublishedTicks: 637142501010000000
       IsInstalled: 0
     - Name: com.unity.memoryprofiler
       DisplayName: Memory Profiler
@@ -78924,9 +79093,9 @@ MonoBehaviour:
       Samples: []
       HasFullFetch: 0
       Info:
-        m_PackageId: com.unity.memoryprofiler@0.1.0-preview.9
+        m_PackageId: com.unity.memoryprofiler@0.2.0-preview.1
         m_IsDirectDependency: 0
-        m_Version: 0.1.0-preview.9
+        m_Version: 0.2.0-preview.1
         m_Source: 1
         m_ResolvedPath: 
         m_AssetPath: Packages/com.unity.memoryprofiler
@@ -78951,6 +79120,7 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Compatible:
           - 0.1.0-preview.1
           - 0.1.0-preview.2
@@ -78961,10 +79131,11 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.editorcoroutines
-          m_Version: 0.0.2-preview.1
+          m_Version: 0.1.0-preview.1
         m_ResolvedDependencies: []
         m_Keywords:
         - profiler
@@ -78983,11 +79154,94 @@ MonoBehaviour:
           m_Url: https://packages.unity.com
           m_IsDefault: 1
         m_HideInEditor: 1
-        m_DatePublishedTicks: 637102982060000000
+        m_DatePublishedTicks: 637142501010000000
       IsInstalled: 0
     - Name: com.unity.memoryprofiler
       DisplayName: Memory Profiler
       _Version: 0.1.0-preview.9
+      Description: 'The Memory Profiler creates a unified solution allowing you to
+        profile both small projects on mobile devices and big AAA projects on high
+        end machines. It provides actionable information about allocations in the
+        engine to allow developers to manage and reduce memory usage. '
+      Category: 
+      State: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      IsDiscoverable: 1
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.memoryprofiler@0.2.0-preview.1
+        m_IsDirectDependency: 0
+        m_Version: 0.2.0-preview.1
+        m_Source: 1
+        m_ResolvedPath: 
+        m_AssetPath: Packages/com.unity.memoryprofiler
+        m_Name: com.unity.memoryprofiler
+        m_DisplayName: Memory Profiler
+        m_Category: 
+        m_Type: 
+        m_Description: 'The Memory Profiler creates a unified solution allowing you
+          to profile both small projects on mobile devices and big AAA projects on
+          high end machines. It provides actionable information about allocations
+          in the engine to allow developers to manage and reduce memory usage. '
+        m_Status: 1
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.1.0-preview.1
+          - 0.1.0-preview.2
+          - 0.1.0-preview.3
+          - 0.1.0-preview.4
+          - 0.1.0-preview.5
+          - 0.1.0-preview.6
+          - 0.1.0-preview.7
+          - 0.1.0-preview.8
+          - 0.1.0-preview.9
+          - 0.2.0-preview.1
+          m_Compatible:
+          - 0.1.0-preview.1
+          - 0.1.0-preview.2
+          - 0.1.0-preview.3
+          - 0.1.0-preview.4
+          - 0.1.0-preview.5
+          - 0.1.0-preview.6
+          - 0.1.0-preview.7
+          - 0.1.0-preview.8
+          - 0.1.0-preview.9
+          - 0.2.0-preview.1
+          m_Recommended: 
+        m_Dependencies:
+        - m_Name: com.unity.editorcoroutines
+          m_Version: 0.1.0-preview.1
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - profiler
+        - memory
+        - memoryprofiler
+        - snapshot
+        - profiling
+        - tool
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+        m_HideInEditor: 1
+        m_DatePublishedTicks: 637142501010000000
+      IsInstalled: 0
+    - Name: com.unity.memoryprofiler
+      DisplayName: Memory Profiler
+      _Version: 0.2.0-preview.1
       Description: 'The Memory Profiler creates a unified solution allowing you to
         profile both small projects on mobile devices and big AAA projects on high
         end machines. It provides actionable information about allocations in the
@@ -79005,9 +79259,9 @@ MonoBehaviour:
       Samples: []
       HasFullFetch: 1
       Info:
-        m_PackageId: com.unity.memoryprofiler@0.1.0-preview.9
+        m_PackageId: com.unity.memoryprofiler@0.2.0-preview.1
         m_IsDirectDependency: 0
-        m_Version: 0.1.0-preview.9
+        m_Version: 0.2.0-preview.1
         m_Source: 1
         m_ResolvedPath: 
         m_AssetPath: Packages/com.unity.memoryprofiler
@@ -79032,6 +79286,7 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Compatible:
           - 0.1.0-preview.1
           - 0.1.0-preview.2
@@ -79042,10 +79297,11 @@ MonoBehaviour:
           - 0.1.0-preview.7
           - 0.1.0-preview.8
           - 0.1.0-preview.9
+          - 0.2.0-preview.1
           m_Recommended: 
         m_Dependencies:
         - m_Name: com.unity.editorcoroutines
-          m_Version: 0.0.2-preview.1
+          m_Version: 0.1.0-preview.1
         m_ResolvedDependencies: []
         m_Keywords:
         - profiler
@@ -79064,7 +79320,7 @@ MonoBehaviour:
           m_Url: https://packages.unity.com
           m_IsDefault: 1
         m_HideInEditor: 1
-        m_DatePublishedTicks: 637102982060000000
+        m_DatePublishedTicks: 637142501010000000
       IsInstalled: 0
     - Name: com.unity.mobile.android-logcat
       DisplayName: Android Logcat
@@ -98596,6 +98852,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -98625,6 +98882,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -98725,6 +98983,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -98754,6 +99013,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -98854,6 +99114,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -98883,6 +99144,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -98983,6 +99245,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -99012,6 +99275,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -99112,6 +99376,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -99141,6 +99406,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -99241,6 +99507,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -99270,6 +99537,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -99370,6 +99638,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -99399,6 +99668,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -99499,6 +99769,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -99528,6 +99799,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -99628,6 +99900,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -99657,6 +99930,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -99757,6 +100031,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -99786,6 +100061,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -99886,6 +100162,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -99915,6 +100192,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -100015,6 +100293,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -100044,6 +100323,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -100144,6 +100424,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -100173,6 +100454,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -100273,6 +100555,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -100302,6 +100585,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -100402,6 +100686,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -100431,6 +100716,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -100531,6 +100817,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -100560,6 +100847,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -100660,6 +100948,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -100689,6 +100978,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -100789,6 +101079,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -100818,6 +101109,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -100918,6 +101210,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -100947,6 +101240,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -101047,6 +101341,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -101076,6 +101371,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -101176,6 +101472,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -101205,6 +101502,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -101305,6 +101603,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -101334,6 +101633,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -101434,6 +101734,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -101463,6 +101764,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -101563,6 +101865,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -101592,6 +101895,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -101692,6 +101996,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -101721,6 +102026,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -101821,6 +102127,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -101850,6 +102157,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -101950,6 +102258,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -101979,6 +102288,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -102010,6 +102320,137 @@ MonoBehaviour:
     - Name: com.unity.quicksearch
       DisplayName: Quick Search
       _Version: 1.5.0-preview.3
+      Description: 'Search multiple areas of Unity: assets, scene objects, menu items,
+        packages, APIs, settings, etc.
+
+
+        On Windows simply press Alt+'' to find anything or Option+'' on Mac.
+
+        Look in the shortcut manager for additional Quick Search shortcut bindings.'
+      Category: 
+      State: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies ApS
+      IsDiscoverable: 1
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.quicksearch@1.4.1
+        m_IsDirectDependency: 0
+        m_Version: 1.4.1
+        m_Source: 1
+        m_ResolvedPath: 
+        m_AssetPath: Packages/com.unity.quicksearch
+        m_Name: com.unity.quicksearch
+        m_DisplayName: Quick Search
+        m_Category: 
+        m_Type: 
+        m_Description: 'Search multiple areas of Unity: assets, scene objects, menu
+          items, packages, APIs, settings, etc.
+
+
+          On Windows simply press Alt+'' to find anything or Option+'' on Mac.
+
+          Look in the shortcut manager for additional Quick Search shortcut bindings.'
+        m_Status: 1
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.9.5-preview.1
+          - 0.9.6-preview.1
+          - 0.9.7-preview.3
+          - 0.9.9-preview.2
+          - 0.9.95-preview
+          - 1.0.0-preview.2
+          - 1.0.1-preview.1
+          - 1.0.9-preview.2
+          - 1.1.0-preview.1
+          - 1.2.0-preview.1
+          - 1.2.1-preview
+          - 1.2.2-preview
+          - 1.2.3-preview
+          - 1.2.4-preview
+          - 1.2.6-preview
+          - 1.2.7-preview
+          - 1.2.8-preview
+          - 1.2.9-preview
+          - 1.3.0-preview
+          - 1.3.1-preview
+          - 1.3.2-preview
+          - 1.4.1
+          - 1.4.2-preview.1
+          - 1.4.2-preview.2
+          - 1.4.2-preview.3
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          m_Compatible:
+          - 0.9.5-preview.1
+          - 0.9.6-preview.1
+          - 0.9.7-preview.3
+          - 0.9.9-preview.2
+          - 0.9.95-preview
+          - 1.0.0-preview.2
+          - 1.0.1-preview.1
+          - 1.0.9-preview.2
+          - 1.1.0-preview.1
+          - 1.2.0-preview.1
+          - 1.2.1-preview
+          - 1.2.2-preview
+          - 1.2.3-preview
+          - 1.2.4-preview
+          - 1.2.6-preview
+          - 1.2.7-preview
+          - 1.2.8-preview
+          - 1.2.9-preview
+          - 1.3.0-preview
+          - 1.3.1-preview
+          - 1.3.2-preview
+          - 1.4.1
+          - 1.4.2-preview.1
+          - 1.4.2-preview.2
+          - 1.4.2-preview.3
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          m_Recommended: 
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - unity
+        - editor
+        - omni
+        - tool
+        - quick
+        - search
+        - assets
+        - menu
+        - scene
+        - api
+        - packages
+        - anything
+        m_Author:
+          m_Name: Unity Technologies ApS
+          m_Email: 
+          m_Url: https://blogs.unity3d.com/2019/04/16/introducing-unity-2019-1/#quicksearch
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+        m_HideInEditor: 1
+        m_DatePublishedTicks: 637032926070000000
+      IsInstalled: 0
+    - Name: com.unity.quicksearch
+      DisplayName: Quick Search
+      _Version: 1.5.0-preview.4
       Description: 'Search multiple areas of Unity: assets, scene objects, menu items,
         packages, APIs, settings, etc.
 
@@ -102079,6 +102520,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Compatible:
           - 0.9.5-preview.1
           - 0.9.6-preview.1
@@ -102108,6 +102550,7 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -103069,6 +103512,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -103088,6 +103532,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -103209,6 +103654,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -103228,6 +103674,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -103349,6 +103796,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -103368,6 +103816,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -103489,6 +103938,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -103508,6 +103958,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -103629,6 +104080,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -103648,6 +104100,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -103769,6 +104222,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -103788,6 +104242,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -103909,6 +104364,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -103928,6 +104384,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -104049,6 +104506,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -104068,6 +104526,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -104189,6 +104648,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -104208,6 +104668,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -104329,6 +104790,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -104348,6 +104810,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -104469,6 +104932,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -104488,6 +104952,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -104609,6 +105074,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -104628,6 +105094,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -104749,6 +105216,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -104768,6 +105236,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -104889,6 +105358,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -104908,6 +105378,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -105029,6 +105500,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -105048,6 +105520,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -105169,6 +105642,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -105188,6 +105662,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -105309,6 +105784,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -105328,6 +105804,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -105378,6 +105855,148 @@ MonoBehaviour:
     - Name: com.unity.remote-config
       DisplayName: Remote Config
       _Version: 1.1.0-preview.3
+      Description: "Remote Config is a cloud service that lets you tune and customize
+        your app over the air without requiring an update to your game.  You can use
+        rules to enable or disable features, change the difficulty of your game or
+        run special events to target specific audiences.  Rules control when updates
+        are applied and to whom, while Unity manages delivery of your game content
+        with minimal performance impact. \n\nRemote Config can be configured via the
+        editor or through our public APIs.  Functionality includes: \n- Release new
+        features without deploying code:\n   - Feature flagging\n   - Staged Rollouts\n
+        \  - Kill switch functionality\n   - Start & End Date\n   - Enable & disable
+        rules\n- Personalized real-time segmentation with custom attributes\n   -
+        Custom conditions for applying setting variants\n   - Device, user, game and
+        other arbitrary attributes supporting\n- Reporting\n   - Tracing ID for decorating
+        analytics events"
+      Category: 
+      State: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      IsDiscoverable: 1
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.remote-config@1.0.8
+        m_IsDirectDependency: 0
+        m_Version: 1.0.8
+        m_Source: 1
+        m_ResolvedPath: 
+        m_AssetPath: Packages/com.unity.remote-config
+        m_Name: com.unity.remote-config
+        m_DisplayName: Remote Config
+        m_Category: 
+        m_Type: 
+        m_Description: "Remote Config is a cloud service that lets you tune and customize
+          your app over the air without requiring an update to your game.  You can
+          use rules to enable or disable features, change the difficulty of your game
+          or run special events to target specific audiences.  Rules control when
+          updates are applied and to whom, while Unity manages delivery of your game
+          content with minimal performance impact. \n\nRemote Config can be configured
+          via the editor or through our public APIs.  Functionality includes: \n-
+          Release new features without deploying code:\n   - Feature flagging\n   -
+          Staged Rollouts\n   - Kill switch functionality\n   - Start & End Date\n
+          \  - Enable & disable rules\n- Personalized real-time segmentation with
+          custom attributes\n   - Custom conditions for applying setting variants\n
+          \  - Device, user, game and other arbitrary attributes supporting\n- Reporting\n
+          \  - Tracing ID for decorating analytics events"
+        m_Status: 1
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.3.0-preview.4
+          - 0.3.1-preview.2
+          - 0.3.2-preview
+          - 1.0.0-preview
+          - 1.0.4-preview.2
+          - 1.0.5-preview
+          - 1.0.6-preview
+          - 1.0.6
+          - 1.0.7-preview
+          - 1.0.8-preview
+          - 1.0.8-preview.1
+          - 1.0.8
+          - 1.0.9-preview
+          - 1.0.9-preview.1
+          - 1.1.0-preview
+          - 1.1.0-preview.1
+          - 1.1.0-preview.2
+          - 1.1.0-preview.3
+          - 1.1.0-preview.4
+          m_Compatible:
+          - 0.3.0-preview.4
+          - 0.3.1-preview.2
+          - 0.3.2-preview
+          - 1.0.0-preview
+          - 1.0.4-preview.2
+          - 1.0.5-preview
+          - 1.0.6-preview
+          - 1.0.6
+          - 1.0.7-preview
+          - 1.0.8-preview
+          - 1.0.8-preview.1
+          - 1.0.8
+          - 1.0.9-preview
+          - 1.0.9-preview.1
+          - 1.1.0-preview
+          - 1.1.0-preview.1
+          - 1.1.0-preview.2
+          - 1.1.0-preview.3
+          - 1.1.0-preview.4
+          m_Recommended: 
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - remote
+        - config
+        - configuration
+        - settings
+        - remote settings
+        - remote config
+        - firebase
+        - staged rollouts
+        - feature flagging
+        - roll-out
+        - adapt
+        - tune
+        - tailor
+        - test
+        - experiment
+        - experimentation
+        - app update
+        - taget
+        - targeting
+        - segment
+        - segmentation
+        - segmenting
+        - override
+        - rules
+        - variants
+        - variation
+        - parameter
+        - condtions
+        - conditional
+        - continuous delivery
+        - deploy
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+        m_HideInEditor: 1
+        m_DatePublishedTicks: 637098627280000000
+      IsInstalled: 0
+    - Name: com.unity.remote-config
+      DisplayName: Remote Config
+      _Version: 1.1.0-preview.4
       Description: "Remote Config is a cloud service that lets you tune and customize
         your app over the air without requiring an update to your game.  You can use
         rules to enable or disable features, change the difficulty of your game or
@@ -105449,6 +106068,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Compatible:
           - 0.3.0-preview.4
           - 0.3.1-preview.2
@@ -105468,6 +106088,7 @@ MonoBehaviour:
           - 1.1.0-preview.1
           - 1.1.0-preview.2
           - 1.1.0-preview.3
+          - 1.1.0-preview.4
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -134579,6 +135200,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -134678,6 +135301,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -134777,6 +135402,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -134876,6 +135503,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -134975,6 +135604,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -135074,6 +135705,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -135173,6 +135806,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -135272,6 +135907,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -135371,6 +136008,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -135470,6 +136109,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -135569,6 +136210,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -135668,6 +136311,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -135767,6 +136412,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -135866,6 +136513,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -135965,6 +136614,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -136064,6 +136715,8 @@ MonoBehaviour:
           - 3.0.4
           - 3.0.5-preview.1
           - 3.0.5
+          - 3.0.6-preview.2
+          - 3.1.0-preview.2
           m_Compatible:
           - 0.1.0-preview.8
           - 0.1.0-preview.12
@@ -137885,8 +138538,8 @@ MonoBehaviour:
         m_HideInEditor: 1
         m_DatePublishedTicks: 636898887280000000
       IsInstalled: 0
-    listPackagesVersion: 323
-    listPackagesOfflineVersion: 322
+    listPackagesVersion: 341
+    listPackagesOfflineVersion: 340
     searchOperationOngoing: 0
     listOperationOngoing: 0
     listOperationOfflineOngoing: 0
@@ -138313,6 +138966,10 @@ MonoBehaviour:
         Expanded: 0
         SeeAllVersions: 0
         Selected: 0
+      - PackageId: com.unity.memoryprofiler@0.2.0-preview.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
     BuiltInSelection:
       States: []
 --- !u!114 &19
@@ -138336,9 +138993,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 261
+    x: 317
     y: 73
-    width: 781
+    width: 725
     height: 344
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
@@ -138469,20 +139126,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/_Project/Scenes
   m_ViewMode: 1
   m_StartGridSize: 61
   m_LastFolders:
-  - Assets
+  - Assets/_Project/Scenes
   m_LastFoldersGridSize: 61
   m_LastProjectPath: C:\Users\Oussama\Documents\GitHub\Unity-Projects\Throw
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 3c340000
-    m_LastClickedID: 13372
-    m_ExpandedIDs: 000000003c340000963400001c360000d2360000843700009e3800006c3900008e3a0000203b0000863b00008c3f00003a400000dc41000088420000d0420000824300008c44000032450000784500005c460000a64600001461000016610000186100001a6100001c61000000ca9a3b
+    scrollPos: {x: 0, y: 99}
+    m_SelectedIDs: 82430000
+    m_LastClickedID: 17282
+    m_ExpandedIDs: 000000003c340000963400001c360000ca360000d2360000843700009e3800006c3900008e3a0000203b0000863b00008c3f00003a400000dc41000088420000d0420000824300008c4400003245000078450000bc4500005c460000a64600001461000016610000186100001a6100001c61000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -139101,7 +139758,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 164326
+  m_LastSelectedObjectID: 84562
 --- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52

@@ -49,9 +49,6 @@ public class Destructible : MonoBehaviour
                 Score();
             }
         }
-
-        ImpactSoundAudioSource.clip = BreakSounds[Random.Range(0, BreakSounds.Length)];
-        ImpactSoundAudioSource.Play();
     }
 
 
@@ -61,5 +58,6 @@ public class Destructible : MonoBehaviour
         scored = true;
         global::Score.Instance.PlayerScores();
         scoredTimestamp = Time.time;
+        ImpactSoundAudioSource.Play();
     }
 }

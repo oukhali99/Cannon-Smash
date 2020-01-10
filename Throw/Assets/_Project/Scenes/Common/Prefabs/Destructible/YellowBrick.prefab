@@ -109,16 +109,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImpactSoundAudioSource: {fileID: 2345175261099240415}
   FallVelocityThresholdSqr: 10
-  BallVelocityThresholdSqr: 20
+  BallVelocityThresholdSqr: 0
   BreakWait: 5
   BreakSounds:
-  - {fileID: 8300000, guid: df8597097a1b8054383b41de3c050d04, type: 3}
-  - {fileID: 8300000, guid: 64e358d3941e5d446afd0a31b529c569, type: 3}
-  - {fileID: 8300000, guid: 1ed6132a2a6d7cc4c80263f0a9de4743, type: 3}
-  - {fileID: 8300000, guid: 9cb0959839772eb468e812a0ff041dd0, type: 3}
-  - {fileID: 8300000, guid: c4ee06a10cd0f444cba94dfbfb568478, type: 3}
-  - {fileID: 8300000, guid: 4c3ac06a113a4ad4aaa1c370331b972f, type: 3}
-  - {fileID: 8300000, guid: 819af311fb49a8245849ce39a31fd593, type: 3}
+  - {fileID: 8300000, guid: 61c358339bd5e83499ea6e8a8ad9f09c, type: 3}
 --- !u!82 &2345175261099240415
 AudioSource:
   m_ObjectHideFlags: 0
@@ -129,7 +123,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 819af311fb49a8245849ce39a31fd593, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 14102160d2957a2468d7ef8384da7576, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

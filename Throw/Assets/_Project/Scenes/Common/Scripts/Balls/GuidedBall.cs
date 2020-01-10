@@ -7,8 +7,10 @@ public class GuidedBall : Ball
     [SerializeField] private float GuidedTime;
     [SerializeField] private Vector3 CameraBallRelativePosition;
     [SerializeField] private float SlowMotionTimescale;
+    [SerializeField] private float SlowdownTime;
     [SerializeField] private float XSpeed;
     [SerializeField] private float XVelocityDividePerSecond;
+    [SerializeField] private AudioSource BulletTimeAudio;
     
     private static Vector3 cameraInitialPosition;
     private static Quaternion cameraInitialRotation;
@@ -17,15 +19,15 @@ public class GuidedBall : Ball
 
     private float firedTimestamp;
     private Camera myCamera;
-    private bool slowMotion;
     private new Transform transform;
     private float XViewportTouchDownPosition;
+    private float slowdownPerSecond;
 
     void Start()
     {
         transform = gameObject.transform;
         firedTimestamp = 0;
-        slowMotion = false;
+        slowdownPerSecond = (1 - SlowMotionTimescale) / SlowdownTime;
 
         GetCamera();
     }
@@ -39,13 +41,18 @@ public class GuidedBall : Ball
 
             if (Time.time - firedTimestamp > GuidedTime)
             {
-                DoneFiring();
+                Speedup();
+            }
+            else
+            {
+                Slowdown();
             }
         }
     }
 
     override public void Fired()
     {
+        BulletTimeAudio.Play();
         firedTimestamp = Time.time;
         TopRightPanel.Instance.gameObject.SetActive(false);
         GameOverChecker.Instance.PressedSpace();
@@ -53,35 +60,20 @@ public class GuidedBall : Ball
         GetCamera();
         cameraInitialPosition = cameraTransform.position;
         cameraInitialRotation = cameraTransform.rotation;
-
-        if (!slowMotion)
-        {
-            slowMotion = true;
-            Time.timeScale *= SlowMotionTimescale;
-            MusicHandler.Instance.MusicSource.pitch *= SlowMotionTimescale;
-        }
     }
 
     private void DoneFiring()
     {
         firedTimestamp = 0;
-
-        // Go back to normal mode
+        
         TopRightPanel.Instance.gameObject.SetActive(true);
         cameraTransform.position = cameraInitialPosition;
-
-        // Set Transform
+        
         cameraTransform.position = cameraInitialPosition;
         cameraTransform.rotation = cameraInitialRotation;
 
         GameOverChecker.Instance.PressedSpace();
-
-        if (slowMotion)
-        {
-            slowMotion = false;
-            Time.timeScale /= SlowMotionTimescale;
-            MusicHandler.Instance.MusicSource.pitch /= SlowMotionTimescale;
-        }
+        firedTimestamp = 0;
     }
 
     private void FollowFinger()
@@ -128,6 +120,35 @@ public class GuidedBall : Ball
             cameraTransform = cam.transform;
             cameraInitialPosition = cameraTransform.position;
             cameraInitialRotation = cameraTransform.rotation;
+        }
+    }
+
+    private void Slowdown()
+    {
+        float predictedTimescale = Time.timeScale - slowdownPerSecond * Time.deltaTime;
+
+        if (predictedTimescale < SlowMotionTimescale)
+        {
+            Time.timeScale = SlowMotionTimescale;
+        }
+        else
+        {
+            Time.timeScale = predictedTimescale;
+        }
+    }
+
+    private void Speedup()
+    {
+        float predictedTimescale = Time.timeScale + slowdownPerSecond * Time.deltaTime;
+
+        if (predictedTimescale > 1)
+        {
+            Time.timeScale = 1;
+            DoneFiring();
+        }
+        else
+        {
+            Time.timeScale = predictedTimescale;
         }
     }
 }
