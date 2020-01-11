@@ -8,7 +8,8 @@ public class GuidedBall : Ball
     [SerializeField] private Vector3 CameraBallRelativePosition;
     [SerializeField] private float SlowMotionTimescale;
     [SerializeField] private float SlowdownTime;
-    [SerializeField] private float XSpeed;
+    [SerializeField] private float XMaximumSpeed;
+    [SerializeField] private float ZSpeed;
     [SerializeField] private float XVelocityDividePerSecond;
     [SerializeField] private AudioSource BulletTimeAudio;
     
@@ -103,13 +104,13 @@ public class GuidedBall : Ball
             float xVelocityUnit = 2 * (touchViewportdPosition.x - 0.5f);
             Vector3 velocity = Rigidbody.velocity;
 
-            Rigidbody.velocity = Vector3.right * xVelocityUnit * XSpeed + Vector3.up * velocity.y + Vector3.forward * velocity.z;
+            Rigidbody.velocity = Vector3.right * xVelocityUnit * XMaximumSpeed + Vector3.up * velocity.y + Vector3.forward * velocity.z;
         }
         else
         {
             Vector3 velocity = Rigidbody.velocity;
 
-            Rigidbody.velocity = Vector3.right * velocity.x / Mathf.Pow(XVelocityDividePerSecond, Time.deltaTime) + Vector3.up * velocity.y + Vector3.forward * velocity.z;
+            Rigidbody.velocity = Vector3.right * velocity.x / Mathf.Pow(XVelocityDividePerSecond, Time.deltaTime) + Vector3.up * velocity.y + Vector3.forward * ZSpeed;
         }
     }
 

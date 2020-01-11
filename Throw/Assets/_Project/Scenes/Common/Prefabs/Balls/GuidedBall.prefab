@@ -129,8 +129,9 @@ MonoBehaviour:
   GuidedTime: 1.25
   CameraBallRelativePosition: {x: 0, y: 1, z: -2}
   SlowMotionTimescale: 0.25
-  SlowdownTime: 0.5
-  XSpeed: 40
+  SlowdownTime: 0.1
+  XMaximumSpeed: 80
+  ZSpeed: 16
   XVelocityDividePerSecond: 10000
   BulletTimeAudio: {fileID: 4981672850536458327}
 --- !u!82 &-2867549156351530629
