@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3243154608234011301
 Transform:
@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702c5ffe1f87ea442a9c50a3bee20215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: MainMenu
+  LevelName: Level1
   UIScaleSaveName: UIScale
   PlayerNameSaveName: PlayerName
   ScoreSaveName: Score

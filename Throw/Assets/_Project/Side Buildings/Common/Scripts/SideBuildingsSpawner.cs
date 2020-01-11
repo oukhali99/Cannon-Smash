@@ -40,7 +40,7 @@ public class SideBuildingsSpawner : MonoBehaviour
 
             nextZ += nextZIncrement;
 
-            GameObject newObject = Instantiate(chosenBuilding.gameObject);
+            GameObject newObject = Instantiate(chosenBuilding.gameObject, transform);
             newObject.transform.position = new Vector3(xCoordinate, 0, nextZ);
             newObject.transform.Rotate(new Vector3(0, yRotation, 0));
 

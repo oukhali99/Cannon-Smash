@@ -37,7 +37,11 @@ public class GuidedBall : Ball
         if (firedTimestamp != 0)
         {
             CameraFollows();
-            FollowFinger();
+            
+            if (Time.time - firedTimestamp > SlowdownTime)
+            {
+                FollowFinger();
+            }
 
             if (Time.time - firedTimestamp > GuidedTime)
             {
@@ -78,22 +82,25 @@ public class GuidedBall : Ball
 
     private void FollowFinger()
     {
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 0 || Input.GetMouseButton(0))
         {
-            Touch touch = Input.touches[0];
-            Vector3 touchPosition = touch.position;
+            Vector3 touchPosition;
+
+            if (Input.touchCount > 0)
+            {
+                Touch touch = Input.touches[0];
+                touchPosition = touch.position;
+            }
+            else
+            {
+                touchPosition = Input.mousePosition;
+            }
+
             Vector3 position = transform.position;
             touchPosition.z = position.z;
 
             Vector3 touchViewportdPosition = cam.ScreenToViewportPoint(touchPosition);
-
-            if (touch.phase == TouchPhase.Began)
-            {
-                XViewportTouchDownPosition = touchViewportdPosition.x;
-            }
-
-            float xVelocityUnit = 2 * (touchViewportdPosition.x - XViewportTouchDownPosition);
-
+            float xVelocityUnit = 2 * (touchViewportdPosition.x - 0.5f);
             Vector3 velocity = Rigidbody.velocity;
 
             Rigidbody.velocity = Vector3.right * xVelocityUnit * XSpeed + Vector3.up * velocity.y + Vector3.forward * velocity.z;
