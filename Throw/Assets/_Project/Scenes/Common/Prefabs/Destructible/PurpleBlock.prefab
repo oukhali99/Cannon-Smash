@@ -209,6 +209,7 @@ MonoBehaviour:
   BreakWait: 5
   BreakSounds:
   - {fileID: 8300000, guid: 61c358339bd5e83499ea6e8a8ad9f09c, type: 3}
+  StartWait: 0.4
 --- !u!54 &1847794677381059719
 Rigidbody:
   m_ObjectHideFlags: 0
