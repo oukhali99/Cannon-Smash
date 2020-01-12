@@ -37,6 +37,7 @@ public class GameOverPanel : MonoBehaviour
         timesPlayed = SaveManager.Instance.LoadCurrentLevelTimesPlayed();
 
         CanvasThemer.Instance.Themeify();
+        RefundAmmo();
     }
 
     void Update()
@@ -148,6 +149,27 @@ public class GameOverPanel : MonoBehaviour
         else
         {
             perfectScore = false;
+        }
+    }
+
+    private void RefundAmmo()
+    {
+        SaveManager saveManager = SaveManager.Instance;
+        BallPooler ballPooler = BallPooler.Instance;
+
+        int normal = ballPooler.NormalBallList.Count;
+        int explosive = ballPooler.ExplosiveBallList.Count;
+        int guided = ballPooler.GuidedBallList.Count;
+        int large = ballPooler.LargeBallList.Count;
+
+        saveManager.SaveNormalBallCount(normal + saveManager.LoadNormalBallCount());
+        saveManager.SaveExplosiveBallCount(explosive + saveManager.LoadExplosiveBallCount());
+        saveManager.SaveGuidedBallCount(guided + saveManager.LoadGuidedBallCount());
+        saveManager.SaveLargeBallCount(large + saveManager.LoadLargeBallCount());
+
+        if (ChooseAmmoPanel.Instance.PicksLeft == Ammo.Instance.MaxAmmo)
+        {
+            saveManager.SaveCurrentLevelTimesPlayed(saveManager.LoadCurrentLevelTimesPlayed() - 1);
         }
     }
 }

@@ -13,6 +13,7 @@ public class PlayPanel : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI Level7Percent;
     [SerializeField] private TMPro.TextMeshProUGUI Level8Percent;
     [SerializeField] private TMPro.TextMeshProUGUI Level9Percent;
+    [SerializeField] private TMPro.TextMeshProUGUI Level10Percent;
 
     void Start()
     {
@@ -31,6 +32,7 @@ public class PlayPanel : MonoBehaviour
         RefreshLevelPercent("Level7", Level7Percent);
         RefreshLevelPercent("Level8", Level8Percent);
         RefreshLevelPercent("Level9", Level9Percent);
+        RefreshLevelPercent("Level10", Level10Percent);
     }
     private void RefreshLevelPercent(string levelName, TMPro.TextMeshProUGUI highScoreText)
     {

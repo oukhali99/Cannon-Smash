@@ -49,6 +49,16 @@ public class GameOverChecker : MonoBehaviour
             lastScoreTimestamp = Time.time;
         }
     }
+    
+    public void TriggerGameOver()
+    {
+        gameOver = true;
+
+        MyPausePanel.gameObject.SetActive(false);
+        TopRightPanel.Instance.gameObject.SetActive(false);
+        MyGameOverPanel.gameObject.SetActive(true);
+        CanvasThemer.Instance.Themeify();
+    }
 
     // Helpers
     private void ScoreCheck()
@@ -69,15 +79,5 @@ public class GameOverChecker : MonoBehaviour
         {
             TriggerGameOver();
         }
-    }
-
-    private void TriggerGameOver()
-    {
-        gameOver = true;
-
-        MyPausePanel.gameObject.SetActive(false);
-        TopRightPanel.Instance.gameObject.SetActive(false);
-        MyGameOverPanel.gameObject.SetActive(true);
-        CanvasThemer.Instance.Themeify();
     }
 }

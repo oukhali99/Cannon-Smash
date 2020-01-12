@@ -2738,7 +2738,7 @@ GameObject:
   - component: {fileID: 8550914402293022659}
   - component: {fileID: 41305170669806428}
   m_Layer: 5
-  m_Name: MainMenu
+  m_Name: EndLevel
   m_TagString: Button1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2854,9 +2854,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2413809956238749652}
-        m_MethodName: LoadScene
-        m_Mode: 3
+      - m_Target: {fileID: 5486557073817959279}
+        m_MethodName: TriggerGameOver
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4050,7 +4050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main Menu
+  m_text: End Level
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4479,6 +4479,7 @@ MonoBehaviour:
   ExplosiveBallsLeftText: {fileID: 466923387084344542}
   GuidedBallsLeftText: {fileID: 4570351839573362370}
   LargeBallsLeftText: {fileID: 3135387592098767411}
+  PicksLeft: 0
 --- !u!1 &6931817888110752034
 GameObject:
   m_ObjectHideFlags: 0

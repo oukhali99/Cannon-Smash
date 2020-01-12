@@ -9,6 +9,7 @@ public class Destructible : MonoBehaviour
     [SerializeField] private float BallVelocityThresholdSqr;
     [SerializeField] private float BreakWait;
     [SerializeField] private AudioClip[] BreakSounds;
+    [SerializeField] private float StartWait = 0.4f;
 
     private bool scored;
     private float scoredTimestamp;
@@ -37,7 +38,7 @@ public class Destructible : MonoBehaviour
     {
         string otherTag = collision.gameObject.tag;
 
-        if (!scored)
+        if (!scored && Time.time > StartWait)
         {
             if (otherTag.Equals("Player")
                 && collision.relativeVelocity.sqrMagnitude > BallVelocityThresholdSqr)

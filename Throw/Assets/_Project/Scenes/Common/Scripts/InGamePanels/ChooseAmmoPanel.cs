@@ -5,6 +5,8 @@ using TMPro;
 
 public class ChooseAmmoPanel : MonoBehaviour
 {
+    public static ChooseAmmoPanel Instance { get; private set; }
+
     [SerializeField] private TextMeshProUGUI TitleText;
     [SerializeField] private NormalBall NormalBall;
     [SerializeField] private ExplosiveBall ExplosiveBall;
@@ -16,8 +18,13 @@ public class ChooseAmmoPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI GuidedBallsLeftText;
     [SerializeField] private TextMeshProUGUI LargeBallsLeftText;
 
-    private int picksLeft;
+    [HideInInspector] public int PicksLeft;
     
+    void Awake()
+    {
+        Instance = this;
+    }
+
     void Start()
     {
         string levelNameSaveName = SaveManager.Instance.LevelName;
@@ -25,7 +32,7 @@ public class ChooseAmmoPanel : MonoBehaviour
         TitleText.text = "Level " + levelNumber;
 
         Time.timeScale = 0;
-        picksLeft = Ammo.Instance.MaxAmmo;
+        PicksLeft = Ammo.Instance.MaxAmmo;
         RefreshPicksLeft();
         RefreshStockText();
     }
@@ -34,11 +41,11 @@ public class ChooseAmmoPanel : MonoBehaviour
     {
         int normalBallsLeft = SaveManager.Instance.LoadNormalBallCount();
 
-        if (picksLeft > 0 && normalBallsLeft > 0)
+        if (PicksLeft > 0 && normalBallsLeft > 0)
         {
             BallPooler.Instance.AddNormalBall(NormalBall);
 
-            picksLeft--;
+            PicksLeft--;
             RefreshPicksLeft();
 
             SaveManager.Instance.SaveNormalBallCount(normalBallsLeft - 1);
@@ -50,11 +57,11 @@ public class ChooseAmmoPanel : MonoBehaviour
     {
         int ExplosiveBallsLeft = SaveManager.Instance.LoadExplosiveBallCount();
 
-        if (picksLeft > 0 && ExplosiveBallsLeft > 0)
+        if (PicksLeft > 0 && ExplosiveBallsLeft > 0)
         {
             BallPooler.Instance.AddExplosiveBall(ExplosiveBall);
 
-            picksLeft--;
+            PicksLeft--;
             RefreshPicksLeft();
 
             SaveManager.Instance.SaveExplosiveBallCount(ExplosiveBallsLeft - 1);
@@ -66,11 +73,11 @@ public class ChooseAmmoPanel : MonoBehaviour
     {
         int GuidedBallsLeft = SaveManager.Instance.LoadGuidedBallCount();
 
-        if (picksLeft > 0 && GuidedBallsLeft > 0)
+        if (PicksLeft > 0 && GuidedBallsLeft > 0)
         {
             BallPooler.Instance.AddAntigravtityBall(GuidedBall);
 
-            picksLeft--;
+            PicksLeft--;
             RefreshPicksLeft();
 
             SaveManager.Instance.SaveGuidedBallCount(GuidedBallsLeft - 1);
@@ -82,11 +89,11 @@ public class ChooseAmmoPanel : MonoBehaviour
     {
         int LargeBallsLeft = SaveManager.Instance.LoadLargeBallCount();
 
-        if (picksLeft > 0 && LargeBallsLeft > 0)
+        if (PicksLeft > 0 && LargeBallsLeft > 0)
         {
             BallPooler.Instance.AddLargeBall(LargeBall);
 
-            picksLeft--;
+            PicksLeft--;
             RefreshPicksLeft();
 
             SaveManager.Instance.SaveLargeBallCount(LargeBallsLeft - 1);
@@ -105,7 +112,7 @@ public class ChooseAmmoPanel : MonoBehaviour
     // Helpers
     private void RefreshPicksLeft()
     {
-        PicksLeftText.text = "Picks Left : " + picksLeft.ToString();
+        PicksLeftText.text = "Picks Left : " + PicksLeft.ToString();
     }
 
     private void RefreshStockText()
