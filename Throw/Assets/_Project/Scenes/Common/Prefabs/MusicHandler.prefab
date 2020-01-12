@@ -146,7 +146,7 @@ MonoBehaviour:
   ScratchSource: {fileID: 3937698057122579611}
   LevelCompleteSource: {fileID: -8950256180072350746}
   MusicPath: Audio/In-Game/
-  MusicCount: 12
+  MusicCount: 8
 --- !u!82 &3937698057122579611
 AudioSource:
   m_ObjectHideFlags: 0

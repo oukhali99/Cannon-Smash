@@ -11,14 +11,17 @@ public class Static
 {
     public static void LoadScene(int index)
     {
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(index);
     }
     public static void ReloadScene()
     {
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public static void LoadNextScene()
     {
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

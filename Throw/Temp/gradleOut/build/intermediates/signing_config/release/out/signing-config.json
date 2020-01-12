@@ -1,1 +1,1 @@
-{"mName":"debug","mStoreFile":"C:\\Users\\Gaming\\.android\\debug.keystore","mStorePassword":"android","mKeyAlias":"AndroidDebugKey","mKeyPassword":"android","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}
+{"mName":"release","mStoreFile":"C:\\Users\\Gaming\\Documents\\GitHub\\Unity-Projects\\user.keystore","mStorePassword":"unityq2w3e4r5","mKeyAlias":"google play","mKeyPassword":"unityq2w3e4r5","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}

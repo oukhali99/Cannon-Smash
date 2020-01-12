@@ -13,6 +13,7 @@ public class Destructible : MonoBehaviour
 
     private bool scored;
     private float scoredTimestamp;
+    private float startTimestamp;
 
     void Awake()
     {
@@ -24,6 +25,7 @@ public class Destructible : MonoBehaviour
     {
         global::Score.Instance.NewDestructible();
         ImpactSoundAudioSource.clip = BreakSounds[Random.Range(0, BreakSounds.Length)];
+        startTimestamp = Time.time;
     }
 
     void Update()
@@ -38,7 +40,7 @@ public class Destructible : MonoBehaviour
     {
         string otherTag = collision.gameObject.tag;
 
-        if (!scored && Time.time > StartWait)
+        if (!scored && Time.time - startTimestamp > StartWait)
         {
             if (otherTag.Equals("Player")
                 && collision.relativeVelocity.sqrMagnitude > BallVelocityThresholdSqr)
