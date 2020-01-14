@@ -11,6 +11,5 @@ public class Ads : MonoBehaviour
     void Start()
     {
         Advertisement.Initialize(gameId, testMode);
-        Debug.Log(Advertisement.isInitialized);
     }
 }
