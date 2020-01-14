@@ -9,10 +9,11 @@ public class GameOverPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI PayoutModifierText;
     [SerializeField] private Animator MyAnimator;
     [SerializeField] private AudioSource ScoreUpAudio;
-    [SerializeField] private AudioSource RewardSound;
+    [SerializeField] private AudioSource RewardMusic;
     [SerializeField] private GameObject Confetti;
     [SerializeField] private float DimMusicRatio;
     [SerializeField] private float PayoutDivider;
+    [SerializeField] private GameObject AdsButton;
 
     private int currentPayoutText;
     private float lastIncrementTimestamp;
@@ -20,11 +21,11 @@ public class GameOverPanel : MonoBehaviour
     private float waitBetweenIncrement;
     private int timesPlayed;
     private bool perfectScore;
-    private bool playedRewardSound;
+    private bool playedRewardMusic;
 
     void Start()
     {
-        playedRewardSound = false;
+        playedRewardMusic = false;
         beatenHighScore = false;
         lastIncrementTimestamp = 0;
         currentPayoutText = 0;
@@ -42,9 +43,9 @@ public class GameOverPanel : MonoBehaviour
 
     void Update()
     {
-        if (!playedRewardSound && (beatenHighScore || perfectScore))
+        if (!playedRewardMusic && (beatenHighScore || perfectScore))
         {
-            playedRewardSound = true;
+            playedRewardMusic = true;
             Confetti.SetActive(true);
             MusicHandler.Instance.LevelComplete();
         }
@@ -78,9 +79,11 @@ public class GameOverPanel : MonoBehaviour
             text += "x2 (perfect score!)";
         }
 
-        PayoutText.text = GetPayout().ToString();
+        currentPayoutText = GetPayout();
+        PayoutText.text = currentPayoutText.ToString();
         PayoutModifierText.text = text;
         ScoreUpAudio.Play();
+        AdsButton.SetActive(true);
     }
     
     public void ScoreUpOne()
@@ -100,6 +103,16 @@ public class GameOverPanel : MonoBehaviour
 
     public void DoNothing()
     {
+    }
+
+    public void WatchedAd()
+    {
+        SaveManager saveManager = SaveManager.Instance;
+        int balance = saveManager.LoadBalance();
+
+        saveManager.SaveBalance(balance + GetPayout());
+        currentPayoutText *= 2;
+        PayoutText.text = currentPayoutText.ToString();
     }
 
     private int GetPayout()
