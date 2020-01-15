@@ -23,13 +23,16 @@ public class GameOverPanel : MonoBehaviour
     private bool perfectScore;
     private bool playedRewardMusic;
 
-    void Start()
+    void Awake()
     {
         playedRewardMusic = false;
         beatenHighScore = false;
         lastIncrementTimestamp = 0;
         currentPayoutText = 0;
+    }
 
+    void Start()
+    {
         SaveManager.Instance.SaveCurrentLevelTimesPlayed(SaveManager.Instance.LoadCurrentLevelTimesPlayed() + 1);
         PerfectScoreCheck();
         HighscoreCheck();

@@ -156,6 +156,7 @@ public class CanvasThemer : MonoBehaviour
         streamlinee.type = streamliner.type;
         streamlinee.preserveAspect = streamliner.preserveAspect;
         streamlinee.pixelsPerUnitMultiplier = streamliner.pixelsPerUnitMultiplier;
+        streamlinee.useSpriteMesh = streamliner.useSpriteMesh;
     }
     private void StreamLineTextMeshPro(TMPro.TextMeshProUGUI streamliner, TMPro.TextMeshProUGUI streamlinee)
     {
