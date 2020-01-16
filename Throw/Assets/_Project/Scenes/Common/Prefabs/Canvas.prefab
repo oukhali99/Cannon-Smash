@@ -2641,7 +2641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7734042049954320473
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3333,6 +3333,8 @@ MonoBehaviour:
   DimMusicRatio: 4
   PayoutDivider: 4
   AdsButton: {fileID: 5118750830856464278}
+  MainMenuButton: {fileID: 4113590088016257624}
+  ContinueButton: {fileID: 6237578705325286983}
 --- !u!95 &1403789375
 Animator:
   serializedVersion: 3
@@ -4232,7 +4234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2080073029546896857
 RectTransform:
   m_ObjectHideFlags: 0

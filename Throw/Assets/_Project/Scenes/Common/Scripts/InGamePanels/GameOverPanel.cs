@@ -14,6 +14,8 @@ public class GameOverPanel : MonoBehaviour
     [SerializeField] private float DimMusicRatio;
     [SerializeField] private float PayoutDivider;
     [SerializeField] private GameObject AdsButton;
+    [SerializeField] private GameObject MainMenuButton;
+    [SerializeField] private GameObject ContinueButton;
 
     private int currentPayoutText;
     private float lastIncrementTimestamp;
@@ -87,16 +89,19 @@ public class GameOverPanel : MonoBehaviour
         PayoutModifierText.text = text;
         ScoreUpAudio.Play();
         AdsButton.SetActive(true);
+        MainMenuButton.SetActive(true);
+        ContinueButton.SetActive(true);
+        CanvasThemer.Instance.Themeify();
     }
     
     public void ScoreUpOne()
     {
         PayoutText.text = currentPayoutText.ToString();
-        if (currentPayoutText == GetRawPayout())
+        if (currentPayoutText >= GetRawPayout())
         {
             MyAnimator.SetBool("DoneScoreUp", true);
         }
-        else
+        else if (!MyAnimator.GetBool("DoneScoreUp"))
         {
             lastIncrementTimestamp = Time.time;
             ScoreUpAudio.Play();

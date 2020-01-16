@@ -104,7 +104,7 @@ public class GuidedBall : Ball
             float xVelocityUnit = 2 * (touchViewportdPosition.x - 0.5f);
             Vector3 velocity = Rigidbody.velocity;
 
-            Rigidbody.velocity = Vector3.right * xVelocityUnit * XMaximumSpeed + Vector3.up * velocity.y + Vector3.forward * velocity.z;
+            Rigidbody.velocity = Vector3.right * xVelocityUnit * XMaximumSpeed + Vector3.up * velocity.y + Vector3.forward * ZSpeed;
         }
         else
         {
