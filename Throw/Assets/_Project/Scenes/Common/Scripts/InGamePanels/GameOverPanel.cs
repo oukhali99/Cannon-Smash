@@ -9,7 +9,6 @@ public class GameOverPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI PayoutModifierText;
     [SerializeField] private Animator MyAnimator;
     [SerializeField] private AudioSource ScoreUpAudio;
-    [SerializeField] private AudioSource RewardMusic;
     [SerializeField] private GameObject Confetti;
     [SerializeField] private float DimMusicRatio;
     [SerializeField] private float PayoutDivider;
@@ -18,19 +17,18 @@ public class GameOverPanel : MonoBehaviour
     [SerializeField] private GameObject ContinueButton;
 
     private int currentPayoutText;
-    private float lastIncrementTimestamp;
     private bool beatenHighScore;
-    private float waitBetweenIncrement;
     private int timesPlayed;
     private bool perfectScore;
-    private bool playedRewardMusic;
+    private bool celebrated;
 
     void Awake()
     {
-        playedRewardMusic = false;
-        beatenHighScore = false;
-        lastIncrementTimestamp = 0;
         currentPayoutText = 0;
+        beatenHighScore = false;
+        timesPlayed = 1;
+        perfectScore = false;
+        celebrated = false;
     }
 
     void Start()
@@ -44,15 +42,15 @@ public class GameOverPanel : MonoBehaviour
 
         CanvasThemer.Instance.Themeify();
         RefundAmmo();
+        MusicHandler.Instance.LevelComplete();
     }
 
     void Update()
     {
-        if (!playedRewardMusic && (beatenHighScore || perfectScore))
+        if (!celebrated && (beatenHighScore || perfectScore))
         {
-            playedRewardMusic = true;
+            celebrated = true;
             Confetti.SetActive(true);
-            MusicHandler.Instance.LevelComplete();
         }
     }
     
@@ -96,16 +94,15 @@ public class GameOverPanel : MonoBehaviour
     
     public void ScoreUpOne()
     {
-        PayoutText.text = currentPayoutText.ToString();
         if (currentPayoutText >= GetRawPayout())
         {
             MyAnimator.SetBool("DoneScoreUp", true);
         }
         else if (!MyAnimator.GetBool("DoneScoreUp"))
         {
-            lastIncrementTimestamp = Time.time;
             ScoreUpAudio.Play();
             currentPayoutText++;
+            PayoutText.text = currentPayoutText.ToString();
         }
     }
 
