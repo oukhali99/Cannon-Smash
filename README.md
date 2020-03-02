@@ -1,1 +1,2 @@
 # Cannon Smash!
+(https://octodex.github.com/images/yaktocat.png)
